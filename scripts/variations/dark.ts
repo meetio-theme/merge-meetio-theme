@@ -1,5 +1,7 @@
+import { dark as ui } from '@meetio/meetio-colors';
+
 export const dark = {
-    background: 'rgb(5,17, 29)',
+    background: ui.background,
     accent: '#011627',
     accent_lightest: 'color(var(background) l(15%))',
     font_face: 'system',

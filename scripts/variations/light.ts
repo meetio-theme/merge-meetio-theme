@@ -1,6 +1,7 @@
+import { light as ui } from '@meetio/meetio-colors';
+
 export const light = {
-    // ~ Meetio Inspired
-    background: '#fbfbfb',
+    background: ui.background,
     accent: '#f7f5f5',
     accent_lightest: 'color(var(background) l(15%))',
     // ~ End Meetio
@@ -91,5 +92,5 @@ export const light = {
     repository_tab_bar_border_bg: 'var(accent)', // ? Seperator to the right of the Tabs in the titlebar
 
     // ~ Hazard buttons (Discard)
-    hazard_button_bg: 'color(var(red) l(25%))',
+    hazard_button_bg: 'color(var(red) l(25%))'
 };

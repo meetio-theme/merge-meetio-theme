@@ -58,12 +58,12 @@ export const rules = [
         'layer0.tint': 'var(accent)',
     },
     {
-        class: "file_diff_header",
-        "layer0.tint": "var(accent)",
+        class: 'file_diff_header',
+        'layer0.tint': 'var(accent)',
     },
     {
-        class: "file_diff_header collapsible",
-        "layer0.tint": "var(accent_lightest)",
+        class: 'file_diff_header collapsible',
+        'layer0.tint': 'var(accent_lightest)',
     },
     // {
     //     "class": "info_area",
