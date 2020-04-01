@@ -21,6 +21,7 @@ belong in `Packages/User/`
 
 ## Light Theme
 ![Status](https://img.shields.io/badge/percentage_complete-50%25-82e6e6?style=for-the-badge)
+
 In order to apply this **Light** theme, you will need to drop these files into Sublime Merge's `Packages/User/` _**See more at...**_ _[Sublime Merge Doc's](https://www.sublimemerge.com/docs/themes#Customization)_
 
 ### Files
