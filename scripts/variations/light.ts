@@ -1,5 +1,6 @@
 import { light as ui } from '@meetio/meetio-colors';
 
+/** Meetio Colors: https://github.com/meetio-theme/meetio-colors */
 export const light = {
     background: ui.background,
     accent: '#f7f5f5',

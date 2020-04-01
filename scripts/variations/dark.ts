@@ -1,5 +1,6 @@
 import { dark as ui } from '@meetio/meetio-colors';
 
+/** Meetio Colors: https://github.com/meetio-theme/meetio-colors */
 export const dark = {
     background: ui.background,
     accent: '#011627',
@@ -9,8 +10,8 @@ export const dark = {
     // "text-heading": "#ddd",
     // "text": "#aaa",
 
-    // "orange": "hsl(32, 80%, 60%)",
-    // "yellow": "hsl(44, 100%, 60%)",
+    orange: ui.orange,
+    yellow: ui.yellow,
     // "teal": "hsl(180, 40%, 65%)",
     // "blue": "hsl(210, 60%, 65%)",
     // "purple": "hsl(260, 60%, 75%)",
