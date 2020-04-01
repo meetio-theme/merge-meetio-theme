@@ -1,675 +1,675 @@
 {
-    "globals": {
-        "stack_guide": "var(brown)", 
-        "find_highlight": "var(yellow)", 
-        "rulers": "color(var(foreground) alpha(0.5))", 
-        "line_diff_modified": "var(diffModified)", 
-        "selection_border": "var(cyan)", 
-        "line_highlight": "color(var(foreground) alpha(0.1))", 
-        "gutter": "var(background)", 
-        "selection_corner_radius": "cut", 
-        "background": "var(background)", 
-        "line_diff_added": "var(diffAdded)", 
-        "tags_foreground": "var(cyan)", 
-        "fold_marker": "var(yellow)", 
-        "gutter_foreground": "color(var(foreground) alpha(0.2))", 
-        "selection_corner_style": "cut", 
-        "caret": "var(cursor)", 
-        "brackets_foreground": "var(cyan)", 
-        "find_highlight_foreground": "var(background)", 
-        "invisibles": "color(var(foreground) alpha(0.3))", 
-        "selection": "color(var(foreground) alpha(0.10))", 
-        "block_caret": "var(cursor)", 
-        "line_diff_deleted": "var(diffDeleted)", 
-        "active_guide": "var(cyan)", 
-        "tags_options": "underline", 
-        "foreground": "var(foreground)", 
-        "shadow": "color(var(background) alpha(0.5))", 
-        "brackets_options": "underline", 
-        "bracket_contents_foreground": "var(yellow)", 
-        "line_diff_width": "2", 
-        "bracket_contents_options": "underline", 
-        "misspelling": "var(red)", 
-        "highlight": "var(yellow)", 
-        "inactive_selection": "color(var(cyan) alpha(0.1))"
-    }, 
-    "name": "Meetio-Theme-Dark", 
-    "variables": {
-        "cyan": "#7fdbca", 
-        "cursor": "#ffcc00", 
-        "deprecated": "#ffc777a1", 
-        "diffModified": "#e2b93d", 
-        "comments": "#637777", 
-        "purple": "#c2afff", 
-        "pink": "#ff5874", 
-        "green": "#c3e88d", 
-        "red": "#d95757", 
-        "background": "#011627", 
-        "foreground": "#dedfe4", 
-        "blue": "#82aaff", 
-        "brown": "#c17e70", 
-        "invalid": "#d46c6c66", 
-        "yellow": "#ffcb8b", 
-        "diffDeleted": "#ef5350", 
-        "diffAdded": "#addb67", 
-        "orange": "#f78c6c"
-    }, 
+    "name": "Meetio-Theme-Light", 
     "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>", 
     "rules": [
         {
-            "foreground": "var(comments)", 
-            "font_style": "italic", 
             "name": "COMMENTS - Single and multi-line comments should use, respectively", 
-            "scope": "comment.line,comment.block"
+            "scope": "comment.line,comment.block", 
+            "foreground": "var(comments)", 
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(comments)", 
-            "font_style": "italic", 
             "name": "COMMENTS - Multi-line comments used as documentation, such as Javadoc or PhpDo", 
-            "scope": "comment.block.documentation"
+            "scope": "comment.block.documentation", 
+            "foreground": "var(comments)", 
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(comments)", 
-            "font_style": "italic", 
             "name": "COMMENTS - Symbols that delineate a comment, e.g. // or /*", 
-            "scope": "punctuation.definition.comment"
-        }, 
-        {
+            "scope": "punctuation.definition.comment", 
             "foreground": "var(comments)", 
-            "font_style": "italic", 
-            "name": "COMMENTS - Special syntax that denote a section of code", 
-            "scope": "meta.toc-list"
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(orange)", 
+            "name": "COMMENTS - Special syntax that denote a section of code", 
+            "scope": "meta.toc-list", 
+            "foreground": "var(comments)", 
+            "font_style": "italic"
+        }, 
+        {
             "name": "CONSTANT - Numeric literals, including integers, floats, etc...", 
+            "foreground": "var(orange)", 
             "scope": "constant.numeric,constant.numeric.integer,constant.numeric.integer.binary,constant.numeric.integer.octal,constant.numeric.integer.decimal,constant.numeric.integer.hexadecimal,constant.numeric.integer.other,constant.numeric.float,constant.numeric.float.binary,constant.numeric.float.octal,constant.numeric.float.decimal,constant.numeric.float.hexadecimal,constant.numeric.float.other,constant.numeric.complex,constant.numeric.complex.real,constant.numeric.complex.imaginary"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "CONSTANT - Constants that are built into the language, such as booleans and null values", 
+            "foreground": "var(cyan)", 
             "scope": "constant.language"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "CONSTANT - Character escapes in strings", 
+            "foreground": "var(yellow)", 
             "scope": "constant.character.escape"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "CONSTANT - Formatting placeholders, such as those used for sprintf(), e.g. %s", 
+            "foreground": "var(yellow)", 
             "scope": "constant.other.placeholder"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "CONSTANT - Other language-specific constant values", 
+            "foreground": "var(cyan)", 
             "scope": "constant.other"
         }, 
         {
-            "foreground": "var(pink)", 
             "name": "CONSTANT - Other language-specific constant values", 
+            "foreground": "var(pink)", 
             "scope": "constant.other.color"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "ENTITY - The names of data structures", 
+            "foreground": "var(yellow)", 
             "scope": "entity.name.class,entity.name.struct,entity.name.enum,entity.name.union,entity.name.trait,entity.name.interface,entity.name.impl,entity.name.type"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "ENTITY - Forward-decl variants of the above are used in languages such as C and C++.", 
+            "foreground": "var(yellow)", 
             "scope": "entity.name.class.forward-decl"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "ENTITY - Class, interface and trait names listed as an inherited class or implemented interface/trait", 
+            "foreground": "var(orange)", 
             "scope": "entity.other.inherited-class"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "ENTITY - Function names receive one of the following scopes", 
+            "foreground": "var(blue)", 
             "scope": "entity.name.function,entity.name.function.constructor,entity.name.function.destructor"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "ENTITY - Namespaces, packages and modules use the following scope", 
+            "foreground": "var(yellow)", 
             "scope": "entity.name.namespace"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "ENTITY - This scope is often included in the symbol list and index", 
+            "foreground": "var(orange)", 
             "scope": "entity.name.constant"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "ENTITY - Labels for goto-like constructs", 
+            "foreground": "var(cyan)", 
             "scope": "entity.name.label"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "ENTITY - Heading names in markup languages, such as Markdown and Textile", 
+            "foreground": "var(purple)", 
             "scope": "entity.name.section"
         }, 
         {
-            "foreground": "var(red)", 
             "name": "ENTITY - HTML and XML tags", 
+            "foreground": "var(red)", 
             "scope": "entity.name.tag"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "ENTITY - HTML, CSS and XML", 
+            "foreground": "var(yellow)", 
             "scope": "entity.other.attribute-name"
         }, 
         {
-            "foreground": "var(invalid)", 
             "name": "INVALID - Elements that are illegal in a specific context", 
+            "foreground": "var(invalid)", 
             "scope": "invalid.illegal"
         }, 
         {
-            "foreground": "var(deprecated)", 
             "name": "INVALID - Deprecated elements", 
+            "foreground": "var(deprecated)", 
             "scope": "invalid.deprecated"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "KEYWORD- Control keywords examples include if, try, end and while. Some syntaxes prefer to mark if and else with the conditional variant.", 
+            "foreground": "var(cyan)", 
             "scope": "keyword.control,keyword.control.conditional,keyword.control.import"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "KEYWORD - Keywords that contain punctuation, such as the @ symbol in CSS", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.definition.keyword"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "KEYWORD - All remaining non-operator keywords fall under the other", 
+            "foreground": "var(orange)", 
             "scope": "keyword.other"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "KEYWORD - Operators are typically symbols, so the term keyword can seem somewhat contradictory.", 
+            "foreground": "var(orange)", 
             "scope": "keyword.operator,keyword.operator.arithmetic,keyword.operator.bitwise,keyword.operator.logical"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "KEYWORD - When the operator is a word, such as and, or or not, the following variant is used", 
+            "foreground": "var(cyan)", 
             "scope": "keyword.operator.word"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "KEYWORD - Operator comparison and assignment ", 
+            "foreground": "var(cyan)", 
             "scope": "keyword.operator.assignment,keyword.operator.comparison"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "MARKUP - Section headings", 
+            "foreground": "var(cyan)", 
             "scope": "markup.heading"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "MARKUP - Lists", 
+            "foreground": "var(cyan)", 
             "scope": "markup.list.unnumbered,markup.list.numbered"
         }, 
         {
-            "foreground": "var(red)", 
-            "font_style": "bold", 
             "name": "MARKUP - Bold", 
-            "scope": "markup.bold"
+            "scope": "markup.bold", 
+            "foreground": "var(red)", 
+            "font_style": "bold"
         }, 
         {
-            "foreground": "var(red)", 
-            "font_style": "italic", 
             "name": "MARKUP - Italic", 
-            "scope": "markup.italic"
+            "scope": "markup.italic", 
+            "foreground": "var(red)", 
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(purple)", 
-            "font_style": "italic", 
             "name": "MARKUP - Underline", 
-            "scope": "markup.underline"
+            "scope": "markup.underline", 
+            "foreground": "var(purple)", 
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(red)", 
-            "font_style": "italic", 
             "name": "MARKUP - Underline Link", 
-            "scope": "markup.underline.link"
+            "scope": "markup.underline.link", 
+            "foreground": "var(red)", 
+            "font_style": "italic"
         }, 
         {
-            "foreground": "var(red)", 
             "name": "MARKUP - Deleted", 
+            "foreground": "var(red)", 
             "scope": "markup.deleted"
         }, 
         {
-            "foreground": "var(green)", 
             "name": "MARKUP - Inserted", 
+            "foreground": "var(green)", 
             "scope": "markup.inserted"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "MARKUP - Changed", 
+            "foreground": "var(orange)", 
             "scope": "markup.changed"
         }, 
         {
-            "foreground": "var(cyan)", 
-            "font_style": "italic", 
             "name": "MARKUP - Blockquotes and other quote styles", 
-            "scope": "markup.quote"
+            "scope": "markup.quote", 
+            "foreground": "var(cyan)", 
+            "font_style": "italic"
         }, 
         {
             "name": "MARKUP - Inline and block literal quoting", 
-            "scope": "markup.raw.inline,markup.raw.block", 
-            "background": "color(var(blue) alpha(0.05))"
+            "background": "color(var(blue) alpha(0.05))", 
+            "scope": "markup.raw.inline,markup.raw.block"
         }, 
         {
             "name": "MARKUP - Inline and block literal quoting", 
-            "scope": "meta.code-fence.definition.begin.text.markdown-gfm,meta.code-fence.definition.end.text.markdown-gfm,markup.raw.code-fence.markdown-gfm", 
-            "background": "color(var(blue) alpha(0.05))"
+            "background": "color(var(blue) alpha(0.05))", 
+            "scope": "meta.code-fence.definition.begin.text.markdown-gfm,meta.code-fence.definition.end.text.markdown-gfm,markup.raw.code-fence.markdown-gfm"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "MARKUP - Other markup, including constructs such as footnotes and tables", 
+            "foreground": "var(yellow)", 
             "scope": "markup.other"
         }, 
         {
-            "foreground": "var(pink)", 
             "name": "MARKUP - Blockquote definition", 
+            "foreground": "var(pink)", 
             "scope": "punctuation.definition.blockquote"
         }, 
         {
-            "foreground": "var(green)", 
             "name": "MARKUP - Blockquote definition", 
+            "foreground": "var(green)", 
             "scope": "meta.link.inline.description"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "META - HTML and XML tags, including punctuation, names and attributes", 
+            "foreground": "var(foreground)", 
             "scope": "meta.tag"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "META - The complete contents of data structures", 
+            "foreground": "var(purple)", 
             "scope": "meta.class,meta.struct,meta.enum,meta.union,meta.trait,meta.interface,meta.impl,meta.type"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "META - The entire scope of a function", 
+            "foreground": "var(purple)", 
             "scope": "meta.function,meta.function.parameters,meta.function.return-type"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "META - The entirety of a namespace", 
+            "foreground": "var(blue)", 
             "scope": "meta.namespace"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Preprocessor statements in language such as C", 
+            "foreground": "var(cyan)", 
             "scope": "meta.preprocessor"
         }, 
         {
-            "foreground": "var(green)", 
             "name": "META - Annotations, attributes and decorator statements that are used to modify the behavior or implementation of a class, method or function", 
+            "foreground": "var(green)", 
             "scope": "meta.annotation,meta.annotation.identifier,meta.annotation.parameters,punctuation.definition.annotation"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Complete identifiers, including namespace names", 
+            "foreground": "var(cyan)", 
             "scope": "meta.path"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "META - Function names, including the full path, and all parameters", 
+            "foreground": "var(yellow)", 
             "scope": "meta.function-call"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "Meta - Mapping Key", 
+            "foreground": "var(blue)", 
             "scope": "meta.mapping.key"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Sections of code delineated by curly braces", 
+            "foreground": "var(cyan)", 
             "scope": "meta.block,punctuation.section.block.begin,punctuation.section.block.end,meta.braces,punctuation.section.braces.begin,punctuation.section.braces.end"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Sections of code delineated by parentheses", 
+            "foreground": "var(cyan)", 
             "scope": "meta.group,punctuation.section.group.begin,punctuation.section.group.end,meta.parens,punctuation.section.parens.begin,punctuation.section.parens.end"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Sections of code delineated by square brackets", 
+            "foreground": "var(cyan)", 
             "scope": "meta.brackets,punctuation.section.brackets.begin,punctuation.section.brackets.end,meta.array.literal,meta.brace.square"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "META - Generic data type constructs", 
+            "foreground": "var(cyan)", 
             "scope": "meta.generic,punctuation.definition.generic.begin,punctuation.definition.generic.end"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "META - Paragraphs in markup", 
+            "foreground": "var(foreground)", 
             "scope": "meta.paragraph"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "META - Object", 
+            "foreground": "var(blue)", 
             "scope": "meta.objectliteral,meta.object.member"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "META - Object", 
+            "foreground": "var(blue)", 
             "scope": "meta.field.declaration"
         }, 
         {
-            "foreground": "var(pink)", 
             "name": "META - Diff Header", 
+            "foreground": "var(pink)", 
             "scope": "meta.diff, meta.diff.header"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Separators such as commas", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.separator"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Semicolons or other statement terminators", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.terminator"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Parameters eg: ()", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.definition.parameters.begin,punctuation.definition.block,punctuation.definition.parameters.end"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Embedded eg: {}", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.section.embedded.begin,punctuation.section.embedded.end"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Parameters eg: <>", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.definition.tag.begin,punctuation.definition.tag.end"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Line-continuation characters, such as in Python and R", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.separator.continuation"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Member access, scope resolution, or similar constructs", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.accessor"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Property list, such CSS in HTML", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.section.property-list"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "PUNCTUATION - Section mapping, such as JSON, eg: \"{}\"", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.section.mapping.begin,punctuation.section.mapping.end"
         }, 
         {
-            "foreground": "var(green)", 
             "name": "SOURCE - A language-specific variant of the following scope is typically applied to the entirety of a source code file", 
+            "foreground": "var(green)", 
             "scope": "source"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "STORAGE - Types should use the following scope. Examples include int, bool and char", 
+            "foreground": "var(purple)", 
             "scope": "storage.type"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "STORAGE - Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private", 
+            "foreground": "var(purple)", 
             "scope": "storage.modifier"
         }, 
         {
-            "foreground": "var(pink)", 
             "name": "STORAGE - Keywords for functions or methods", 
+            "foreground": "var(pink)", 
             "scope": "storage.type.function keyword.declaration.function"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "STORAGE - Keywords for classes, structs, interfaces", 
+            "foreground": "var(purple)", 
             "scope": "storage.type.class keyword.declaration.class,storage.type.struct keyword.declaration.struct,storage.type.enum keyword.declaration.enum,storage.type.union keyword.declaration.union,storage.type.trait keyword.declaration.trait,storage.type.interface keyword.declaration.interface,storage.type.impl keyword.declaration.impl,storage.type keyword.declaration.type"
         }, 
         {
-            "foreground": "var(green)", 
             "name": "STRING - Basic strings use the one", 
+            "foreground": "var(green)", 
             "scope": "string.quoted.single,string.quoted.double,string.quoted.triple"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "STRING - Strings that used unconventional quotes, such as < and > with C imports", 
+            "foreground": "var(cyan)", 
             "scope": "string.quoted.other"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "STRING - The entirety of a string, along with all punctuation, prefixes, suffixes and interpolations", 
+            "foreground": "var(cyan)", 
             "scope": "meta.string"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "STRING - Punctuation at the beginning and end of strings", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.definition.string.begin,punctuation.definition.string.end"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "STRING - Unquoted strings, such as in Shell and Batch File", 
+            "foreground": "var(yellow)", 
             "scope": "string.unquoted"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "STRING - Regular expression literal", 
+            "foreground": "var(yellow)", 
             "scope": "string.regexp"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "STRING - When a string contain interpolated code", 
+            "foreground": "var(yellow)", 
             "scope": "meta.interpolation"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "STRING - The punctuation for an interpolated expression", 
+            "foreground": "var(yellow)", 
             "scope": "punctuation.section.interpolation.begin,punctuation.section.interpolation.end"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "STRING - Between the punctuation, the interpolated expression", 
+            "foreground": "var(yellow)", 
             "scope": "source.language-suffix.embedded"
         }, 
         {
-            "foreground": "var(pink)", 
             "name": "SUPPORT - Elements provided by a base frameworks", 
+            "foreground": "var(pink)", 
             "scope": "support.constant,support.function,support.module"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "SUPPORT - While also used for base frameworks, many syntaxes apply these to scopes unrecognized classes and types, effectively scoping all user constructs.", 
+            "foreground": "var(foreground)", 
             "scope": "support.type,support.class,support.variable.property"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "SUPPORT - Class Component", 
+            "foreground": "var(purple)", 
             "scope": "support.class.component"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "SUPPORT - Type Primitive", 
+            "foreground": "var(yellow)", 
             "scope": "support.type.primitive"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "TEXT - HTML", 
+            "foreground": "var(foreground)", 
             "scope": "text.html"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "TEXT - XML", 
+            "foreground": "var(foreground)", 
             "scope": "text.xml"
         }, 
         {
-            "foreground": "var(brown)", 
             "name": "VARIABLE - Declaration", 
+            "foreground": "var(brown)", 
             "scope": "variable.declaration,variable.other"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "VARIABLE - A generic variable", 
+            "foreground": "var(foreground)", 
             "scope": "variable.other.readwrite"
         }, 
         {
-            "foreground": "var(cyan)", 
             "name": "VARIABLE - Symbols that are part of the variable name", 
+            "foreground": "var(cyan)", 
             "scope": "punctuation.definition.variable"
         }, 
         {
-            "foreground": "var(red)", 
             "name": "VARIABLE - Immutable variables", 
+            "foreground": "var(red)", 
             "scope": "variable.other.constant"
         }, 
         {
-            "foreground": "var(red)", 
             "name": "VARIABLE - Reserved variable names that are specified by the language, such as this, self, super", 
+            "foreground": "var(red)", 
             "scope": "variable.language"
         }, 
         {
-            "foreground": "var(red)", 
             "name": "VARIABLE - Parameters to a function or methods", 
+            "foreground": "var(red)", 
             "scope": "variable.parameter"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "VARIABLE - Fields, properties, members and attributes of a class", 
+            "foreground": "var(yellow)", 
             "scope": "variable.other.member"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "VARIABLE - Function and method name", 
+            "foreground": "var(blue)", 
             "scope": "variable.function"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "VARIABLE - The final label in an identifier that is part of an annotation", 
+            "foreground": "var(yellow)", 
             "scope": "variable.annotation"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "HTML - Attribute name ID", 
+            "foreground": "var(purple)", 
             "scope": "meta.attribute-with-value.id. entity.other.attribute-name.id"
         }, 
         {
-            "foreground": "var(green)", 
-            "font_style": "normal", 
             "name": "HTML - Attribute name ID", 
-            "scope": "meta.attribute-with-value.id. string.quoted.double. meta.toc-list.id."
+            "scope": "meta.attribute-with-value.id. string.quoted.double. meta.toc-list.id.", 
+            "foreground": "var(green)", 
+            "font_style": "normal"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "CSS - Attribute name ID", 
+            "foreground": "var(orange)", 
             "scope": "entity.other.attribute-name.id"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "CSS - Attribute name Class", 
+            "foreground": "var(yellow)", 
             "scope": "entity.other.attribute-name.class"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "CSS - Pseudo class", 
+            "foreground": "var(purple)", 
             "scope": "entity.other.pseudo-class"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "CSS - Pseudo element", 
+            "foreground": "var(purple)", 
             "scope": "entity.other.pseudo-element"
         }, 
         {
             "name": "DIFF - Deleted", 
-            "scope": "diff.deleted", 
-            "background": "color(var(red) alpha(0.15))"
+            "background": "color(var(red) alpha(0.10))", 
+            "scope": "diff.deleted"
         }, 
         {
             "name": "DIFF - Deleted Char", 
-            "scope": "diff.deleted.char", 
-            "background": "color(var(red) alpha(0.15))"
+            "background": "color(var(red) alpha(0.10))", 
+            "scope": "diff.deleted.char"
         }, 
         {
             "name": "DIFF - Inserted", 
-            "scope": "diff.inserted", 
-            "background": "color(var(green) alpha(0.10))"
+            "background": "color(var(green) alpha(0.10))", 
+            "scope": "diff.inserted"
         }, 
         {
             "name": "DIFF - Inserted Char", 
-            "scope": "diff.inserted.char", 
-            "background": "color(var(green) alpha(0.10))"
+            "background": "color(var(green) alpha(0.10))", 
+            "scope": "diff.inserted.char"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "JS - Console, \"console\"", 
+            "foreground": "var(yellow)", 
             "scope": "support.type.object.console,support.class.console"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "JS - Console, \"log\"", 
+            "foreground": "var(blue)", 
             "scope": "support.function.console"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "JS - Other property", 
+            "foreground": "var(blue)", 
             "scope": "source.js variable.other.property.js"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "JSON - Key ", 
+            "foreground": "var(purple)", 
             "scope": "meta.mapping.key.json string.quoted.double.json"
         }, 
         {
-            "foreground": "var(yellow)", 
             "name": "JSON - Mapping Level 1", 
+            "foreground": "var(yellow)", 
             "scope": "source.json meta.mapping.value.json meta.mapping.key.json string.quoted.double.json"
         }, 
         {
-            "foreground": "var(orange)", 
             "name": "JSON - Mapping Level 2", 
+            "foreground": "var(orange)", 
             "scope": "source.json meta.mapping.value.json meta.mapping.value.json meta.mapping.key.json string.quoted.double.json"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "JSX - Meta", 
+            "foreground": "var(foreground)", 
             "scope": "meta.jsx.js"
         }, 
         {
-            "foreground": "var(purple)", 
             "name": "PYTHON - Keyword declaration function", 
+            "foreground": "var(purple)", 
             "scope": "source.python keyword.declaration.function.python"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "PYTHON - Function magic", 
+            "foreground": "var(blue)", 
             "scope": "source.python support.function.magic.python"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "PYTHON - Function", 
+            "foreground": "var(blue)", 
             "scope": "source.python meta.function.python"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "PYTHON - Qualified name", 
+            "foreground": "var(foreground)", 
             "scope": "source.python meta.qualified-name.python"
         }, 
         {
-            "foreground": "var(blue)", 
             "name": "PYTHON - Generic name", 
+            "foreground": "var(blue)", 
             "scope": "source.python variable.function.python meta.generic-name.python"
         }, 
         {
-            "foreground": "var(foreground)", 
             "name": "VUE - Console, \"console\"", 
+            "foreground": "var(foreground)", 
             "scope": "text.html.vue meta.property.object"
         }
-    ]
+    ], 
+    "variables": {
+        "green": "#91b859", 
+        "red": "#e53935", 
+        "cyan": "#5fb3b3", 
+        "diffAdded": "#9ccc65", 
+        "deprecated": "#ffc777a1", 
+        "orange": "#f76d47", 
+        "background": "#fbfbfb", 
+        "blue": "#6182b8", 
+        "foreground": "#455A64", 
+        "pink": "#ff5370", 
+        "yellow": "#f3ad2c", 
+        "purple": "#7c4dff", 
+        "brown": "#bc5454", 
+        "cursor": "#7e57c2", 
+        "comments": "#90a4ae", 
+        "diffModified": "#e2b93d", 
+        "invalid": "#d3423e66", 
+        "diffDeleted": "#ef5350"
+    }, 
+    "globals": {
+        "selection_corner_style": "cut", 
+        "selection_border": "var(cyan)", 
+        "find_highlight": "var(yellow)", 
+        "shadow": "color(var(background) alpha(0.5))", 
+        "active_guide": "var(cyan)", 
+        "block_caret": "var(cursor)", 
+        "find_highlight_foreground": "var(background)", 
+        "background": "var(background)", 
+        "foreground": "var(foreground)", 
+        "gutter": "var(background)", 
+        "tags_options": "underline", 
+        "line_highlight": "color(var(foreground) alpha(0.1))", 
+        "invisibles": "color(var(foreground) alpha(0.3))", 
+        "selection": "color(var(foreground) alpha(0.10))", 
+        "inactive_selection": "color(var(cyan) alpha(0.1))", 
+        "line_diff_deleted": "var(diffDeleted)", 
+        "caret": "var(cursor)", 
+        "tags_foreground": "var(cyan)", 
+        "misspelling": "var(red)", 
+        "stack_guide": "var(brown)", 
+        "brackets_options": "underline", 
+        "rulers": "color(var(foreground) alpha(0.5))", 
+        "fold_marker": "var(yellow)", 
+        "highlight": "var(yellow)", 
+        "line_diff_modified": "var(diffModified)", 
+        "brackets_foreground": "var(cyan)", 
+        "bracket_contents_options": "underline", 
+        "line_diff_added": "var(diffAdded)", 
+        "selection_corner_radius": "cut", 
+        "line_diff_width": "2", 
+        "bracket_contents_foreground": "var(yellow)", 
+        "gutter_foreground": "color(var(foreground) alpha(0.2))"
+    }
 }
