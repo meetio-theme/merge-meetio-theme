@@ -1,13 +1,8 @@
 export const dark = {
-    // ~ Meetio Inspired
-    dark_background: 'rgb(5,17, 29)',
-    dark_accent: '#011627',
-    dark_accent_lightest: 'color(var(dark_background) l(15%))',
-    // ~ End Meetio
-
-    // ~ Font
+    background: 'rgb(5,17, 29)',
+    accent: '#011627',
+    accent_lightest: 'color(var(background) l(15%))',
     font_face: 'system',
-    // ~ End Font
 
     // "text-heading": "#ddd",
     // "text": "#aaa",
@@ -35,12 +30,12 @@ export const dark = {
 
     // Header
     title_bar_style: 'dark',
-    header_bg: 'color(var(dark_background))',
+    header_bg: 'color(var(background))',
     // "header_bg": "color(var(dark_gray-medium))",
 
     // "header_fg": "var(text-heading)",
 
-    header_button_bg: 'color(var(dark_background) a(0.5))',
+    header_button_bg: 'color(var(background) a(0.5))',
     // "header_button_bg": "color(var(medium_gray) a(0.5))",
 
     // "icon_button_fg": "#FFF",
@@ -58,15 +53,15 @@ export const dark = {
     // "focus_highlight_color": "var(text)",
 
     // Welcome overlay
-    welcome_bg: 'color(var(dark_background) l(- 0.75%))',
+    welcome_bg: 'color(var(background) l(- 0.75%))',
     // "welcome_bg": "color(var(dark_gray) l(- 3%))",
-    'recent_repositories_row_bg-hover': 'var(dark_accent)',
+    recent_repositories_row_bg-hover: 'var(accent)',
     // "recent_repositories_row_bg-hover": "var(dark_gray-light)",
 
     // Preferences Page
-    preferences_overlay_bg: 'var(dark_background)',
+    preferences_overlay_bg: 'var(background)',
     // "preferences_overlay_bg": "var(dark_gray-medium)",
-    preferences_section_table_bg: 'var(dark_background)',
+    preferences_section_table_bg: 'var(background)',
     // "preferences_section_table_bg": "var(dark_gray-lightest)",
 
     // Side bar
@@ -74,20 +69,20 @@ export const dark = {
     // "location_bar_heading_fg": "var(text-heading)",
     // "location_bar_heading_shadow": "black",
 
-    'location_bar_row_bg-hover': 'var(dark_accent)',
+    location_bar_row_bg-hover: 'var(accent)',
     // "location_bar_row_bg-hover": "var(--background)",
 
     // "disclosure_fg": "white",
 
     // Commit list
-    commit_list_bg: 'var(dark_background)', // ~ Commit Left Background
+    commit_list_bg: 'var(background)', // ~ Commit Left Background
     // "commit_list_bg": "var(dark_gray-lightest)",
-    'commit_row_bg-hover': 'var(dark_accent)', // ~ Commit row selection color
+    commit_row_bg-hover: 'var(accent)', // ~ Commit row selection color
     // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
 
     // Tool Tips
     // ~ Hover Over Button Results
-    tool_tip_bg: 'var(dark_accent_lightest)',
+    tool_tip_bg: 'var(accent_lightest)',
     tool_tip_fg: 'white',
 
     // "commit_edge_0": "var(blue)",
@@ -98,21 +93,21 @@ export const dark = {
     // "commit_edge_5": "color(var(teal) l(50%))",
 
     // Location Bar
-    side_bar_container_bg: 'var(dark_background)',
+    side_bar_container_bg: 'var(background)',
     // "side_bar_container_bg": "var(dark_gray-light)",
 
     // Table of Contents
-    table_of_contents_bg: 'var(dark_background)', // todo find what this changes
+    table_of_contents_bg: 'var(background)', // todo find what this changes
     //  tree view?
 
     // "table_of_contents_fg": "var(text)",
     // "table_of_contents_heading_fg": "var(text-heading)",
 
-    table_of_contents_row_bg: 'var(dark_accent)', // ~ Tree view hover
+    table_of_contents_row_bg: 'var(accent)', // ~ Tree view hover
     // "table_of_contents_row_bg": "var(medium_gray)",
 
     // Detail panel
-    detail_panel_bg: 'var(dark_accent)', // ~ Details View
+    detail_panel_bg: 'var(accent)', // ~ Details View
 
     // "field_name_fg": "var(text)",
     // "author_fg": "color(var(--foreground) a(0.4))",
@@ -150,12 +145,12 @@ export const dark = {
     // "hunk_button_fg": "#eee",
     // "hunk_button_shadow": "color(black a(0.5))",
 
-    file_header_bg: 'var(dark_background)', // ~ File header in Right Detail View
+    file_header_bg: 'var(background)', // ~ File header in Right Detail View
     // "file_header_bg": "color(var(--background) l(+ 5%))",
-    'file_header_bg-hover': 'var(dark_accent)', // ~ File header hover in Right Detail View
+    file_header_bg-hover: 'var(accent)', // ~ File header hover in Right Detail View
     // "file_header_bg-hover": "color(var(--background) l(+ 8%))",
 
-    hunk_header_bg: 'color(var(dark_accent) l(+ 1%))', // ~ Hunk header in Right Detail View
+    hunk_header_bg: 'color(var(accent) l(+ 1%))', // ~ Hunk header in Right Detail View
     // "hunk_header_bg": "color(var(--background) l(+ 11%))",
 
     // "deleted_icon_fg": "var(text)",
@@ -180,7 +175,7 @@ export const dark = {
     // "blame_popup_bg": "color(var(--background) l(+ 10%))",
 
     // // Buttons
-    button_bg: 'color(var(dark_accent) l(+ 5%)))',
+    button_bg: 'color(var(accent) l(+ 5%)))',
     // "button_fg": "var(label_color)",
     // "button_shadow": "color(black a(0.5))",
 
@@ -195,7 +190,7 @@ export const dark = {
     // "toggle_button_fg_selected": "var(text-heading)",
 
     // Tabs
-    tab_bar_bg: 'var(dark_accent)', // ~ Tabs background (Locations, Commits, Files, Summary..)
+    tab_bar_bg: 'var(accent)', // ~ Tabs background (Locations, Commits, Files, Summary..)
     // "tab_bar_bg": "var(dark_gray-medium)",
     // "tab_separator_bg": "var(medium_gray-dark)",
 
@@ -218,13 +213,13 @@ export const dark = {
     // "progress_fg": "color(var(medium_gray) a(0.5))",
 
     // Quick panel
-    quick_panel_bg: 'var(dark_background)', // ~ Background Panel
+    quick_panel_bg: 'var(background)', // ~ Background Panel
     // "quick_panel_bg": "var(dark_gray-light)",
-    quick_panel_row_bg: 'var(dark_accent_lightest)', // ~ Active Row / Hover Row Background on the Panel
+    quick_panel_row_bg: 'var(accent_lightest)', // ~ Active Row / Hover Row Background on the Panel
     // "quick_panel_row_bg": "var(dark_gray)",
 
     // // Switch repository window
-    switch_repo_bg: 'var(dark_background)',
+    switch_repo_bg: 'var(background)',
 
     // // Hints
     // "failed_label_fg": "var(dark_gray)",
@@ -238,11 +233,11 @@ export const dark = {
 
     // Merge Helper
     merge_helper_highlight_bg: 'color(var(dark_gray-lightest) l(25%))',
-    console_border: 'var(dark_background)', // ? Console Border
+    console_border: 'var(background)', // ? Console Border
 
     // Tabs
-    repository_tab_bar_bg: 'var(dark_background)', // ? Title bar background color
-    repository_tab_bar_border_bg: 'var(dark_accent)', // ? Seperator to the right of the Tabs in the titlebar
+    repository_tab_bar_bg: 'var(background)', // ? Title bar background color
+    repository_tab_bar_border_bg: 'var(accent)', // ? Seperator to the right of the Tabs in the titlebar
 
     // Hazard buttons
     hazard_button_bg: 'color(var(red) l(25%))',

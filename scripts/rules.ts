@@ -9,14 +9,14 @@ export const rules = [
     {
         class: 'preferences_section_table_row',
         attributes: ['hover'],
-        'layer0.tint': 'var(dark_accent)',
+        'layer0.tint': 'var(accent)',
         'layer0.opacity': 1.0,
         content_margin: [0, 16, 0, 0],
     },
     {
         class: 'preferences_section_table_row',
         attributes: ['selected'],
-        'layer0.tint': 'var(dark_accent)',
+        'layer0.tint': 'var(accent)',
         'layer0.opacity': 1.0,
         content_margin: [0, 16, 0, 0],
     },
@@ -52,7 +52,15 @@ export const rules = [
     {
         class: 'info_area',
         'layer0.opacity': 1.0,
-        'layer0.tint': 'var(dark_accent)',
+        'layer0.tint': 'var(accent)',
+    },
+    {
+        class: "file_diff_header",
+        "layer0.tint": "var(accent)",
+    },
+    {
+        class: "file_diff_header collapsible",
+        "layer0.tint": "var(accent_lightest)",
     },
     // {
     //     "class": "info_area",
