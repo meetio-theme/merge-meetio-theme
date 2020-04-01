@@ -18,10 +18,24 @@ function build(name: string, variables: any, folder: string, rules: any) {
         rules,
     };
 
-    fs.mkdir(`tests/${folder}`, { recursive: true }, err => {
+    fs.mkdir(`${folder}`, { recursive: true }, err => {
         if (err) throw err;
+        ['Commit Message', 'Diff', 'File Mode', 'Widget'].forEach(
+            (file: string) => {
+                fs.writeFileSync(
+                    `${folder}/${file} - ${name}.sublime-settings`,
+                    JSON.stringify(
+                        {
+                            color_scheme: `${name}.sublime-color-scheme`,
+                        },
+                        null,
+                        4
+                    )
+                );
+            }
+        );
         fs.writeFileSync(
-            `tests/${folder}/${name}.sublime-theme`,
+            `${folder}/${name}.sublime-theme`,
             JSON.stringify(theme, null, 4)
         );
     });
