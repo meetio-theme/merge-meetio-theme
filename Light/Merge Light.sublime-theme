@@ -147,5 +147,13 @@
             "layer0.opacity": 1.0,
             "layer0.tint": "var(light_accent)",
         },
+        {
+            "class": "file_diff_header",
+            "layer0.tint": "var(light_accent)",
+        },
+        {
+            "class": "file_diff_header collapsible",
+            "layer0.tint": "var(light_accent_lightest)",
+        },
     ]
 }
