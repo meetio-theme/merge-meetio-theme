@@ -1,5 +1,7 @@
 # Meetio Theme - Sublime Merge
 ## Dark Theme
+![Status](https://img.shields.io/badge/percentage_complete-75%25-82e6e6?style=for-the-badge)
+
 In order to apply this **Dark** theme, you will need to drop these files into Sublime Merge's `Packages/User/` _**See more at...**_ _[Sublime Merge Doc's](https://www.sublimemerge.com/docs/themes#Customization)_
 
 _**You need to have purchased Sublime Merge in order for Dark theme to work**_
@@ -18,6 +20,7 @@ belong in `Packages/User/`
 <br />
 
 ## Light Theme
+![Status](https://img.shields.io/badge/percentage_complete-50%25-82e6e6?style=for-the-badge)
 In order to apply this **Light** theme, you will need to drop these files into Sublime Merge's `Packages/User/` _**See more at...**_ _[Sublime Merge Doc's](https://www.sublimemerge.com/docs/themes#Customization)_
 
 ### Files
