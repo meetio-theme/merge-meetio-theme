@@ -315,6 +315,14 @@
             "layer0.opacity": 1.0,
             "layer0.tint": "var(dark_accent)",
         },
+        {
+            "class": "file_diff_header",
+            "layer0.tint": "var(dark_accent)",
+        },
+        {
+            "class": "file_diff_header collapsible",
+            "layer0.tint": "var(dark_accent_lightest)",
+        },
         // {
         //     "class": "info_area",
         //     "attributes": ["hover"],
