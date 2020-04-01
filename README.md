@@ -23,9 +23,9 @@ In order to apply this **Light** theme, you will need to drop these files into S
 ### Files
 These are the files required to achieve **Light** theme. These files
 belong in `Packages/User/`
-- Commit Message - Merge.sublime-settings
-- Diff - Merge.sublime-settings
-- File Mode - Merge.sublime-settings
+- Commit Message - Merge Light.sublime-settings
+- Diff - Merge Light.sublime-settings
+- File Mode - Merge Light.sublime-settings
 - Meetio-Theme-Light.sublime-color-scheme
-- Merge.sublime-theme
-- Widget - Merge.sublime-settings
+- Merge Light.sublime-theme
+- Widget - Merge Light.sublime-settings
