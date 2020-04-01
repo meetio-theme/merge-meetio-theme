@@ -6,13 +6,7 @@ export const rules = [
         'font.size': 'var(font_size)',
         fg: 'var(tool_tip_fg)',
     },
-    {
-        class: 'preferences_section_table_row',
-        attributes: ['hover'],
-        'layer0.tint': 'var(accent)',
-        'layer0.opacity': 1.0,
-        content_margin: [0, 16, 0, 0],
-    },
+    // ~ Left side of preference panel rows (Selected)
     {
         class: 'preferences_section_table_row',
         attributes: ['selected'],
@@ -20,6 +14,15 @@ export const rules = [
         'layer0.opacity': 1.0,
         content_margin: [0, 16, 0, 0],
     },
+    // ~ Left side of preference panel rows (Hover)
+    {
+        class: 'preferences_section_table_row',
+        attributes: ['hover'],
+        'layer0.tint': 'var(accent)',
+        'layer0.opacity': 1.0,
+        content_margin: [0, 16, 0, 0],
+    },
+    // ~ Left Panel Commit Tab Hover Settings
     {
         class: 'commit_summary_control',
         attributes: ['hover'],
