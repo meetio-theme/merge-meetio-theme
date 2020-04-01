@@ -1,4 +1,10 @@
 # Meetio Theme - Sublime Merge
+<<<<<<< HEAD
+=======
+_The following files need updated as the Sublime Meetio Theme is updated_
+- Meetio-Theme-Dark.sublime-color-scheme
+- Meetio-Theme-Light.sublime-color-scheme
+>>>>>>> origin/master
 
 ## Dark Theme
 ![Status](https://img.shields.io/badge/percentage_complete-75%25-82e6e6?style=for-the-badge)
