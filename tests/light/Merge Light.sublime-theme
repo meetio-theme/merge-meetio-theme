@@ -1,0 +1,105 @@
+{
+    "extends": "Merge.sublime-theme",
+    "variables": {
+        "light_background": "#fbfbfb",
+        "light_accent": "#f7f5f5",
+        "light_accent_lightest": "color(var(light_background) l(15%))",
+        "header_bg": "var(light_background)",
+        "header_button_bg": "color(var(light_background) a(0.5))",
+        "welcome_bg": "color(var(light_background) l(- 0.75%))",
+        "recent_repositories_row_bg-hover": "var(light_accent)",
+        "preferences_overlay_bg": "var(light_background)",
+        "preferences_section_table_bg": "var(light_background)",
+        "location_bar_row_bg-hover": "var(light_accent)",
+        "commit_list_bg": "var(light_background)",
+        "commit_row_bg-hover": "var(light_accent)",
+        "tool_tip_bg": "var(light_accent_lightest)",
+        "tool_tip_fg": "white",
+        "side_bar_container_bg": "var(light_background)",
+        "table_of_contents_bg": "var(light_background)",
+        "table_of_contents_row_bg": "var(light_accent)",
+        "detail_panel_bg": "var(light_accent)",
+        "file_header_bg": "var(light_background)",
+        "file_header_bg-hover": "var(light_accent)",
+        "hunk_header_bg": "color(var(light_accent) l(+ 1%))",
+        "button_bg": "color(var(light_accent) l(+ 5%)))",
+        "tab_bar_bg": "var(light_accent)",
+        "quick_panel_bg": "var(light_background)",
+        "quick_panel_row_bg": "var(light_accent_lightest)",
+        "switch_repo_bg": "var(light_background)",
+        "merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
+        "console_border": "var(light_background)",
+        "repository_tab_bar_bg": "var(light_background)",
+        "repository_tab_bar_border_bg": "var(light_accent)",
+        "hazard_button_bg": "color(var(red) l(25%))"
+    },
+    "rules": [
+        {
+            "class": "tool_tip_label_control",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "fg": "var(tool_tip_fg)"
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.tint": "var(dark_accent)",
+            "layer0.opacity": 1,
+            "content_margin": [
+                0,
+                16,
+                0,
+                0
+            ]
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": [
+                "selected"
+            ],
+            "layer0.tint": "var(dark_accent)",
+            "layer0.opacity": 1,
+            "content_margin": [
+                0,
+                16,
+                0,
+                0
+            ]
+        },
+        {
+            "class": "commit_summary_control",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.tint": "var(commit_row_bg-hover)",
+            "layer0.opacity": 1,
+            "content_margin": [
+                8,
+                8,
+                4,
+                8
+            ]
+        },
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.opacity": 1
+        },
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": [
+                "selected"
+            ],
+            "layer0.opacity": 1
+        },
+        {
+            "class": "info_area",
+            "layer0.opacity": 1,
+            "layer0.tint": "var(dark_accent)"
+        }
+    ]
+}

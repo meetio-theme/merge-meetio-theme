@@ -1,9 +1,22 @@
+# macOS filesystem
 .DS_Store
+Thumbs.db
+
+# Editors and IDEs
+.sublime/
+
+# Generated folders
+node_modules/
+.rpt2_cache
+dist/
+demo/*.js
+
+# Generated files
+package-lock.json
+npm-debug
+yarn.lock
+yarn-error.log
+
+# Sublime Files
 Preferences.sublime-settings
 Merge.sublime-theme
-Commit Message - Merge Dark.sublime-settings
-Diff - Merge Dark.sublime-settings
-File Mode - Merge Dark.sublime-settings
-Meetio-Theme-Dark.sublime-color-scheme
-Merge Dark.sublime-theme
-Widget - Merge Dark.sublime-settings

@@ -1,0 +1,23 @@
+  # Tests
+test
+coverage
+
+# Folder's
+src/
+examples/
+
+# Build Tools
+.travis.yml
+.jenkins.yml
+
+# Linter's
+.stylelintrc.yaml
+.tslint.json
+.jscsrc
+.jshintrc
+.eslintrc*
+
+# Editor Settings
+.idea
+.editorconfig
+.vscode
