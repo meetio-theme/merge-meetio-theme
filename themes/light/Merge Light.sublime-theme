@@ -1,0 +1,57 @@
+{
+     "extends": "Merge.sublime-theme",
+    "variables":
+    {
+       
+       
+    },
+    "rules":
+    [
+        // ~ Hover tool tip 
+        {
+            "class": "tool_tip_label_control",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "fg": "var(tool_tip_fg)"
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["hover"],
+            "layer0.tint": "var(light_accent)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 16, 0, 0],
+        },
+        {
+            "class": "preferences_section_table_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(light_accent)",
+            "layer0.opacity": 1.0,
+            "content_margin": [0, 16, 0, 0],
+        },
+        {
+            "class": "commit_summary_control",
+            "attributes": ["hover"],
+            "layer0.tint": "var(commit_row_bg-hover)",
+            "layer0.opacity": 1.0,
+            "content_margin": [8, 8, 4, 8]
+        },
+        // ~ Tree View Hover
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": ["hover"],
+            "layer0.opacity": 1.0,
+        },
+        // ~ Tree View Selected
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": ["selected"],
+            "layer0.opacity": 1.0,
+        },
+        // ~ Center Branch Indicator
+        {
+            "class": "info_area",
+            "layer0.opacity": 1.0,
+            "layer0.tint": "var(light_accent)",
+        },
+    ]
+}
