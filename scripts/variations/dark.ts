@@ -58,7 +58,10 @@ export const dark = {
     // Welcome overlay
     welcome_bg: 'color(var(background) l(- 0.75%))',
     // "welcome_bg": "color(var(dark_gray) l(- 3%))",
-    recent_repositories_row_bg-hover: 'var(accent)',
+
+    // recent_repositories_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
+    recentRepositoriesRowBgHover: 'var(accent)',
+
     // "recent_repositories_row_bg-hover": "var(dark_gray-light)",
 
     // Preferences Page
@@ -72,7 +75,9 @@ export const dark = {
     // "location_bar_heading_fg": "var(text-heading)",
     // "location_bar_heading_shadow": "black",
 
-    location_bar_row_bg-hover: 'var(accent)',
+    // location_bar_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
+    locationBarRowBgHover: 'var(accent)',
+
     // "location_bar_row_bg-hover": "var(--background)",
 
     // "disclosure_fg": "white",
@@ -80,7 +85,10 @@ export const dark = {
     // Commit list
     commit_list_bg: 'var(background)', // ~ Commit Left Background
     // "commit_list_bg": "var(dark_gray-lightest)",
-    commit_row_bg-hover: 'var(accent)', // ~ Commit row selection color
+
+    //commit_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
+    commitRowBgHover: 'var(accent)', // ~ Commit row selection color
+
     // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
 
     // Tool Tips
@@ -88,11 +96,11 @@ export const dark = {
     tool_tip_bg: 'var(accent_lightest)',
     tool_tip_fg: 'white',
 
-     // Toggle Button
+    // Toggle Button
     // ~ Left Panel > Files Tab > Bottom Switcher
-    toggle_button_bg: "color(var(accent_lightest) a(0.5))",
-    toggle_button_fg: "var(text)",
-    toggle_button_fg_selected: "var(text)",
+    toggle_button_bg: 'color(var(accent_lightest) a(0.5))',
+    toggle_button_fg: 'var(text)',
+    toggle_button_fg_selected: 'var(text)',
 
     // "commit_edge_0": "var(blue)",
     // "commit_edge_1": "var(purple)",
@@ -156,8 +164,10 @@ export const dark = {
 
     file_header_bg: 'var(background)', // ~ File header in Right Detail View
     // "file_header_bg": "color(var(--background) l(+ 5%))",
-    file_header_bg-hover: 'var(accent)', // ~ File header hover in Right Detail View
+
     // "file_header_bg-hover": "color(var(--background) l(+ 8%))",
+    // file_header_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
+    fileHeaderBgHover: 'var(accent)', // ~ File header hover in Right Detail View
 
     hunk_header_bg: 'color(var(accent) l(+ 1%))', // ~ Hunk header in Right Detail View
     // "hunk_header_bg": "color(var(--background) l(+ 11%))",
