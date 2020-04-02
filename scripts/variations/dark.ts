@@ -8,13 +8,14 @@ export const dark = {
     font_face: 'system',
 
     // "text-heading": "#ddd",
-    // "text": "#aaa",
+    text: ui.foreground,
 
     orange: ui.orange,
     yellow: ui.yellow,
+    blue: ui.blue,
+    purple: ui.purple,
+
     // "teal": "hsl(180, 40%, 65%)",
-    // "blue": "hsl(210, 60%, 65%)",
-    // "purple": "hsl(260, 60%, 75%)",
     // "magenta": "hsl(330, 70%, 65%)",
 
     // "dark_red": "color(var(red) s(25%) l(35%))",
