@@ -87,6 +87,10 @@
         // "commit_list_bg": "var(dark_gray-lightest)",
         "commit_row_bg-hover": "var(dark_accent)", // ~ Commit row selection color
         // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
+        // ~ Left Panel > Commits Tab > Number Right of Commit Message
+        "file_ann_bg": "color(var(accent_lightest) a(0.75))",
+        // ~ Left Panel > Locations Tab > Number Right of Branch Name
+        "branch_stats_label_bg": "color(var(accent_lightest) a(0.75))",
         
         // Tool Tips
         // ~ Hover Over Button Results

@@ -84,9 +84,15 @@ export const dark = {
     // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
 
     // Tool Tips
-    // ~ Hover Over Button Results
+    // ~ Hover Over Button Disalog
     tool_tip_bg: 'var(accent_lightest)',
     tool_tip_fg: 'white',
+
+     // Toggle Button
+    // ~ Left Panel > Files Tab > Bottom Switcher
+    toggle_button_bg: "color(var(accent_lightest) a(0.5))",
+    toggle_button_fg: "var(text)",
+    toggle_button_fg_selected: "var(text)",
 
     // "commit_edge_0": "var(blue)",
     // "commit_edge_1": "var(purple)",
