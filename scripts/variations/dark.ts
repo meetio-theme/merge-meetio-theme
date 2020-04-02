@@ -60,8 +60,7 @@ export const dark = {
     welcome_bg: 'color(var(background) l(- 0.75%))',
     // "welcome_bg": "color(var(dark_gray) l(- 3%))",
 
-    // recent_repositories_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
-    recentRepositoriesRowBgHover: 'var(accent)',
+    'recent_repositories_row_bg-hover': 'var(accent)',
 
     // "recent_repositories_row_bg-hover": "var(dark_gray-light)",
 
@@ -76,8 +75,7 @@ export const dark = {
     // "location_bar_heading_fg": "var(text-heading)",
     // "location_bar_heading_shadow": "black",
 
-    // location_bar_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
-    locationBarRowBgHover: 'var(accent)',
+    'location_bar_row_bg-hover': 'var(accent)',
 
     // "location_bar_row_bg-hover": "var(--background)",
 
@@ -87,8 +85,7 @@ export const dark = {
     commit_list_bg: 'var(background)', // ~ Commit Left Background
     // "commit_list_bg": "var(dark_gray-lightest)",
 
-    //commit_row_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
-    commitRowBgHover: 'var(accent)', // ~ Commit row selection color
+    'commit_row_bg-hover': 'var(accent)', // ~ Commit row selection color
 
     // "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
 
@@ -167,8 +164,7 @@ export const dark = {
     // "file_header_bg": "color(var(--background) l(+ 5%))",
 
     // "file_header_bg-hover": "color(var(--background) l(+ 8%))",
-    // file_header_bg-hover: 'var(accent)', // CHANGE TO CAMEL CASE
-    fileHeaderBgHover: 'var(accent)', // ~ File header hover in Right Detail View
+    'file_header_bg-hover': 'var(accent)', // ~ File header hover in Right Detail View
 
     hunk_header_bg: 'color(var(accent) l(+ 1%))', // ~ Hunk header in Right Detail View
     // "hunk_header_bg": "color(var(--background) l(+ 11%))",
