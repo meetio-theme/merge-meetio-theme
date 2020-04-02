@@ -20,7 +20,7 @@ function build(name: string, variables: any, folder: string, rules: any) {
 
     fs.mkdir(`${folder}`, { recursive: true }, err => {
         if (err) throw err;
-        ['Commit Message', 'Diff', 'Widget'].forEach((file: string) => {
+        ['File Mode', 'Commit Message', 'Diff', 'Widget'].forEach((file: string) => {
             fs.writeFileSync(
                 `${folder}/${file} - ${name}.sublime-settings`,
                 JSON.stringify(
