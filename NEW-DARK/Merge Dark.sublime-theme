@@ -21,13 +21,12 @@
         "diffAdded": "#addb67",
         "diffModified": "#e2b93d",
         "diffDeleted": "#ef5350",
-        "accent": "color(var(background) l(- 0.10%))",
-        "accentDark": "color(var(accent) l(- 0.75%))",
-        "accentDarker": "color(var(accent) l(- 1.00%))",
-        "accentDarkest": "color(var(accent) l(- 2.00%))",
-        "accentLight": "color(var(accent) l(+ 2%))",
-        "accentLighter": "color(var(accent) l(+ 4%))",
-        "accentLightest": "color(var(accent) l(+ 10%))",
+        "accentDark": "color(var(background) l(- 0.75%))",
+        "accentDarker": "color(var(background) l(- 1.00%))",
+        "accentDarkest": "color(var(background) l(- 2.00%))",
+        "accentLight": "color(var(background) l(+ 2%))",
+        "accentLighter": "color(var(background) l(+ 4%))",
+        "accentLightest": "color(var(background) l(+ 10%))",
         "teal": "hsl(180, 40%, 65%)",
         "magenta": "hsl(330, 70%, 65%)",
         "darkRed": "color(var(red) s(25%) l(35%))",
@@ -54,18 +53,18 @@
         "focusHighlightColor": "var(foreground)",
         "overlayBg": "var(background)",
         "welcomeBg": "var(accentDarkest)",
-        "recentRepositoriesRowBgHover": "var(accent)",
+        "recentRepositoriesRowBgHover": "var(background)",
         "preferencesOverlayBg": "var(background)",
         "preferencesSectionTableBg": "var(background)",
         "preferencesSectionTableRowBg": "var(accentLight)",
-        "preferencesOverlayLeft": "var(accent)",
+        "preferencesOverlayLeft": "var(background)",
         "locationBarFg": "var(foreground)",
         "locationBarHeadingFg": "var(foreground)",
         "locationBarHeadingShadow": "black",
-        "locationBarRowBgHover": "var(accent)",
+        "locationBarRowBgHover": "var(accentLight)",
         "disclosureFg": "white",
         "commitListBg": "var(background)",
-        "commitRowBgHover": "var(accent)",
+        "commitRowBgHover": "var(background)",
         "commitSummaryFgPrimary": "var(foreground)",
         "commitSummaryFgSecondary": "var(foreground)",
         "commitEdge0": "var(blue)",
@@ -78,12 +77,12 @@
         "tableOfContentsBg": "var(background)",
         "tableOfContentsFg": "var(foreground)",
         "tableOfContentsHeadingFg": "var(foreground)",
-        "tableOfContentsRowBg": "var(accent)",
-        "detailPanelBg": "var(accent)",
+        "tableOfContentsRowBg": "var(background)",
+        "detailPanelBg": "var(background)",
         "fieldNameFg": "var(foreground)",
         "authorFg": "color(var(--foreground) a(0.4))",
         "terminatorFg": "var(accentLightest)",
-        "toolTipBg": "var(accentLighter)",
+        "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
         "headAnnFg": "var(darkGray)",
         "headAnnBg": "var(purple)",
@@ -106,7 +105,7 @@
         "hunkButtonFg": "#eee",
         "hunkButtonShadow": "color(black a(0.5))",
         "fileHeaderBg": "var(background)",
-        "fileHeaderBgHover": "var(accent)",
+        "fileHeaderBgHover": "var(background)",
         "hunkHeaderBg": "var(accentLight)",
         "deletedIconFg": "var(foreground)",
         "deletedHeaderBg": "var(darkRed)",
@@ -130,21 +129,21 @@
         "highlightedButtonDarkBg": "color(hsl(83, 40%, 44%))",
         "highlightedButtonDarkFg": "var(labelColor)",
         "highlightedButtonShadow": "color(black a(0.5) l(+ 10%))",
-        "toggleButtonBg": "color(var(accent_lightest) a(0.5))",
+        "toggleButtonBg": "color(var(accentLightest) a(0.5))",
         "toggleButtonFg": "var(foreground)",
         "toggleButtonFgSelected": "var(foreground)",
-        "tabBarBg": "var(accent)",
-        "tabSeparatorBg": "var(accentLightest)",
+        "tabBarBg": "var(background)",
+        "tabSeparatorBg": "var(accentLighter)",
         "radioBack": "var(--background)",
         "radioSelected": "var(blue)",
         "radioBorderSelected": "var(blue)",
         "checkboxBack": "var(--background)",
         "checkboxSelected": "var(blue)",
         "checkboxBorderSelected": "var(blue)",
-        "dialogBg": "var(darkGrayLight)",
-        "dialogButtonBg": "var(mediumGray)",
-        "progressBg": "color(var(darkGrayLightest) l(+ 3%))",
-        "progressFg": "color(var(mediumGray) a(0.5))",
+        "dialogBg": "var(background)",
+        "dialogButtonBg": "var(accentLight)",
+        "progressBg": "color(var(accentLightest) l(+ 3%))",
+        "progressFg": "color(var(accentDarker) a(0.5))",
         "quickPanelBg": "var(background)",
         "quickPanelRowBg": "var(accentLighter)",
         "quickPanelFg": "var(foreground)",
@@ -164,7 +163,7 @@
         "consoleBorder": "var(background)",
         "hazardButtonBg": "var(red)",
         "repositoryTabBarBg": "var(background)",
-        "repositoryTabBarBorderBg": "var(accent)",
+        "repositoryTabBarBorderBg": "var(background)",
         "fileBadgeModifiedFg": "var(mediumGray)",
         "fileBadgeUnmergedFg": "#2e1d07",
         "fileBadgeUntrackedBg": "var(detailPanelBg)",
@@ -368,7 +367,7 @@
         },
         {
             "class": "toggle_button",
-            "layer0.tint": "var(toggle_button_bg)",
+            "layer0.tint": "var(toggleButtonBg)",
             "layer0.opacity": 1,
             "layer0.inner_margin": 4,
             "min_size": [
@@ -396,7 +395,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer1.tint": "var(toggle_button_bg)",
+            "layer1.tint": "var(toggleButtonBg)",
             "layer1.opacity": {
                 "target": 0.3,
                 "speed": 4,
@@ -425,7 +424,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer1.tint": "var(toggle_button_bg)",
+            "layer1.tint": "var(toggleButtonBg)",
             "layer1.opacity": {
                 "target": 0.3,
                 "speed": 4,
@@ -447,7 +446,7 @@
                     "class": "toggle_button"
                 }
             ],
-            "fg": "var(toggle_button_fg)"
+            "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
@@ -459,7 +458,7 @@
                     ]
                 }
             ],
-            "fg": "var(toggle_button_fg_selected)"
+            "fg": "var(toggleButtonFgSelected)"
         },
         {
             "class": "tab",
@@ -495,14 +494,16 @@
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
-            }
+            },
+            "layer0.tint": "var(accentLighter)"
         },
         {
             "class": "tab",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 1
+            "layer0.opacity": 1,
+            "layer0.tint": "var(accentLight)"
         },
         {
             "class": "label_control",
@@ -511,7 +512,7 @@
                     "class": "tab"
                 }
             ],
-            "fg": "var(toggle_button_fg)"
+            "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
@@ -523,7 +524,7 @@
                     ]
                 }
             ],
-            "fg": "var(toggle_button_fg_selected)"
+            "fg": "var(toggleButtonFgSelected)"
         },
         {
             "class": "tab_separator",
@@ -631,7 +632,7 @@
                     ]
                 }
             ],
-            "layer1.tint": "var(checkbox_border-selected)",
+            "layer1.tint": "var(checkboxBorderSelected)",
             "layer2.opacity": 1
         },
         {
@@ -1046,6 +1047,7 @@
         {
             "class": "info_area",
             "layer0.texture": "Theme - Merge/button.png",
+            "layer0.tint": "var(accentLighter)",
             "layer0.opacity": 0.4,
             "layer0.inner_margin": 4,
             "content_margin": [
@@ -1066,7 +1068,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.5
+            "layer0.opacity": 1,
+            "layer0.tint": "var(accentLighter)"
         },
         {
             "class": "label_control",
@@ -1305,6 +1308,8 @@
         },
         {
             "class": "button_control icon_button",
+            "layer0.tint": "var(background)",
+            "layer0.opacity": 1,
             "content_margin": 0,
             "min_size": [
                 10,
@@ -1851,21 +1856,23 @@
         },
         {
             "class": "location_bar_row",
-            "layer0.tint": "var(location_bar_row_bg-hover)",
+            "layer0.tint": "var(locationBarRowBgHover)",
             "layer0.opacity": 0
-        },
-        {
-            "class": "location_bar_row",
-            "attributes": [
-                "selected"
-            ],
-            "layer0.opacity": 1
         },
         {
             "class": "location_bar_row",
             "attributes": [
                 "hover"
             ],
+            "layer0.tint": "var(locationBarRowBgHover)",
+            "layer0.opacity": 1
+        },
+        {
+            "class": "location_bar_row",
+            "attributes": [
+                "selected"
+            ],
+            "layer0.tint": "var(accentLightest)",
             "layer0.opacity": 1
         },
         {
@@ -2044,19 +2051,6 @@
             "layer0.opacity": 1
         },
         {
-            "class": "tab",
-            "parents": [
-                {
-                    "class": "side_bar_tabs",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
-            "layer0.tint": "var(accent)",
-            "layer0.opacity": 1
-        },
-        {
             "class": "table_of_contents_heading_container",
             "spacing": 8
         },
@@ -2163,7 +2157,7 @@
         },
         {
             "class": "commit_summary_control",
-            "layer0.tint": "var(commitRowBgHover)",
+            "layer0.tint": "var(accentLight)",
             "layer0.opacity": 0,
             "content_margin": [
                 8,
@@ -2182,7 +2176,6 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(commitRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -3955,7 +3948,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(preferencesSectionTableRowBg)",
+            "layer0.tint": "var(accentLightest)",
             "layer0.opacity": 1,
             "content_margin": [
                 0,

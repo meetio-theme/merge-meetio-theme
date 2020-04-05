@@ -24,13 +24,12 @@ export const dark = {
     diffModified: ui.diffModified,
     diffDeleted: ui.diffDeleted,
 
-    accent: "color(var(background) l(- 0.10%))",
-    accentDark: "color(var(accent) l(- 0.75%))",
-    accentDarker: "color(var(accent) l(- 1.00%))",
-    accentDarkest: "color(var(accent) l(- 2.00%))",
-    accentLight: "color(var(accent) l(+ 2%))",
-    accentLighter: "color(var(accent) l(+ 4%))",
-    accentLightest: "color(var(accent) l(+ 10%))",
+    accentDark: "color(var(background) l(- 0.75%))",
+    accentDarker: "color(var(background) l(- 1.00%))",
+    accentDarkest: "color(var(background) l(- 2.00%))",
+    accentLight: "color(var(background) l(+ 2%))",
+    accentLighter: "color(var(background) l(+ 4%))",
+    accentLightest: "color(var(background) l(+ 10%))",
 
     teal: "hsl(180, 40%, 65%)",
     magenta: "hsl(330, 70%, 65%)",
@@ -74,24 +73,24 @@ export const dark = {
 
     // Welcome overlay
     welcomeBg: "var(accentDarkest)",
-    recentRepositoriesRowBgHover: "var(accent)",
+    recentRepositoriesRowBgHover: "var(background)",
 
     // Preferences Page
     preferencesOverlayBg: "var(background)",
     preferencesSectionTableBg: "var(background)",
     preferencesSectionTableRowBg: "var(accentLight)",
-    preferencesOverlayLeft: "var(accent)",
+    preferencesOverlayLeft: "var(background)",
 
     // Side bar
     locationBarFg: "var(foreground)",
     locationBarHeadingFg: "var(foreground)",
     locationBarHeadingShadow: "black",
-    locationBarRowBgHover: "var(accent)",
+    locationBarRowBgHover: "var(accentLight)",
     disclosureFg: "white",
 
     // Commit list
     commitListBg: "var(background)",
-    commitRowBgHover: "var(accent)",
+    commitRowBgHover: "var(background)",
     commitSummaryFgPrimary: "var(foreground)",
     commitSummaryFgSecondary: "var(foreground)",
 
@@ -109,16 +108,16 @@ export const dark = {
     tableOfContentsBg: "var(background)",
     tableOfContentsFg: "var(foreground)",
     tableOfContentsHeadingFg: "var(foreground)",
-    tableOfContentsRowBg: "var(accent)",
+    tableOfContentsRowBg: "var(background)",
 
     // Detail panel
-    detailPanelBg: "var(accent)",
+    detailPanelBg: "var(background)",
     fieldNameFg: "var(foreground)",
     authorFg: "color(var(--foreground) a(0.4))",
     terminatorFg: "var(accentLightest)",
 
     // Tool Tips
-    toolTipBg: "var(accentLighter)",
+    toolTipBg: "var(accentLight)",
     toolTipFg: "var(foreground)",
 
     // Annotations
@@ -154,7 +153,7 @@ export const dark = {
     hunkButtonShadow: "color(black a(0.5))",
 
     fileHeaderBg: "var(background)",
-    fileHeaderBgHover: "var(accent)",
+    fileHeaderBgHover: "var(background)",
 
     hunkHeaderBg: "var(accentLight)",
 
@@ -190,13 +189,13 @@ export const dark = {
     highlightedButtonDarkFg: "var(labelColor)",
     highlightedButtonShadow: "color(black a(0.5) l(+ 10%))",
 
-    toggleButtonBg: "color(var(accent_lightest) a(0.5))",
+    toggleButtonBg: "color(var(accentLightest) a(0.5))",
     toggleButtonFg: "var(foreground)",
     toggleButtonFgSelected: "var(foreground)",
 
     // Tabs
-    tabBarBg: "var(accent)",
-    tabSeparatorBg: "var(accentLightest)",
+    tabBarBg: "var(background)",
+    tabSeparatorBg: "var(accentLighter)",
 
     // Radio buttons
     radioBack: "var(--background)",
@@ -209,12 +208,12 @@ export const dark = {
     checkboxBorderSelected: "var(blue)",
 
     // Dialogs
-    dialogBg: "var(darkGrayLight)",
-    dialogButtonBg: "var(mediumGray)",
+    dialogBg: "var(background)",
+    dialogButtonBg: "var(accentLight)",
 
     // Progress bar
-    progressBg: "color(var(darkGrayLightest) l(+ 3%))",
-    progressFg: "color(var(mediumGray) a(0.5))",
+    progressBg: "color(var(accentLightest) l(+ 3%))",
+    progressFg: "color(var(accentDarker) a(0.5))",
 
     // Quick panel
     quickPanelBg: "var(background)",
@@ -250,7 +249,7 @@ export const dark = {
 
     // Tabs
     repositoryTabBarBg: "var(background)",
-    repositoryTabBarBorderBg: "var(accent)",
+    repositoryTabBarBorderBg: "var(background)",
 
     fileBadgeModifiedFg: "var(mediumGray)",
     fileBadgeUnmergedFg: "#2e1d07",
