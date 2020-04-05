@@ -715,7 +715,7 @@ export const rules = [
         {
             class: "button_control",
             parents: [{class: "header"}],
-            "layer1.tint": "var(header_button_bg)",
+            "layer1.tint": "var(headerButtonBg)",
         },
         {
             class: "button_control_right",

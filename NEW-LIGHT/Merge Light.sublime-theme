@@ -1,6 +1,176 @@
 {
     "extends": "Merge.sublime-theme",
-    "variables": {},
+    "variables": {
+        "textHeading": "#ddd",
+        "text": "#aaa",
+        "cursor": "#7e57c2",
+        "foreground": "#455A64",
+        "background": "#fbfbfb",
+        "comments": "#90a4ae",
+        "blue": "#6182b8",
+        "brown": "#bc5454",
+        "cyan": "#5fb3b3",
+        "green": "#91b859",
+        "orange": "#f76d47",
+        "pink": "#ff5370",
+        "purple": "#7c4dff",
+        "red": "#e53935",
+        "yellow": "#f3ad2c",
+        "invalid": "#d3423e66",
+        "deprecated": "#ffc777a1",
+        "diffAdded": "#9ccc65",
+        "diffModified": "#e2b93d",
+        "diffDeleted": "#ef5350",
+        "accentDark": "color(var(background) l(- 0.75%))",
+        "accentDarker": "color(var(background) l(- 1.00%))",
+        "accentDarkest": "color(var(background) l(- 2.00%))",
+        "accentLight": "color(var(background) l(+ 2%))",
+        "accentLighter": "color(var(background) l(+ 4%))",
+        "accentLightest": "color(var(background) l(+ 10%))",
+        "teal": "hsl(180, 40%, 65%)",
+        "magenta": "hsl(330, 70%, 65%)",
+        "darkRed": "color(var(red) s(25%) l(35%))",
+        "darkTeal": "color(var(teal) s(25%) l(35%))",
+        "darkBlue": "color(var(blue) s(25%) l(35%))",
+        "mediumGray": "hsl(210, 10%, 50%)",
+        "darkGrayLightest": "hsl(210, 10%, 19%)",
+        "darkGrayLight": "hsl(210, 10%, 16%)",
+        "darkGrayMedium": "hsl(210, 10%, 13%)",
+        "darkGray": "hsl(210, 10%, 10%)",
+        "labelColor": "var(foreground)",
+        "helpLabelColor": "color(var(foreground) a(0.6))",
+        "branchStatsLabelBg": "color(var(accentLightest) a(0.75))",
+        "titleBarStyle": "light",
+        "headerBg": "var(background)",
+        "headerFg": "var(foreground)",
+        "headerButtonBg": "var(accentLight)",
+        "iconButtonFg": "#fff",
+        "infoShadow": "color(black a(0.2))",
+        "divergedBg": "color(var(orange) l(- 5%) s(- 20%))",
+        "divergedButtonBg": "var(buttonBg)",
+        "divergedButtonFg": "var(foreground)",
+        "scrollShadow": "color(black a(0.3))",
+        "focusHighlightColor": "var(foreground)",
+        "overlayBg": "var(background)",
+        "welcomeBg": "var(accentDarkest)",
+        "recentRepositoriesRowBgHover": "var(background)",
+        "preferencesOverlayBg": "var(background)",
+        "preferencesSectionTableBg": "var(background)",
+        "preferencesSectionTableRowBg": "var(accentLight)",
+        "preferencesOverlayLeft": "var(background)",
+        "locationBarFg": "var(foreground)",
+        "locationBarHeadingFg": "var(foreground)",
+        "locationBarHeadingShadow": "black",
+        "locationBarRowBgHover": "var(accentLight)",
+        "disclosureFg": "white",
+        "commitListBg": "var(background)",
+        "commitRowBgHover": "var(background)",
+        "commitSummaryFgPrimary": "var(foreground)",
+        "commitSummaryFgSecondary": "var(foreground)",
+        "commitEdge0": "var(blue)",
+        "commitEdge1": "var(purple)",
+        "commitEdge2": "var(magenta)",
+        "commitEdge3": "color(var(orange) l(- 10%))",
+        "commitEdge4": "var(yellow)",
+        "commitEdge5": "color(var(teal) l(50%))",
+        "sideBarContainerBg": "var(background)",
+        "tableOfContentsBg": "var(background)",
+        "tableOfContentsFg": "var(foreground)",
+        "tableOfContentsHeadingFg": "var(foreground)",
+        "tableOfContentsRowBg": "var(background)",
+        "detailPanelBg": "var(background)",
+        "fieldNameFg": "var(foreground)",
+        "authorFg": "color(var(--foreground) a(0.4))",
+        "terminatorFg": "var(accentLightest)",
+        "toolTipBg": "var(accentLight)",
+        "toolTipFg": "var(foreground)",
+        "headAnnFg": "var(foreground)",
+        "headAnnBg": "var(purple)",
+        "branchAnnFg": "var(foreground)",
+        "branchAnnBg": "var(blue)",
+        "remoteAnnFg": "var(foreground)",
+        "remoteAnnBg": "var(cyan)",
+        "tagAnnFg": "var(foreground)",
+        "tagAnnBg": "var(yellow)",
+        "stashAnnFg": "var(foreground)",
+        "stashAnnBg": "var(orange)",
+        "fileAnnFg": "var(foreground)",
+        "fileAnnBg": "color(var(accentLightest) a(0.75))",
+        "submoduleAnnBg": "var(darkGrayLightest)",
+        "submoduleLightAnnBg": "var(darkGrayLightest)",
+        "insertedAnnBg": "color(var(cyan) a(0.50))",
+        "deletedAnnBg": "color(var(red) a(0.50))",
+        "fileDiffShadow": "color(black a(0.5))",
+        "fileIconBg": "color(white a(0.2))",
+        "hunkButtonFg": "#eee",
+        "hunkButtonShadow": "color(black a(0.5))",
+        "fileHeaderBg": "var(background)",
+        "fileHeaderBgHover": "var(background)",
+        "hunkHeaderBg": "var(accentLight)",
+        "deletedIconFg": "var(foreground)",
+        "deletedHeaderBg": "var(darkRed)",
+        "deletedHeaderBgHover": "color(var(darkRed) l(+ 5%))",
+        "unmergedIconFg": "color(var(foreground) l(+ 20%))",
+        "unmergedHeaderBg": "var(darkBlue)",
+        "unmergedHeaderBgHover": "color(var(darkBlue) l(+ 5%))",
+        "recentIconFg": "var(yellow)",
+        "recentIconBg": "transparent",
+        "untrackedHeaderBg": "color(var(darkGrayMedium) s(- 5%) l(+ 5%))",
+        "untrackedHeaderBgHover": "color(var(darkGrayMedium) s(- 5%) l(+ 10%))",
+        "stagedIconFg": "var(foreground)",
+        "renamedFileInserted": "color(var(green) s(30%) l(60%))",
+        "renamedFileDeleted": "color(var(red) s(50%) l(65%))",
+        "blamePopupBg": "color(var(--background) l(+ 10%))",
+        "buttonBg": "var(accentLighter)",
+        "buttonFg": "var(labelColor)",
+        "buttonShadow": "color(black a(0.5))",
+        "highlightedButtonLightBg": "color(hsl(84, 35%, 50%))",
+        "highlightedButtonLightFg": "var(labelColor)",
+        "highlightedButtonDarkBg": "color(hsl(83, 40%, 44%))",
+        "highlightedButtonDarkFg": "var(labelColor)",
+        "highlightedButtonShadow": "color(black a(0.5) l(+ 10%))",
+        "toggleButtonBg": "color(var(accentLightest) a(0.5))",
+        "toggleButtonFg": "var(foreground)",
+        "toggleButtonFgSelected": "var(foreground)",
+        "tabBarBg": "var(background)",
+        "tabSeparatorBg": "var(accentLighter)",
+        "radioBack": "var(--background)",
+        "radioSelected": "var(blue)",
+        "radioBorderSelected": "var(blue)",
+        "checkboxBack": "var(--background)",
+        "checkboxSelected": "var(blue)",
+        "checkboxBorderSelected": "var(blue)",
+        "dialogBg": "var(background)",
+        "dialogButtonBg": "var(accentLight)",
+        "progressBg": "color(var(accentLightest) l(+ 3%))",
+        "progressFg": "color(var(accentDarker) a(0.5))",
+        "quickPanelBg": "var(background)",
+        "quickPanelRowBg": "var(accentLighter)",
+        "quickPanelFg": "var(foreground)",
+        "quickPanelFgMatch": "var(foreground)",
+        "quickPanelFgSelected": "var(foreground)",
+        "quickPanelFgSelectedMatch": "var(foreground)",
+        "quickPanelPathFg": "var(foreground)",
+        "quickPanelPathFgMatch": "var(foreground)",
+        "quickPanelPathFgSelected": "var(foreground)",
+        "quickPanelPathFgSelectedMatch": "var(foreground)",
+        "switchRepoBg": "var(background)",
+        "failedLabelFg": "var(foreground)",
+        "loadingBall1": "var(mediumGray)",
+        "loadingBall2": "var(blue)",
+        "previewFg": "white",
+        "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
+        "consoleBorder": "var(background)",
+        "hazardButtonBg": "var(red)",
+        "repositoryTabBarBg": "var(background)",
+        "repositoryTabBarBorderBg": "var(background)",
+        "fileBadgeModifiedFg": "var(mediumGray)",
+        "fileBadgeUnmergedFg": "#2e1d07",
+        "fileBadgeUntrackedBg": "var(detailPanelBg)",
+        "fileBadgeUntrackedFg": "var(mediumGray-dark)",
+        "fileBadgeStagedBg": "var(fileHeaderBg)",
+        "fileBadgeStagedFg": "var(mediumGray-light)"
+    },
     "rules": [
         {
             "class": "console_panel",
@@ -197,7 +367,7 @@
         },
         {
             "class": "toggle_button",
-            "layer0.tint": "var(toggle_button_bg)",
+            "layer0.tint": "var(toggleButtonBg)",
             "layer0.opacity": 1,
             "layer0.inner_margin": 4,
             "min_size": [
@@ -225,7 +395,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer1.tint": "var(toggle_button_bg)",
+            "layer1.tint": "var(toggleButtonBg)",
             "layer1.opacity": {
                 "target": 0.3,
                 "speed": 4,
@@ -254,7 +424,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer1.tint": "var(toggle_button_bg)",
+            "layer1.tint": "var(toggleButtonBg)",
             "layer1.opacity": {
                 "target": 0.3,
                 "speed": 4,
@@ -276,7 +446,7 @@
                     "class": "toggle_button"
                 }
             ],
-            "fg": "var(toggle_button_fg)"
+            "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
@@ -288,7 +458,7 @@
                     ]
                 }
             ],
-            "fg": "var(toggle_button_fg_selected)"
+            "fg": "var(toggleButtonFgSelected)"
         },
         {
             "class": "tab",
@@ -324,14 +494,16 @@
                 "target": 0.5,
                 "speed": 4,
                 "interpolation": "smoothstep"
-            }
+            },
+            "layer0.tint": "var(accentLighter)"
         },
         {
             "class": "tab",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 1
+            "layer0.opacity": 1,
+            "layer0.tint": "var(accentLight)"
         },
         {
             "class": "label_control",
@@ -340,7 +512,7 @@
                     "class": "tab"
                 }
             ],
-            "fg": "var(toggle_button_fg)"
+            "fg": "var(toggleButtonFg)"
         },
         {
             "class": "label_control",
@@ -352,7 +524,7 @@
                     ]
                 }
             ],
-            "fg": "var(toggle_button_fg_selected)"
+            "fg": "var(toggleButtonFgSelected)"
         },
         {
             "class": "tab_separator",
@@ -460,7 +632,7 @@
                     ]
                 }
             ],
-            "layer1.tint": "var(checkbox_border-selected)",
+            "layer1.tint": "var(checkboxBorderSelected)",
             "layer2.opacity": 1
         },
         {
@@ -875,6 +1047,7 @@
         {
             "class": "info_area",
             "layer0.texture": "Theme - Merge/button.png",
+            "layer0.tint": "var(accentLighter)",
             "layer0.opacity": 0.4,
             "layer0.inner_margin": 4,
             "content_margin": [
@@ -895,7 +1068,8 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.5
+            "layer0.opacity": 1,
+            "layer0.tint": "var(accentLighter)"
         },
         {
             "class": "label_control",
@@ -1134,6 +1308,8 @@
         },
         {
             "class": "button_control icon_button",
+            "layer0.tint": "var(background)",
+            "layer0.opacity": 1,
             "content_margin": 0,
             "min_size": [
                 10,
@@ -1680,21 +1856,23 @@
         },
         {
             "class": "location_bar_row",
-            "layer0.tint": "var(location_bar_row_bg-hover)",
+            "layer0.tint": "var(locationBarRowBgHover)",
             "layer0.opacity": 0
-        },
-        {
-            "class": "location_bar_row",
-            "attributes": [
-                "selected"
-            ],
-            "layer0.opacity": 1
         },
         {
             "class": "location_bar_row",
             "attributes": [
                 "hover"
             ],
+            "layer0.tint": "var(locationBarRowBgHover)",
+            "layer0.opacity": 1
+        },
+        {
+            "class": "location_bar_row",
+            "attributes": [
+                "selected"
+            ],
+            "layer0.tint": "var(accentLightest)",
             "layer0.opacity": 1
         },
         {
@@ -1873,19 +2051,6 @@
             "layer0.opacity": 1
         },
         {
-            "class": "tab",
-            "parents": [
-                {
-                    "class": "side_bar_tabs",
-                    "attributes": [
-                        "selected"
-                    ]
-                }
-            ],
-            "layer0.tint": "var(accent)",
-            "layer0.opacity": 1
-        },
-        {
             "class": "table_of_contents_heading_container",
             "spacing": 8
         },
@@ -1992,7 +2157,7 @@
         },
         {
             "class": "commit_summary_control",
-            "layer0.tint": "var(commitRowBgHover)",
+            "layer0.tint": "var(accentLight)",
             "layer0.opacity": 0,
             "content_margin": [
                 8,
@@ -2011,7 +2176,6 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(commitRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -3784,7 +3948,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(preferencesSectionTableRowBg)",
+            "layer0.tint": "var(accentLightest)",
             "layer0.opacity": 1,
             "content_margin": [
                 0,
