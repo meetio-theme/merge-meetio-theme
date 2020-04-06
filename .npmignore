@@ -4,7 +4,6 @@ coverage
 
 # Folder's
 src/
-examples/
 
 # Build Tools
 .travis.yml

@@ -75,8 +75,9 @@ export const dark = {
     overlayBg: 'var(background)',
 
     // Welcome overlay
-    welcomeBg: 'var(accentDarkest)',
-    recentRepositoriesRowBgHover: 'var(background)',
+    welcomeBg: 'var(accentLight)',
+    recentRepositoriesRowBg: 'var(accentLight)',
+    recentRepositoriesRowBgHover: 'var(accentLightest)',
 
     // Preferences Page
     preferencesOverlayBg: 'var(background)',
@@ -106,6 +107,7 @@ export const dark = {
 
     // Sidebar Bar
     sideBarContainerBg: 'var(background)',
+    sideBarContainerBgWithGraph: 'var(accentLight)',
 
     // Table of Contents
     tableOfContentsBg: 'var(background)',
@@ -187,6 +189,12 @@ export const dark = {
     buttonShadow: 'color(black a(0.5))',
     buttonBgHover: 'color(var(colorAccent) a(0.2))',
 
+    // Inputs
+    inputBackground: 'var(background)',
+    inputBackgroundWelcome: 'var(welcomeBg)',
+    inputBorderColor: ['foreground', 0.1],
+    inputBorderSize: [0, 0, 0, 1],
+
     highlightedButtonLightBg: 'color(hsl(84, 35%, 50%))',
     highlightedButtonLightFg: 'var(labelColor)',
     highlightedButtonDarkBg: 'color(hsl(83, 40%, 44%))',
@@ -200,6 +208,9 @@ export const dark = {
     // Tabs
     tabBarBg: 'var(background)',
     tabSeparatorBg: 'var(accentLighter)',
+    tabBackground: ['background', 1],
+    tabSelectedBorderColor: 'var(colorAccent)',
+    tabSelectedBorderSize: [0, 0, 0, 2],
 
     // Radio buttons
     radioBack: 'var(--background)',
