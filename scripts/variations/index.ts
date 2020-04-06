@@ -4,11 +4,11 @@ import { light } from './light';
 export const ui = [
     {
         name: 'Merge Dark',
-        folder: 'NEW-DARK',
+        folder: 'Dark',
         variables: dark,
     }, {
         name: 'Merge Light',
-        folder: 'NEW-LIGHT',
+        folder: 'Light',
         variables: light,
     },
 ];
