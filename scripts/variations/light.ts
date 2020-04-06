@@ -1,6 +1,5 @@
  import { light as ui } from '@meetio/meetio-colors';
 
-/** Meetio Colors: https://github.com/meetio-theme/meetio-colors */
 export const light = {
     textHeading: "#ddd",
     text: "#aaa",
@@ -54,7 +53,10 @@ export const light = {
     headerBg: "var(background)",
     headerFg: "var(foreground)",
     headerButtonBg: "var(accentLight)",
-    iconButtonFg: "#fff",
+
+    // Icons on Header (e.g: Push, Pull, Search)
+    iconButtonOpacity: 1,
+    iconButtonOpacityHover: 0.8,
 
     infoShadow: "color(black a(0.2))",
 
