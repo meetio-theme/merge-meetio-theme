@@ -3,11 +3,17 @@ import { light } from './light';
 
 export const ui = [
     {
-        name: 'Merge Dark',
+        // Description: Theme
+        // - These need to be a valid sublime-color-scheme
+        // - file. In this case the Meetio theme
+        name: 'Meetio-Theme-Dark',
         folder: 'Dark',
         variables: dark,
     }, {
-        name: 'Merge Light',
+        // Description: Theme
+        // - These need to be a valid sublime-color-scheme
+        // - file. In this case the Meetio theme
+        name: 'Meetio-Theme-Light',
         folder: 'Light',
         variables: light,
     },
