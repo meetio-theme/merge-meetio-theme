@@ -120,6 +120,12 @@ export const dark = {
     authorFg: 'color(var(--foreground) a(0.4))',
     terminatorFg: 'var(accentLightest)',
 
+    // Center Branch Input
+    outputSucceededFg: "var(green)",
+    outputFailedFg: "var(red)",
+    outputRunningFg: "var(cyan)",
+    outputCanceledFg: "var(red)",
+
     // Tool Tips
     toolTipBg: 'var(accentLight)',
     toolTipFg: 'var(foreground)',

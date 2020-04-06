@@ -710,22 +710,22 @@ export const rules = [
     },
     {
         class: 'git_output_button succeeded',
-        'layer2.tint': 'var(output_succeeded_fg)',
+        'layer2.tint': 'var(outputSucceededFg)',
         'layer2.texture': 'Theme - Merge/icon_output_succeeded.png',
     },
     {
         class: 'git_output_button failed',
-        'layer2.tint': 'var(output_failed_fg)',
+        'layer2.tint': 'var(outputFailedFg)',
         'layer2.texture': 'Theme - Merge/icon_output_failed.png',
     },
     {
         class: 'git_output_button running',
-        'layer2.tint': 'var(output_running_fg)',
+        'layer2.tint': 'var(outputRunningFg)',
         'layer2.texture': 'Theme - Merge/icon_output_running.png',
     },
     {
         class: 'git_output_button cancelled',
-        'layer2.tint': 'var(output_cancelled_fg)',
+        'layer2.tint': 'var(outputCancelledFg)',
         'layer2.texture': 'Theme - Merge/icon_output_cancelled.png',
     },
     {
