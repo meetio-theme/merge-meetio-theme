@@ -1,9 +1,6 @@
 import { dark as ui } from '@meetio/meetio-colors';
 
 export const dark = {
-    textHeading: '#ddd',
-    text: '#aaa',
-
     cursor: ui.cursor,
     foreground: ui.foreground,
     background: ui.background,
@@ -58,6 +55,8 @@ export const dark = {
     // Icons on Header (e.g: Push, Pull, Search)
     iconButtonOpacity: 1,
     iconButtonOpacityHover: 0.8,
+    iconButtonOpacityFaded: 0.4,
+    iconButtonOpacityHidden: 0.0,
 
     infoShadow: 'color(black a(0.2))',
 
@@ -179,6 +178,9 @@ export const dark = {
 
     renamedFileInserted: 'color(var(green) s(30%) l(60%))',
     renamedFileDeleted: 'color(var(red) s(50%) l(65%))',
+
+    // Sidebar Location Icon Visible
+    hiddenSlash: "var(red)",
 
     // Blame
     blamePopupBg: 'color(var(--background) l(+ 10%))',

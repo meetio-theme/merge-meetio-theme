@@ -1008,7 +1008,7 @@ export const rules = [
     {
         class: 'icon_visible',
         'layer0.texture': 'Theme - Merge/icon_visible.png',
-        'layer0.opacity': 'var(iconButtonOpacity-hidden)',
+        'layer0.opacity': 'var(iconButtonOpacityHidden)',
         'layer0.tint': 'var(colorAccent)',
         content_margin: [8, 5],
     },
@@ -1247,6 +1247,9 @@ export const rules = [
         min_size: 0,
         content_margin: [2, 2],
         'layer1.opacity': 0,
+        'layer0.tint': 'var(transparent)',
+        'layer1.tint': 'var(transparent)',
+        'layer2.tint': 'var(transparent)',
     },
     {
         class: 'icon_visible',
@@ -1266,11 +1269,11 @@ export const rules = [
     {
         class: 'icon_hidden',
         'layer0.texture': 'Theme - Merge/icon_hidden.png',
-        'layer0.opacity': 'var(iconButtonOpacity-faded)',
+        'layer0.opacity': 'var(iconButtonOpacityFaded)',
         'layer0.tint': 'var(colorAccent)',
         'layer1.texture': 'Theme - Merge/icon_hidden_slash.png',
         'layer1.opacity': 'var(iconButtonOpacity)',
-        'layer1.tint': 'var(hidden_slash)',
+        'layer1.tint': 'var(hiddenSlash)',
         content_margin: [8, 5],
     },
     {
@@ -1289,7 +1292,7 @@ export const rules = [
     {
         class: 'icon_section_actions',
         'layer0.texture': 'Theme - Merge/gear.png',
-        'layer0.opacity': 'var(iconButtonOpacity-hidden)',
+        'layer0.opacity': 'var(iconButtonOpacityHidden)',
         'layer0.tint': 'var(colorAccent)',
         content_margin: [10, 7],
     },
