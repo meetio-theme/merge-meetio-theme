@@ -7,7 +7,8 @@
     },
     "license": "MIT",
     "scripts": {
-        "build": "ts-node scripts/index.ts",
+        "build": "ts-node scripts/index.ts && npm run schemes",
+        "schemes": "ts-node scripts/schemes.ts",
         "prettier": "prettier --write \"scripts/*.ts?(x)\" \"scripts/**/*.ts?(x)\"",
         "lint": "eslint \"scripts/*.ts\" \"scripts/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,5 +34,8 @@
         "prettier": "^1.18.2",
         "ts-node": "^8.6.2",
         "typescript": "^3.7.2"
+    },
+    "dependencies": {
+        "@meetio/scheme-generator": "^1.5.2"
     }
 }
