@@ -1,9 +1,7 @@
  import { light as ui } from '@meetio/meetio-colors';
 
 export const light = {
-    textHeading: "#ddd",
-    text: "#aaa",
-
+    // Section: Define Meetio Colors
     cursor: ui.cursor,
     foreground: ui.foreground,
     background: ui.background,
@@ -30,11 +28,8 @@ export const light = {
     accentLighter: "color(var(background) l(+ 4%))",
     accentLightest: "color(var(background) l(+ 10%))",
 
-    teal: "hsl(180, 40%, 65%)",
-    magenta: "hsl(330, 70%, 65%)",
-
     darkRed: "color(var(red) s(25%) l(35%))",
-    darkTeal: "color(var(teal) s(25%) l(35%))",
+    darkTeal: "color(var(cyan) s(25%) l(35%))",
     darkBlue: "color(var(blue) s(25%) l(35%))",
 
     mediumGray: "hsl(210, 10%, 50%)",
@@ -100,10 +95,10 @@ export const light = {
 
     commitEdge0: "var(blue)",
     commitEdge1: "var(purple)",
-    commitEdge2: "var(magenta)",
+    commitEdge2: "var(red)",
     commitEdge3: "color(var(orange) l(- 10%))",
     commitEdge4: "var(yellow)",
-    commitEdge5: "color(var(teal) l(50%))",
+    commitEdge5: "color(var(cyan) l(50%))",
 
     // Sidebar Bar
     sideBarContainerBg: "var(background)",

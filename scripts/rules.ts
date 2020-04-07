@@ -1680,7 +1680,7 @@ export const rules = [
         class: 'blame_text_control',
         settings: ['!kelly_colors'],
         num_colors: 6,
-        color0: 'color(var(magenta) s(80%))',
+        color0: 'color(var(red) s(80%))',
         color1: 'color(color(var(orange) s(100%)) s(80%))',
         color2: 'color(var(yellow) s(80%))',
         color3: 'color(color(var(cyan) l(35%)) s(80%))',

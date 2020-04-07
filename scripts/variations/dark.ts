@@ -1,6 +1,7 @@
 import { dark as ui } from '@meetio/meetio-colors';
 
 export const dark = {
+    // Section: Define Meetio Colors
     cursor: ui.cursor,
     foreground: ui.foreground,
     background: ui.background,
@@ -28,11 +29,7 @@ export const dark = {
     accentLighter: 'color(var(background) l(+ 4%))',
     accentLightest: 'color(var(background) l(+ 10%))',
 
-    teal: 'hsl(180, 40%, 65%)',
-    magenta: 'hsl(330, 70%, 65%)',
-
     darkRed: 'color(var(red) s(25%) l(35%))',
-    darkTeal: 'color(var(teal) s(25%) l(35%))',
     darkBlue: 'color(var(blue) s(25%) l(35%))',
 
     mediumGray: 'hsl(210, 10%, 50%)',
@@ -41,18 +38,18 @@ export const dark = {
     darkGrayMedium: 'hsl(210, 10%, 13%)',
     darkGray: 'hsl(210, 10%, 10%)',
 
-    // Labels
+    // Section: Labels
     labelColor: 'var(foreground)',
     helpLabelColor: 'color(var(foreground) a(0.6))',
     branchStatsLabelBg: 'color(var(accentLightest) a(0.75))',
 
-    // Header
+    // Section: Header
     titleBarStyle: 'dark',
     headerBg: 'var(background)',
     headerFg: 'var(foreground)',
     headerButtonBg: 'var(accentLight)',
 
-    // Icons on Header (e.g: Push, Pull, Search)
+    // Section: Icons on Header (e.g: Push, Pull, Search)
     iconButtonOpacity: 1,
     iconButtonOpacityHover: 0.8,
     iconButtonOpacityFaded: 0.4,
@@ -64,34 +61,34 @@ export const dark = {
     divergedButtonBg: 'var(buttonBg)',
     divergedButtonFg: 'var(darkGray)',
 
-    // Scroll shadow
+    // Section: Scroll shadow
     scrollShadow: 'color(black a(0.3))',
 
-    // Focus highlight
+    // Section: Focus highlight
     focusHighlightColor: 'var(foreground)',
 
-    // Overlay
+    // Section: Overlay
     overlayBg: 'var(background)',
 
-    // Welcome overlay
+    // Section: Welcome overlay
     welcomeBg: 'var(accentLight)',
     recentRepositoriesRowBg: 'var(accentLight)',
     recentRepositoriesRowBgHover: 'var(accentLightest)',
 
-    // Preferences Page
+    // Section: Preferences Page
     preferencesOverlayBg: 'var(background)',
     preferencesSectionTableBg: 'var(background)',
     preferencesSectionTableRowBg: 'var(accentLight)',
     preferencesOverlayLeft: 'var(background)',
 
-    // Side bar
+    // Section: Side bar
     locationBarFg: 'var(foreground)',
     locationBarHeadingFg: 'var(foreground)',
     locationBarHeadingShadow: 'black',
     locationBarRowBgHover: 'var(accentLight)',
     disclosureFg: 'white',
 
-    // Commit list
+    // Section: Commit list
     commitListBg: 'var(background)',
     commitRowBgHover: 'var(background)',
     commitSummaryFgPrimary: 'var(foreground)',
@@ -99,38 +96,38 @@ export const dark = {
 
     commitEdge0: 'var(blue)',
     commitEdge1: 'var(purple)',
-    commitEdge2: 'var(magenta)',
+    commitEdge2: 'var(red)',
     commitEdge3: 'color(var(orange) l(- 10%))',
     commitEdge4: 'var(yellow)',
-    commitEdge5: 'color(var(teal) l(50%))',
+    commitEdge5: 'color(var(cyan) l(50%))',
 
-    // Sidebar Bar
+    // Section: Sidebar
     sideBarContainerBg: 'var(background)',
     sideBarContainerBgWithGraph: 'var(accentLight)',
 
-    // Table of Contents
+    // Section: Table of Contents
     tableOfContentsBg: 'var(background)',
     tableOfContentsFg: 'var(foreground)',
     tableOfContentsHeadingFg: 'var(foreground)',
     tableOfContentsRowBg: 'var(background)',
 
-    // Detail panel
+    // Section: Detail panel
     detailPanelBg: 'var(background)',
     fieldNameFg: 'var(foreground)',
     authorFg: 'color(var(--foreground) a(0.4))',
     terminatorFg: 'var(colorAccent)',
 
-    // Center Branch Input
+    // Section: Center Branch Input
     outputSucceededFg: "var(green)",
     outputFailedFg: "var(red)",
     outputRunningFg: "var(cyan)",
     outputCanceledFg: "var(red)",
 
-    // Tool Tips
+    // Section: Tool Tips
     toolTipBg: 'var(accentLight)',
     toolTipFg: 'var(foreground)',
 
-    // Annotations
+    // Section: Annotations
     headAnnFg: 'var(darkGray)',
     headAnnBg: 'var(purple)',
 
@@ -155,11 +152,11 @@ export const dark = {
     insertedAnnBg: 'color(var(cyan) a(0.50))',
     deletedAnnBg: 'color(var(red) a(0.50))',
 
-    // Diff headers
+    // Section: Diff headers
     fileDiffShadow: 'color(black a(0.5))',
     fileIconBg: 'color(white a(0.2))',
 
-    hunkButtonFg: '#eee',
+    hunkButtonFg: 'var(foreground)',
     hunkButtonShadow: 'color(black a(0.5))',
 
     fileHeaderBg: 'var(background)',
@@ -185,20 +182,20 @@ export const dark = {
     renamedFileInserted: 'color(var(green) s(30%) l(60%))',
     renamedFileDeleted: 'color(var(red) s(50%) l(65%))',
 
-    // Sidebar Location Icon Visible
+    // Section: Sidebar Location Icon Visible
     hiddenSlash: "var(red)",
 
-    // Blame
+    // Section: Blame
     blamePopupBg: 'color(var(--background) l(+ 10%))',
 
-    // Buttons
+    // Section: Buttons
     buttonBg: 'color(var(background) l(+ 5%))',
     buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
     buttonFg: 'var(labelColor)',
     buttonShadow: 'color(black a(0.5))',
     buttonBgHover: 'color(var(colorAccent) a(0.2))',
 
-    // Inputs
+    // Section: Inputs
     inputBackground: 'var(background)',
     inputBackgroundWelcome: 'var(welcomeBg)',
     inputBorderColor: 'color(var(background) l(+ 2%))',
@@ -224,25 +221,25 @@ export const dark = {
     tabLabelColorHover: "color(var(colorAccent) a(1.0))",
     tabLabelColorSelected: "color(var(colorAccent) a(1.0))",
 
-    // Radio buttons
+    // Section: Radio buttons
     radioBack: 'var(--background)',
     radioSelected: 'var(blue)',
     radioBorderSelected: 'var(blue)',
 
-    // Checkbox buttons
+    // Section: Checkbox buttons
     checkboxBack: 'var(--background)',
     checkboxSelected: 'var(blue)',
     checkboxBorderSelected: 'var(blue)',
 
-    // Dialogs
+    // Section: Dialogs
     dialogBg: 'var(background)',
     dialogButtonBg: 'var(accentLight)',
 
-    // Progress bar
+    // Section: Progress bar
     progressBg: 'color(var(accentLightest) l(+ 3%))',
     progressFg: 'color(var(accentDarker) a(0.5))',
 
-    // Quick panel
+    // Section: Quick panel
     quickPanelBg: 'var(background)',
     quickPanelRowBg: 'var(accentLighter)',
     quickPanelFg: 'var(foreground)',
@@ -254,27 +251,27 @@ export const dark = {
     quickPanelPathFgSelected: 'var(foreground)',
     quickPanelPathFgSelectedMatch: 'var(foreground)',
 
-    // Switch repository window
+    // Section: Switch repository window
     switchRepoBg: 'var(background)',
 
-    // Hints
+    // Section: Hints
     failedLabelFg: 'var(darkGray)',
 
-    // Loading
+    // Section: Loading
     loadingBall1: 'var(mediumGray)',
     loadingBall2: 'var(blue)',
 
-    // Command Palette
+    // Section: Command Palette
     previewFg: 'white',
 
-    // Merge Helper
+    // Section: Merge Helper
     mergeHelperHighlightBg: 'color(var(accentLightest) l(25%))',
     consoleBorder: 'var(background)',
 
-    // Hazard buttons
+    // Section: Hazard buttons
     hazardButtonBg: 'var(red)',
 
-    // Tabs
+    // Section: Tabs
     repositoryTabBarBg: 'var(background)',
     repositoryTabBarBorderBg: 'var(background)',
 
