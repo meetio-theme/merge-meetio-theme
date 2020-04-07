@@ -192,7 +192,8 @@ export const dark = {
     blamePopupBg: 'color(var(--background) l(+ 10%))',
 
     // Buttons
-    buttonBg: ['background', 0.5],
+    buttonBg: 'color(var(background) l(+ 5%))',
+    buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
     buttonFg: 'var(labelColor)',
     buttonShadow: 'color(black a(0.5))',
     buttonBgHover: 'color(var(colorAccent) a(0.2))',
@@ -200,8 +201,8 @@ export const dark = {
     // Inputs
     inputBackground: 'var(background)',
     inputBackgroundWelcome: 'var(welcomeBg)',
-    inputBorderColor: ['foreground', 0.1],
-    inputBorderSize: [0, 0, 0, 1],
+    inputBorderColor: 'color(var(background) l(+ 2%))',
+    inputBorderSize: [0, 0, 0, 2],
 
     highlightedButtonLightBg: 'color(hsl(84, 35%, 50%))',
     highlightedButtonLightFg: 'var(labelColor)',

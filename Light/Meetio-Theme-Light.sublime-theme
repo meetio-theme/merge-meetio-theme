@@ -1,25 +1,26 @@
 {
     "extends": "Merge.sublime-theme",
     "variables": {
-        "cursor": "#ffcc00",
-        "foreground": "#dedfe4",
-        "background": "#011627",
-        "comments": "#637777",
-        "blue": "#82aaff",
-        "brown": "#c17e70",
-        "cyan": "#7fdbca",
-        "green": "#c3e88d",
-        "orange": "#f78c6c",
-        "pink": "#ff5874",
-        "purple": "#c2afff",
-        "red": "#d95757",
-        "yellow": "#ffcb8b",
-        "invalid": "#d46c6c66",
+        "textHeading": "#ddd",
+        "text": "#aaa",
+        "cursor": "#7e57c2",
+        "foreground": "#455A64",
+        "background": "#fbfbfb",
+        "comments": "#90a4ae",
+        "blue": "#6182b8",
+        "brown": "#bc5454",
+        "cyan": "#5fb3b3",
+        "green": "#91b859",
+        "orange": "#f76d47",
+        "pink": "#ff5370",
+        "purple": "#7c4dff",
+        "red": "#e53935",
+        "yellow": "#f3ad2c",
+        "invalid": "#d3423e66",
         "deprecated": "#ffc777a1",
-        "diffAdded": "#addb67",
+        "diffAdded": "#9ccc65",
         "diffModified": "#e2b93d",
         "diffDeleted": "#ef5350",
-        "colorAccent": "#80CBC4",
         "accentDark": "color(var(background) l(- 0.75%))",
         "accentDarker": "color(var(background) l(- 1.00%))",
         "accentDarkest": "color(var(background) l(- 2.00%))",
@@ -39,7 +40,7 @@
         "labelColor": "var(foreground)",
         "helpLabelColor": "color(var(foreground) a(0.6))",
         "branchStatsLabelBg": "color(var(accentLightest) a(0.75))",
-        "titleBarStyle": "dark",
+        "titleBarStyle": "light",
         "headerBg": "var(background)",
         "headerFg": "var(foreground)",
         "headerButtonBg": "var(accentLight)",
@@ -50,13 +51,12 @@
         "infoShadow": "color(black a(0.2))",
         "divergedBg": "color(var(orange) l(- 5%) s(- 20%))",
         "divergedButtonBg": "var(buttonBg)",
-        "divergedButtonFg": "var(darkGray)",
+        "divergedButtonFg": "var(foreground)",
         "scrollShadow": "color(black a(0.3))",
         "focusHighlightColor": "var(foreground)",
         "overlayBg": "var(background)",
-        "welcomeBg": "var(accentLight)",
-        "recentRepositoriesRowBg": "var(accentLight)",
-        "recentRepositoriesRowBgHover": "var(accentLightest)",
+        "welcomeBg": "var(accentDarkest)",
+        "recentRepositoriesRowBgHover": "var(background)",
         "preferencesOverlayBg": "var(background)",
         "preferencesSectionTableBg": "var(background)",
         "preferencesSectionTableRowBg": "var(accentLight)",
@@ -77,7 +77,6 @@
         "commitEdge4": "var(yellow)",
         "commitEdge5": "color(var(teal) l(50%))",
         "sideBarContainerBg": "var(background)",
-        "sideBarContainerBgWithGraph": "var(accentLight)",
         "tableOfContentsBg": "var(background)",
         "tableOfContentsFg": "var(foreground)",
         "tableOfContentsHeadingFg": "var(foreground)",
@@ -92,15 +91,15 @@
         "outputCanceledFg": "var(red)",
         "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
-        "headAnnFg": "var(darkGray)",
+        "headAnnFg": "var(foreground)",
         "headAnnBg": "var(purple)",
-        "branchAnnFg": "var(darkGray)",
+        "branchAnnFg": "var(foreground)",
         "branchAnnBg": "var(blue)",
-        "remoteAnnFg": "var(darkGray)",
+        "remoteAnnFg": "var(foreground)",
         "remoteAnnBg": "var(cyan)",
-        "tagAnnFg": "var(darkGray)",
+        "tagAnnFg": "var(foreground)",
         "tagAnnBg": "var(yellow)",
-        "stashAnnFg": "var(darkGray)",
+        "stashAnnFg": "var(foreground)",
         "stashAnnBg": "var(orange)",
         "fileAnnFg": "var(foreground)",
         "fileAnnBg": "color(var(accentLightest) a(0.75))",
@@ -123,32 +122,16 @@
         "unmergedHeaderBgHover": "color(var(darkBlue) l(+ 5%))",
         "recentIconFg": "var(yellow)",
         "recentIconBg": "transparent",
-        "untrackedHeaderBg": "var(accentLight)",
-        "untrackedHeaderBgHover": "var(accentLighter)",
+        "untrackedHeaderBg": "color(var(darkGrayMedium) s(- 5%) l(+ 5%))",
+        "untrackedHeaderBgHover": "color(var(darkGrayMedium) s(- 5%) l(+ 10%))",
         "stagedIconFg": "var(foreground)",
         "renamedFileInserted": "color(var(green) s(30%) l(60%))",
         "renamedFileDeleted": "color(var(red) s(50%) l(65%))",
         "hiddenSlash": "var(red)",
         "blamePopupBg": "color(var(--background) l(+ 10%))",
-        "buttonBg": [
-            "background",
-            0.5
-        ],
+        "buttonBg": "var(accentLighter)",
         "buttonFg": "var(labelColor)",
         "buttonShadow": "color(black a(0.5))",
-        "buttonBgHover": "color(var(colorAccent) a(0.2))",
-        "inputBackground": "var(background)",
-        "inputBackgroundWelcome": "var(welcomeBg)",
-        "inputBorderColor": [
-            "foreground",
-            0.1
-        ],
-        "inputBorderSize": [
-            0,
-            0,
-            0,
-            1
-        ],
         "highlightedButtonLightBg": "color(hsl(84, 35%, 50%))",
         "highlightedButtonLightFg": "var(labelColor)",
         "highlightedButtonDarkBg": "color(hsl(83, 40%, 44%))",
@@ -159,20 +142,6 @@
         "toggleButtonFgSelected": "var(foreground)",
         "tabBarBg": "var(background)",
         "tabSeparatorBg": "var(accentLighter)",
-        "tabBackground": [
-            "background",
-            1
-        ],
-        "tabSelectedBorderColor": "var(colorAccent)",
-        "tabSelectedBorderSize": [
-            0,
-            0,
-            0,
-            2
-        ],
-        "tabLabelColor": "color(var(foreground) a(0.50))",
-        "tabLabelColorHover": "color(var(colorAccent) a(1.0))",
-        "tabLabelColorSelected": "color(var(colorAccent) a(1.0))",
         "radioBack": "var(--background)",
         "radioSelected": "var(blue)",
         "radioBorderSelected": "var(blue)",
@@ -194,7 +163,7 @@
         "quickPanelPathFgSelected": "var(foreground)",
         "quickPanelPathFgSelectedMatch": "var(foreground)",
         "switchRepoBg": "var(background)",
-        "failedLabelFg": "var(darkGray)",
+        "failedLabelFg": "var(foreground)",
         "loadingBall1": "var(mediumGray)",
         "loadingBall2": "var(blue)",
         "previewFg": "white",
@@ -1197,9 +1166,9 @@
         {
             "class": "git_output_button",
             "layer0.texture": "Theme - Merge/icon_output_border.png",
-            "layer0.tint": "var(colorAccent)",
+            "layer0.tint": "var(output_fg)",
             "layer0.opacity": {
-                "target": 1,
+                "target": 0.4,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
@@ -3852,6 +3821,28 @@
             ]
         },
         {
+            "class": "button_control",
+            "parents": [
+                {
+                    "class": "welcome_overlay_contents"
+                }
+            ],
+            "layer1.tint": "var(buttonBgWelcome)",
+            "layer1.texture": "Theme - Merge/button.png",
+            "layer1.inner_margin": 4,
+            "layer2.opacity": 0,
+            "layer2.texture": "Theme - Merge/button.png",
+            "layer2.inner_margin": 4,
+            "min_size": [
+                120,
+                15
+            ],
+            "content_margin": [
+                10,
+                6
+            ]
+        },
+        {
             "class": "purchase_license_cta_link",
             "fg": "color(var(link_label_color))",
             "font.face": "var(font_face)",
@@ -4684,24 +4675,6 @@
         },
         {
             "class": "tab_label",
-            "fg": "var(tabLabelColor)",
-            "font.face": "var(font_face)",
-            "font.size": "var(font_size)"
-        },
-        {
-            "class": "tab_label",
-            "parents": [
-                {
-                    "class": "tab_control",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
-            "fg": "var(tabLabelColorHover)"
-        },
-        {
-            "class": "tab_label",
             "parents": [
                 {
                     "class": "tab_control",
@@ -4710,7 +4683,7 @@
                     ]
                 }
             ],
-            "fg": "var(tabLabelColorSelected)"
+            "fg": "var(labelColor)"
         },
         {
             "class": "tab_close_button",
