@@ -2477,6 +2477,18 @@ export const rules = [
         content_margin: [50, 25, 50, 25],
     },
     {
+        class: 'button_control',
+        parents: [{class: 'welcome_overlay_contents'}],
+        'layer1.tint': 'var(buttonBgWelcome)',
+        'layer1.texture': 'Theme - Merge/button.png',
+        'layer1.inner_margin': 4,
+        'layer2.opacity': 0.0,
+        'layer2.texture': 'Theme - Merge/button.png',
+        'layer2.inner_margin': 4,
+        min_size: [120, 15],
+        content_margin: [10, 6],
+    },
+    {
         class: 'purchase_license_cta_link',
         fg: 'color(var(link_label_color))',
         'font.face': 'var(font_face)',
