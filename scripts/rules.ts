@@ -686,9 +686,9 @@ export const rules = [
     {
         class: 'git_output_button',
         'layer0.texture': 'Theme - Merge/icon_output_border.png',
-        'layer0.tint': 'var(output_fg)',
+        'layer0.tint': 'var(colorAccent)',
         'layer0.opacity': {
-            target: 0.4,
+            target: 1.0,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
@@ -1850,9 +1850,15 @@ export const rules = [
     {
         class: 'terminator',
         'layer0.texture': 'Theme - Merge/terminator.png',
-        'layer0.tint': 'var(terminatorFg)',
+        'layer0.tint': 'color(var(terminatorFg) a(0.25))',
         'layer0.opacity': 1.0,
         content_margin: [16, 4, 16, 4],
+    },
+    {
+        class: "terminator",
+        attributes: ["hover"],
+        "layer0.tint": "color(var(terminatorFg) a(0.50))",
+        "layer0.opacity": 1,
     },
     {
         class: 'terminator_container',
@@ -2962,9 +2968,32 @@ export const rules = [
         'font.size': 'var(font_size)',
     },
     {
-        class: 'tab_label',
-        parents: [{ class: 'tab_control', attributes: ['selected'] }],
-        fg: 'var(labelColor)',
+        class: "tab_label",
+        fg: "var(tabLabelColor)",
+        "font.face": "var(font_face)",
+        "font.size": "var(font_size)"
+    },
+    {
+        class: "tab_label",
+        parents: [
+        {
+            class: "tab_control",
+            attributes: [
+                "hover"
+            ]
+        }],
+        fg: "var(tabLabelColorHover)"
+    },
+    {
+        class: "tab_label",
+        parents: [
+        {
+            class: "tab_control",
+            attributes: [
+                "selected"
+            ]
+        }],
+        fg: "var(tabLabelColorSelected)"
     },
     {
         class: 'tab_close_button',

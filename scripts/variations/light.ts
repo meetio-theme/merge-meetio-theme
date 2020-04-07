@@ -118,7 +118,7 @@ export const light = {
     detailPanelBg: "var(background)",
     fieldNameFg: "var(foreground)",
     authorFg: "color(var(--foreground) a(0.4))",
-    terminatorFg: "var(accentLightest)",
+    terminatorFg: 'var(colorAccent)',
 
     // Center Branch Input
     outputSucceededFg: "var(green)",
@@ -177,8 +177,8 @@ export const light = {
 
     recentIconFg: "var(yellow)",
     recentIconBg: "transparent",
-    untrackedHeaderBg: "color(var(darkGrayMedium) s(- 5%) l(+ 5%))",
-    untrackedHeaderBgHover: "color(var(darkGrayMedium) s(- 5%) l(+ 10%))",
+    untrackedHeaderBg: 'var(accentLight)',
+    untrackedHeaderBgHover: 'var(accentLighter)',
 
     stagedIconFg: "var(foreground)",
 

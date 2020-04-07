@@ -118,7 +118,7 @@ export const dark = {
     detailPanelBg: 'var(background)',
     fieldNameFg: 'var(foreground)',
     authorFg: 'color(var(--foreground) a(0.4))',
-    terminatorFg: 'var(accentLightest)',
+    terminatorFg: 'var(colorAccent)',
 
     // Center Branch Input
     outputSucceededFg: "var(green)",
@@ -177,8 +177,8 @@ export const dark = {
 
     recentIconFg: 'var(yellow)',
     recentIconBg: 'transparent',
-    untrackedHeaderBg: 'color(var(darkGrayMedium) s(- 5%) l(+ 5%))',
-    untrackedHeaderBgHover: 'color(var(darkGrayMedium) s(- 5%) l(+ 10%))',
+    untrackedHeaderBg: 'var(accentLight)',
+    untrackedHeaderBgHover: 'var(accentLighter)',
 
     stagedIconFg: 'var(foreground)',
 
@@ -213,12 +213,15 @@ export const dark = {
     toggleButtonFg: 'var(foreground)',
     toggleButtonFgSelected: 'var(foreground)',
 
-    // Tabs
+    // Section: Tabs
     tabBarBg: 'var(background)',
     tabSeparatorBg: 'var(accentLighter)',
     tabBackground: ['background', 1],
     tabSelectedBorderColor: 'var(colorAccent)',
     tabSelectedBorderSize: [0, 0, 0, 2],
+    tabLabelColor: "color(var(foreground) a(0.50))",
+    tabLabelColorHover: "color(var(colorAccent) a(1.0))",
+    tabLabelColorSelected: "color(var(colorAccent) a(1.0))",
 
     // Radio buttons
     radioBack: 'var(--background)',
