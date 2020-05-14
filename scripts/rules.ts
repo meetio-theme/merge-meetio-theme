@@ -1,11 +1,10 @@
 export const rules = [
-    // browse page
+    // Browse page
     {
         class: 'console_panel',
         'layer0.tint': 'var(consoleBorder)',
         'layer0.opacity': 1.0,
     },
-
     {
         class: 'panel_grid_control',
         inside_spacing: 0,
@@ -532,13 +531,13 @@ export const rules = [
     {
         class: 'text_line_control',
         parents: [{ class: 'overlay_control' }],
-        'font.face': 'system',
+        'font.face': 'var(font_face)',
         'font.size': 'var(font_size_lg)',
     },
     {
         class: 'text_line_control',
         parents: [{ class: 'switch_project_window' }],
-        'font.face': 'system',
+        'font.face': 'var(font_face)',
         'font.size': 'var(font_size_lg)',
     },
     {
@@ -595,6 +594,18 @@ export const rules = [
     {
         class: 'quick_panel_label command',
         'font.italic': true,
+    },
+    // Quick Panel
+    // - Right Side Labels (e.g. Build 2009)
+    {
+        class: "quick_panel_label hint",
+        color: "color(var(--foreground) a(- 50%))"
+    },
+    // Quick Panel
+    // - Right Side Command Labels (e.g. ⌘ + p)
+    {
+        class: "quick_panel_label key_binding",
+        color: "color(var(--foreground) a(- 50%))"
     },
 
     // Header
@@ -2643,7 +2654,7 @@ export const rules = [
         'font.size': 'var(font_size_sm)',
     },
 
-    // Switch repository window
+    // Switch Repository Window
     {
         class: 'panel_control',
         parents: [{ class: 'switch_project_window' }],
@@ -2658,7 +2669,7 @@ export const rules = [
         tint_index: -1,
     },
 
-    // Tool tips
+    // Tool Tips
     {
         class: 'tool_tip_control',
         'layer0.tint': 'var(tool_tip_bg)',
@@ -2761,7 +2772,7 @@ export const rules = [
         fg: 'var(error_hint_fg)',
     },
 
-    // Tree view
+    // Tree View
     {
         class: 'scroll_bar_control',
         parents: [{ class: 'tree_details' }],
@@ -2794,7 +2805,7 @@ export const rules = [
         'layer0.opacity': 1.0,
     },
 
-    // Merge tool
+    // Merge Tool
     {
         class: 'diff_text_control',
         line_selection_color: [64, 64, 177, 10],
@@ -2830,7 +2841,7 @@ export const rules = [
         },
     },
 
-    // Auto complete
+    // Auto Complete
     {
         class: 'popup_control',
         'layer0.tint': [255, 255, 255],
@@ -2921,7 +2932,7 @@ export const rules = [
         min_size: [80, 20],
     },
 
-    // Repository Tabs
+    // Repository Tabs (Tab Bar Settings)
     {
         class: 'tabset_control',
         'layer0.opacity': 1.0,
