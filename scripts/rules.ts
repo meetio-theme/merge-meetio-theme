@@ -1,4 +1,31 @@
 export const rules = [
+    {
+        class: 'table_row',
+        attributes: ['hover'],
+        'layer0.opacity': 0.1,
+    },
+    {
+        class: 'table_row',
+        attributes: ['selected'],
+        'layer0.opacity': 0.2,
+    },
+    {
+        class: 'table_row',
+        parents: [{ class: 'auto_complete', attributes: ['file_light'] }],
+        attributes: ['selected'],
+        'layer0.opacity': 0.15,
+    },
+    {
+        class: 'table_row',
+        'layer0.tint': [255, 255, 255],
+        'layer0.opacity': 0.0,
+    },
+    {
+        class: 'table_row',
+        parents: [{ class: 'auto_complete', attributes: ['file_light'] }],
+        'layer0.tint': [0, 0, 0],
+        'layer0.opacity': 0.0,
+    },
     // Browse page
     {
         class: 'console_panel',
@@ -2871,17 +2898,6 @@ export const rules = [
         tint_modifier: [255, 255, 255, 0.05],
     },
     {
-        class: 'table_row',
-        'layer0.tint': [255, 255, 255],
-        'layer0.opacity': 0.0,
-    },
-    {
-        class: 'table_row',
-        parents: [{ class: 'auto_complete', attributes: ['file_light'] }],
-        'layer0.tint': [0, 0, 0],
-        'layer0.opacity': 0.0,
-    },
-    {
         class: 'auto_complete_label',
         fg: [0, 0, 0, 0.0],
         match_fg: [255, 255, 255, 0.18],
@@ -2897,22 +2913,6 @@ export const rules = [
         selected_fg: [0, 0, 0, 0.0],
         selected_match_fg: [0, 0, 0, 0.18],
         fg_blend: true,
-    },
-    {
-        class: 'table_row',
-        attributes: ['hover'],
-        'layer0.opacity': 0.1,
-    },
-    {
-        class: 'table_row',
-        attributes: ['selected'],
-        'layer0.opacity': 0.2,
-    },
-    {
-        class: 'table_row',
-        parents: [{ class: 'auto_complete', attributes: ['file_light'] }],
-        attributes: ['selected'],
-        'layer0.opacity': 0.15,
     },
     {
         class: 'progress_gauge_control',
