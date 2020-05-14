@@ -9,7 +9,7 @@ interface ITheme {
     rules: string[];
 }
 
-function build(name: string, variables: any, folder: string, rules: any) {
+function build(name: string, scheme: string, variables: any,folder: string, rules: any) {
     const theme: ITheme = {
         extends: 'Merge.sublime-theme',
         variables,
@@ -24,7 +24,7 @@ function build(name: string, variables: any, folder: string, rules: any) {
                     `${folder}/${file} - ${name}.sublime-settings`,
                     JSON.stringify(
                         {
-                            color_scheme: `${name}.sublime-color-scheme`,
+                            color_scheme: `${scheme}.sublime-color-scheme`,
                         },
                         null,
                         4
@@ -40,5 +40,5 @@ function build(name: string, variables: any, folder: string, rules: any) {
 }
 
 Object.values(ui).map((key: any) => {
-    build(key.name, key.variables, key.folder, rules);
+    build(key.name, key.scheme, key.variables, key.folder, rules);
 });

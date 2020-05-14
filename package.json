@@ -7,7 +7,8 @@
     },
     "license": "MIT",
     "scripts": {
-        "build": "ts-node scripts/index.ts",
+        "build": "ts-node scripts/index.ts && npm run schemes",
+        "schemes": "ts-node scripts/schemes.ts",
         "prettier": "prettier --write \"scripts/*.ts?(x)\" \"scripts/**/*.ts?(x)\"",
         "lint": "eslint \"scripts/*.ts\" \"scripts/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,11 +19,11 @@
         }
     },
     "devDependencies": {
-        "@meetio/meetio-colors": "^1.6.0",
         "@babel/core": "7.4.5",
         "@babel/preset-env": "7.4.5",
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
+        "@meetio/meetio-colors": "^1.7.0",
         "@types/node": "^13.9.8",
         "@typescript-eslint/eslint-plugin": "2.15.0",
         "@typescript-eslint/parser": "2.15.0",
@@ -33,5 +34,8 @@
         "prettier": "^1.18.2",
         "ts-node": "^8.6.2",
         "typescript": "^3.7.2"
+    },
+    "dependencies": {
+        "@meetio/scheme-generator": "^1.5.2"
     }
 }
