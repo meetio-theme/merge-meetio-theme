@@ -20,6 +20,7 @@ export const light = {
     diffAdded: ui.diffAdded,
     diffModified: ui.diffModified,
     diffDeleted: ui.diffDeleted,
+    transparent: "transparent",
 
     accentDark: "color(var(background) l(- 0.75%))",
     accentDarker: "color(var(background) l(- 1.00%))",
@@ -85,7 +86,7 @@ export const light = {
     locationBarHeadingFg: "var(foreground)",
     locationBarHeadingShadow: "black",
     locationBarRowBgHover: "var(accentLight)",
-    disclosureFg: "white",
+    disclosureFg: "var(foreground)",
 
     // Commit list
     commitListBg: "var(background)",
@@ -107,7 +108,8 @@ export const light = {
     tableOfContentsBg: "var(background)",
     tableOfContentsFg: "var(foreground)",
     tableOfContentsHeadingFg: "var(foreground)",
-    tableOfContentsRowBg: "var(background)",
+    tableOfContentsRowBg: 'var(accentLight)',
+    tableOfContentsRowBgHover: 'var(accentLighter)',
 
     // Detail panel
     detailPanelBg: "var(background)",
@@ -122,8 +124,8 @@ export const light = {
     outputCanceledFg: "var(red)",
 
     // Tool Tips
-    toolTipBg: "var(accentLight)",
     toolTipFg: "var(foreground)",
+    toolTipBg: "var(accentLight)",
 
     // Annotations
     headAnnFg: "var(foreground)",
@@ -246,7 +248,7 @@ export const light = {
     loadingBall2: "var(blue)",
 
     // Command Palette
-    previewFg: "white",
+    previewFg: "var(foreground)",
 
     // Merge Helper
     mergeHelperHighlightBg: "color(var(accentLightest) l(25%))",
@@ -259,10 +261,10 @@ export const light = {
     repositoryTabBarBg: "var(background)",
     repositoryTabBarBorderBg: "var(background)",
 
-    fileBadgeModifiedFg: "var(mediumGray)",
+    fileBadgeModifiedFg: "var(foreground)",
     fileBadgeUnmergedFg: "#2e1d07",
     fileBadgeUntrackedBg: "var(detailPanelBg)",
-    fileBadgeUntrackedFg: "var(mediumGray-dark)",
+    fileBadgeUntrackedFg: "var(foreground)",
     fileBadgeStagedBg: "var(fileHeaderBg)",
-    fileBadgeStagedFg: "var(mediumGray-light)",
+    fileBadgeStagedFg: "var(foreground)",
 };

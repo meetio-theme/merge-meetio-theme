@@ -19,6 +19,7 @@
         "diffAdded": "#addb67",
         "diffModified": "#e2b93d",
         "diffDeleted": "#ef5350",
+        "transparent": "transparent",
         "colorAccent": "#80CBC4",
         "accentDark": "color(var(background) l(- 0.75%))",
         "accentDarker": "color(var(background) l(- 1.00%))",
@@ -61,10 +62,11 @@
         "locationBarFg": "var(foreground)",
         "locationBarHeadingFg": "var(foreground)",
         "locationBarHeadingShadow": "black",
-        "locationBarRowBgHover": "var(accentLight)",
-        "disclosureFg": "white",
-        "commitListBg": "var(background)",
-        "commitRowBgHover": "var(background)",
+        "locationBarRowBg": "var(accentLight)",
+        "locationBarRowBgHover": "var(accentLighter)",
+        "disclosureFg": "var(foreground)",
+        "commitListBg": "var(accentLight)",
+        "commitRowBgHover": "var(accentLighter)",
         "commitSummaryFgPrimary": "var(foreground)",
         "commitSummaryFgSecondary": "var(foreground)",
         "commitEdge0": "var(blue)",
@@ -78,7 +80,8 @@
         "tableOfContentsBg": "var(background)",
         "tableOfContentsFg": "var(foreground)",
         "tableOfContentsHeadingFg": "var(foreground)",
-        "tableOfContentsRowBg": "var(background)",
+        "tableOfContentsRowBg": "var(accentLight)",
+        "tableOfContentsRowBgHover": "var(accentLighter)",
         "detailPanelBg": "var(background)",
         "fieldNameFg": "var(foreground)",
         "authorFg": "color(var(--foreground) a(0.4))",
@@ -87,17 +90,17 @@
         "outputFailedFg": "var(red)",
         "outputRunningFg": "var(cyan)",
         "outputCanceledFg": "var(red)",
-        "toolTipBg": "var(accentLight)",
         "toolTipFg": "var(foreground)",
-        "headAnnFg": "var(darkGray)",
+        "toolTipBg": "var(accentLight)",
+        "headAnnFg": "var(foreground)",
         "headAnnBg": "var(purple)",
-        "branchAnnFg": "var(darkGray)",
+        "branchAnnFg": "var(foreground)",
         "branchAnnBg": "var(blue)",
-        "remoteAnnFg": "var(darkGray)",
+        "remoteAnnFg": "var(foreground)",
         "remoteAnnBg": "var(cyan)",
-        "tagAnnFg": "var(darkGray)",
+        "tagAnnFg": "var(foreground)",
         "tagAnnBg": "var(yellow)",
-        "stashAnnFg": "var(darkGray)",
+        "stashAnnFg": "var(foreground)",
         "stashAnnBg": "var(orange)",
         "fileAnnFg": "var(foreground)",
         "fileAnnBg": "color(var(accentLightest) a(0.75))",
@@ -189,7 +192,7 @@
         "failedLabelFg": "var(darkGray)",
         "loadingBall1": "var(mediumGray)",
         "loadingBall2": "var(blue)",
-        "previewFg": "white",
+        "previewFg": "var(foreground)",
         "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
         "consoleBorder": "var(background)",
         "hazardButtonBg": "var(red)",
@@ -1967,7 +1970,7 @@
         },
         {
             "class": "location_bar_row",
-            "layer0.tint": "var(locationBarRowBgHover)",
+            "layer0.tint": "var(locationBarRowBg)",
             "layer0.opacity": 0
         },
         {
@@ -1983,7 +1986,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(accentLightest)",
+            "layer0.tint": "var(locationBarRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -2213,14 +2216,16 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.2
+            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.opacity": 1
         },
         {
             "class": "table_of_contents_row_container",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 0.4
+            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.opacity": 1
         },
         {
             "class": "table_of_contents_heading",
@@ -2271,7 +2276,7 @@
         },
         {
             "class": "commit_summary_control",
-            "layer0.tint": "var(accentLight)",
+            "layer0.tint": "var(commitRowBgHover)",
             "layer0.opacity": 0,
             "content_margin": [
                 8,
@@ -4095,7 +4100,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(accentLightest)",
+            "layer0.tint": "var(preferencesSectionTableRowBg)",
             "layer0.opacity": 1,
             "content_margin": [
                 0,

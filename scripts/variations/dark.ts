@@ -20,6 +20,7 @@ export const dark = {
     diffAdded: ui.diffAdded,
     diffModified: ui.diffModified,
     diffDeleted: ui.diffDeleted,
+    transparent: "transparent",
 
     colorAccent: '#80CBC4',
     accentDark: 'color(var(background) l(- 0.75%))',
@@ -85,12 +86,13 @@ export const dark = {
     locationBarFg: 'var(foreground)',
     locationBarHeadingFg: 'var(foreground)',
     locationBarHeadingShadow: 'black',
-    locationBarRowBgHover: 'var(accentLight)',
-    disclosureFg: 'white',
+    locationBarRowBg: 'var(accentLight)',
+    locationBarRowBgHover: 'var(accentLighter)',
+    disclosureFg: 'var(foreground)',
 
     // Section: Commit list
-    commitListBg: 'var(background)',
-    commitRowBgHover: 'var(background)',
+    commitListBg: 'var(accentLight)',
+    commitRowBgHover: 'var(accentLighter)',
     commitSummaryFgPrimary: 'var(foreground)',
     commitSummaryFgSecondary: 'var(foreground)',
 
@@ -109,7 +111,8 @@ export const dark = {
     tableOfContentsBg: 'var(background)',
     tableOfContentsFg: 'var(foreground)',
     tableOfContentsHeadingFg: 'var(foreground)',
-    tableOfContentsRowBg: 'var(background)',
+    tableOfContentsRowBg: 'var(accentLight)',
+    tableOfContentsRowBgHover: 'var(accentLighter)',
 
     // Section: Detail panel
     detailPanelBg: 'var(background)',
@@ -124,23 +127,23 @@ export const dark = {
     outputCanceledFg: "var(red)",
 
     // Section: Tool Tips
-    toolTipBg: 'var(accentLight)',
     toolTipFg: 'var(foreground)',
+    toolTipBg: 'var(accentLight)',
 
     // Section: Annotations
-    headAnnFg: 'var(darkGray)',
+    headAnnFg: 'var(foreground)',
     headAnnBg: 'var(purple)',
 
-    branchAnnFg: 'var(darkGray)',
+    branchAnnFg: 'var(foreground)',
     branchAnnBg: 'var(blue)',
 
-    remoteAnnFg: 'var(darkGray)',
+    remoteAnnFg: 'var(foreground)',
     remoteAnnBg: 'var(cyan)',
 
-    tagAnnFg: 'var(darkGray)',
+    tagAnnFg: 'var(foreground)',
     tagAnnBg: 'var(yellow)',
 
-    stashAnnFg: 'var(darkGray)',
+    stashAnnFg: 'var(foreground)',
     stashAnnBg: 'var(orange)',
 
     fileAnnFg: 'var(foreground)',
@@ -262,7 +265,7 @@ export const dark = {
     loadingBall2: 'var(blue)',
 
     // Section: Command Palette
-    previewFg: 'white',
+    previewFg: 'var(foreground)',
 
     // Section: Merge Helper
     mergeHelperHighlightBg: 'color(var(accentLightest) l(25%))',

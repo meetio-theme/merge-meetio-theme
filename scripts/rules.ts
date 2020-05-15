@@ -1208,7 +1208,7 @@ export const rules = [
     },
     {
         class: 'location_bar_row',
-        'layer0.tint': 'var(locationBarRowBgHover)',
+        'layer0.tint': 'var(locationBarRowBg)',
         'layer0.opacity': 0.0,
     },
     {
@@ -1220,7 +1220,7 @@ export const rules = [
     {
         class: 'location_bar_row',
         attributes: ['selected'],
-        'layer0.tint': 'var(accentLightest)',
+        'layer0.tint': 'var(locationBarRowBgHover)',
         'layer0.opacity': 1.0,
     },
     {
@@ -1389,12 +1389,14 @@ export const rules = [
     {
         class: 'table_of_contents_row_container',
         attributes: ['hover'],
-        'layer0.opacity': 0.2,
+        'layer0.tint': 'var(tableOfContentsRowBg)',
+        'layer0.opacity': 1.0,
     },
     {
         class: 'table_of_contents_row_container',
         attributes: ['selected'],
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(tableOfContentsRowBg)',
+        'layer0.opacity': 1.0,
     },
 
     {
@@ -1430,7 +1432,7 @@ export const rules = [
     },
     {
         class: 'commit_summary_control',
-        'layer0.tint': 'var(accentLight)',
+        'layer0.tint': 'var(commitRowBgHover)',
         'layer0.opacity': 0.0,
         content_margin: [8, 8, 4, 8],
     },
@@ -2637,7 +2639,7 @@ export const rules = [
     {
         class: 'preferences_section_table_row',
         attributes: ['selected'],
-        'layer0.tint': 'var(accentLightest)',
+        'layer0.tint': 'var(preferencesSectionTableRowBg)',
         'layer0.opacity': 1.0,
         content_margin: [0, 16, 0, 0],
     },
