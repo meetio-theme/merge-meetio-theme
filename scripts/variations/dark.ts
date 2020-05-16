@@ -148,6 +148,8 @@ export const dark = {
 
     fileAnnFg: 'var(foreground)',
     fileAnnBg: 'color(var(cyan) a(0.50))',
+    fileAnnIconAheadFg: 'var(green)',
+    fileAnnIconBehindFg: 'var(red)',
 
     submoduleAnnBg: 'var(darkGrayLightest)',
     submoduleLightAnnBg: 'var(darkGrayLightest)',

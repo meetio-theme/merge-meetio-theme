@@ -1265,15 +1265,15 @@ export const rules = [
     {
         class: 'icon_behind',
         'layer0.texture': 'Theme - Merge/icon_behind.png',
-        'layer0.tint': 'var(fileAnnFg)',
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(fileAnnIconBehindFg)',
+        'layer0.opacity': 1.0,
         content_margin: [4, 5, 5, 5],
     },
     {
         class: 'icon_ahead',
         'layer0.texture': 'Theme - Merge/icon_ahead.png',
-        'layer0.tint': 'var(fileAnnFg)',
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(fileAnnIconAheadFg)',
+        'layer0.opacity': 1.0,
         content_margin: [4, 5, 5, 5],
     },
     {
