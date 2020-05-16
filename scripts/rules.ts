@@ -3023,7 +3023,7 @@ export const rules = [
     {
         class: 'tab_close_button',
         settings: ['show_tab_close_buttons'],
-        'layer0.texture': 'Theme - Default/common/light/tab_close.png',
+        'layer0.texture': 'Theme - Default/common/dark/tab_close.png',
         content_margin: [10, 9],
     },
     {
