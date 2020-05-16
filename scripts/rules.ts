@@ -39,7 +39,7 @@ export const rules = [
     },
     {
         class: 'root_tabs',
-        'layer0.tint': 'var(repositoryTabBarBg)',
+        'layer0.tint': 'var(tabBarBg)',
         'layer0.opacity': 1.0,
     },
 
@@ -374,13 +374,13 @@ export const rules = [
         ],
         content_margin: [13, 13, 0, 0],
         'layer0.texture': 'Theme - Merge/radio_button_back.png',
-        'layer0.tint': 'var(radio_back)',
+        'layer0.tint': 'var(radioBack)',
         'layer0.opacity': 1,
         'layer1.texture': 'Theme - Merge/radio_button_border.png',
-        'layer1.tint': 'var(radio_border-unselected)',
+        'layer1.tint': 'var(radioBorderSelected)',
         'layer1.opacity': 1,
         'layer2.texture': 'Theme - Merge/radio_button_on.png',
-        'layer2.tint': 'var(radio_selected)',
+        'layer2.tint': 'var(radioSelected)',
         'layer2.opacity': 0,
     },
     {
@@ -389,7 +389,7 @@ export const rules = [
             { class: 'radio_button_list_control' },
             { class: 'checkbox_control', attributes: ['hover'] },
         ],
-        'layer1.tint': 'var(radio_border-selected)',
+        'layer1.tint': 'var(radioBorderSelected)',
     },
     {
         class: 'checkbox_box_control',
@@ -397,7 +397,7 @@ export const rules = [
             { class: 'radio_button_list_control' },
             { class: 'checkbox_control', attributes: ['checked'] },
         ],
-        'layer1.tint': 'var(radio_border-selected)',
+        'layer1.tint': 'var(radioBorderSelected)',
         'layer2.opacity': 1,
     },
 
@@ -645,7 +645,7 @@ export const rules = [
     {
         class: 'title_bar',
         attributes: ['panel_visible'],
-        bg: 'var(repositoryTabBarBg)',
+        bg: 'var(headerBg)',
     },
     {
         class: 'header',
@@ -731,14 +731,14 @@ export const rules = [
             interpolation: 'smoothstep',
         },
         'layer1.texture': 'Theme - Merge/icon_output_prompt.png',
-        'layer1.tint': 'var(output_fg)',
+        'layer1.tint': 'var(colorAccent)',
         'layer1.opacity': {
             target: 0.6,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
         'layer2.texture': 'Theme - Merge/icon_output_none.png',
-        'layer2.tint': 'var(output_fg)',
+        'layer2.tint': 'var(colorAccent)',
         'layer2.opacity': {
             target: 0.8,
             speed: 4.0,
@@ -2499,7 +2499,7 @@ export const rules = [
     {
         class: 'icon_deleted',
         parents: [{ class: 'staged_badge' }],
-        'layer0.tint': 'var(fileBadgeStagedFg)',
+        'layer0.tint': 'var(fileBadgeModifiedRightFg)',
     },
 
     // Welcome overlay
@@ -2595,7 +2595,7 @@ export const rules = [
     },
     {
         class: 'git_output_data_container',
-        'layer0.tint': 'var(--background)',
+        'layer0.tint': 'var(gitOutputPanelBg)',
         'layer0.opacity': 1.0,
         content_margin: [6, 6, 4, 6],
     },
@@ -3078,13 +3078,15 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'new_tab_button' }],
-        fg: 'color(var(labelColor) a(0.7))',
+        fg: "var(colorAccent)",
+        opacity: "var(iconButtonOpacity)",
         'font.bold': true,
     },
     {
         class: 'label_control',
         parents: [{ class: 'new_tab_button', attributes: ['hover'] }],
-        fg: 'var(labelColor)',
+        fg: "var(colorAccent)",
+        opacity: "var(iconButtonOpacityHover)",
         'font.bold': true,
     },
 ];

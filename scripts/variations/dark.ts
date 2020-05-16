@@ -126,6 +126,10 @@ export const dark = {
     outputRunningFg: "var(cyan)",
     outputCanceledFg: "var(red)",
 
+    // Section: Git Output Panel
+    gitOutputPanelBg: "var(accentLight)",
+    gitOutputPanelFg: "var(foreground)",
+
     // Section: Tool Tips
     toolTipFg: 'var(foreground)',
     toolTipBg: 'var(accentLight)',
@@ -228,13 +232,13 @@ export const dark = {
 
     // Section: Radio buttons
     radioBack: 'var(--background)',
-    radioSelected: 'var(blue)',
-    radioBorderSelected: 'var(blue)',
+    radioSelected: 'var(colorAccent)',
+    radioBorderSelected: 'var(colorAccent)',
 
     // Section: Checkbox buttons
     checkboxBack: 'var(--background)',
-    checkboxSelected: 'var(blue)',
-    checkboxBorderSelected: 'var(blue)',
+    checkboxSelected: 'var(colorAccent)',
+    checkboxBorderSelected: 'var(colorAccent)',
 
     // Section: Dialogs
     dialogBg: 'var(background)',
@@ -277,7 +281,7 @@ export const dark = {
     hazardButtonBg: 'var(red)',
 
     // Section: Tabs
-    repositoryTabBarBg: 'var(background)',
+    repositoryTabBarBg: 'var(accentLight)',
     repositoryTabBarBorderBg: 'var(background)',
 
 
