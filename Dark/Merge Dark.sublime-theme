@@ -667,7 +667,7 @@
                     "class": "details_tab_bar"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(0.8))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -676,7 +676,7 @@
                     "class": "all_button"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -691,7 +691,7 @@
                     ]
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "checkbox_box_control",
@@ -3769,7 +3769,7 @@
         },
         {
             "class": "modified_badge",
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(fileBadgeModifiedBg)"
         },
         {
             "class": "modified_badge",
