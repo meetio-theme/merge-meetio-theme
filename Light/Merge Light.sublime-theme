@@ -365,7 +365,7 @@
                     ]
                 }
             ],
-            "fg": "var(hazard_button_fg)",
+            "fg": "var(foreground)",
             "shadow_color": "var(hazard_button_shadow)",
             "shadow_offset": [
                 0,
@@ -639,7 +639,7 @@
                     "class": "details_tab_bar"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(0.8))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -648,7 +648,7 @@
                     "class": "all_button"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -663,7 +663,7 @@
                     ]
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "checkbox_box_control",
@@ -3447,7 +3447,7 @@
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer0.tint": "var(disclosure_fg)",
+            "layer0.tint": "var(disclosureFg)",
             "content_margin": [
                 8,
                 8
@@ -3529,7 +3529,7 @@
         },
         {
             "class": "commit_author",
-            "color": "var(author_fg)"
+            "color": "var(foreground)"
         },
         {
             "class": "commit_author_container",
@@ -3660,7 +3660,7 @@
                     ]
                 }
             ],
-            "fg": "color(var(hunk_button_fg) a(0))",
+            "fg": "color(var(hunkButtonFg) a(0))",
             "shadow_offset": [
                 0,
                 0
@@ -3682,8 +3682,8 @@
                     ]
                 }
             ],
-            "fg": "var(hunk_button_fg)",
-            "shadow_color": "var(hunk_button_shadow)",
+            "fg": "var(hunkButtonFg)",
+            "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
                 1
@@ -3705,8 +3705,8 @@
                     ]
                 }
             ],
-            "fg": "var(hunk_button_fg)",
-            "shadow_color": "var(hunk_button_shadow)",
+            "fg": "var(hunkButtonFg)",
+            "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
                 1
@@ -3741,7 +3741,7 @@
         },
         {
             "class": "modified_badge",
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(fileBadgeModifiedBg)"
         },
         {
             "class": "modified_badge",
@@ -3753,11 +3753,11 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(fileHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeModifiedHover)"
         },
         {
             "class": "unmerged_badge",
-            "layer0.tint": "var(file_badge_unmerged_bg)"
+            "layer0.tint": "var(fileBadgeUnmergedBg)"
         },
         {
             "class": "unmerged_badge",
@@ -3769,15 +3769,15 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(unmergedHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeUnmergedHover)"
         },
         {
             "class": "untracked_badge",
-            "layer0.tint": "var(file_badge_untracked_bg)"
+            "layer0.tint": "var(fileBadgeUntrackedBg)"
         },
         {
             "class": "staged_badge",
-            "layer0.tint": "var(file_badge_staged_bg)"
+            "layer0.tint": "var(fileBadgeStagedBg)"
         },
         {
             "class": "staged_badge",
@@ -3786,7 +3786,7 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(fileHeaderBg)"
+            "layer0.tint": "var(fileBadgeStagedBg)"
         },
         {
             "class": "staged_badge",
@@ -3798,7 +3798,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(fileHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeStagedBgHover)"
         },
         {
             "class": "label_control",
@@ -3807,7 +3807,7 @@
                     "class": "file_badge"
                 }
             ],
-            "font.bold": true
+            "font.bold": false
         },
         {
             "class": "label_control",
@@ -3816,7 +3816,7 @@
                     "class": "modified_badge"
                 }
             ],
-            "fg": "var(file_badge_modified_fg)"
+            "fg": "var(fileBadgeModifiedLeftFg)"
         },
         {
             "class": "label_control",
@@ -3834,7 +3834,7 @@
                     "class": "untracked_badge"
                 }
             ],
-            "fg": "var(file_badge_untracked_fg)"
+            "fg": "var(fileBadgeUntrackedFg)"
         },
         {
             "class": "label_control",
@@ -3843,7 +3843,7 @@
                     "class": "staged_badge"
                 }
             ],
-            "fg": "var(file_badge_staged_fg)"
+            "fg": "var(fileBadgeStagedFg)"
         },
         {
             "class": "icon_deleted",
@@ -3852,7 +3852,7 @@
                     "class": "modified_badge"
                 }
             ],
-            "layer0.tint": "var(file_badge_modified_fg)"
+            "layer0.tint": "var(fileBadgeModifiedRightFg)"
         },
         {
             "class": "icon_deleted",
@@ -3861,7 +3861,7 @@
                     "class": "staged_badge"
                 }
             ],
-            "layer0.tint": "var(file_badge_staged_fg)"
+            "layer0.tint": "var(fileBadgeStagedFg)"
         },
         {
             "class": "welcome_overlay",
@@ -4404,7 +4404,7 @@
         },
         {
             "class": "use_hunk_button",
-            "layer0.tint": "var(use_hunk_button_fg)",
+            "layer0.tint": "var(hunkButtonFg)",
             "layer0.opacity": {
                 "target": 0.8,
                 "speed": 4,

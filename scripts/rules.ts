@@ -138,7 +138,7 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'button_control', attributes: ['confirm'] }],
-        fg: 'var(hazard_button_fg)',
+        fg: 'var(foreground)',
         shadow_color: 'var(hazard_button_shadow)',
         shadow_offset: [0, 1],
     },
@@ -318,12 +318,12 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'details_tab_bar' }],
-        fg: 'color(var(tab_button_fg) a(0.8))',
+        fg: 'var(foreground)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'all_button' }],
-        fg: 'color(var(tab_button_fg) a(1.0))',
+        fg: 'var(foreground)',
     },
     {
         class: 'label_control',
@@ -331,7 +331,7 @@ export const rules = [
             { class: 'details_tab_bar' },
             { class: 'tab', attributes: ['selected'] },
         ],
-        fg: 'color(var(tab_button_fg) a(1.0))',
+        fg: 'var(foreground)',
     },
     // Checkboxes
     {
@@ -2259,7 +2259,7 @@ export const rules = [
             speed: 4.0,
             interpolation: 'smoothstep',
         },
-        'layer0.tint': 'var(disclosure_fg)',
+        'layer0.tint': 'var(disclosureFg)',
         content_margin: [8, 8],
     },
     {
@@ -2313,7 +2313,7 @@ export const rules = [
     // Commit dialog
     {
         class: 'commit_author',
-        color: 'var(author_fg)',
+        color: 'var(foreground)',
     },
     {
         class: 'commit_author_container',
@@ -2386,7 +2386,7 @@ export const rules = [
             { class: 'file_diff_hunk_container' },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'color(var(hunk_button_fg) a(0))',
+        fg: 'color(var(hunkButtonFg) a(0))',
         shadow_offset: [0, 0],
     },
     {
@@ -2395,8 +2395,8 @@ export const rules = [
             { class: 'file_diff_hunk_container', attributes: ['hover'] },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'var(hunk_button_fg)',
-        shadow_color: 'var(hunk_button_shadow)',
+        fg: 'var(hunkButtonFg)',
+        shadow_color: 'var(hunkButtonShadow)',
         shadow_offset: [0, 1],
     },
     {
@@ -2405,8 +2405,8 @@ export const rules = [
             { class: 'file_diff_hunk_header', attributes: ['selected'] },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'var(hunk_button_fg)',
-        shadow_color: 'var(hunk_button_shadow)',
+        fg: 'var(hunkButtonFg)',
+        shadow_color: 'var(hunkButtonShadow)',
         shadow_offset: [0, 1],
     },
 
@@ -2432,49 +2432,49 @@ export const rules = [
     },
     {
         class: 'modified_badge',
-        'layer0.tint': 'var(file_badge_modified_bg)',
+        'layer0.tint': 'var(fileBadgeModifiedBg)',
     },
     {
         class: 'modified_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(fileHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeModifiedHover)',
     },
     {
         class: 'unmerged_badge',
-        'layer0.tint': 'var(file_badge_unmerged_bg)',
+        'layer0.tint': 'var(fileBadgeUnmergedBg)',
     },
     {
         class: 'unmerged_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(unmergedHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeUnmergedHover)',
     },
     {
         class: 'untracked_badge',
-        'layer0.tint': 'var(file_badge_untracked_bg)',
+        'layer0.tint': 'var(fileBadgeUntrackedBg)',
     },
     {
         class: 'staged_badge',
-        'layer0.tint': 'var(file_badge_staged_bg)',
+        'layer0.tint': 'var(fileBadgeStagedBg)',
     },
     {
         class: 'staged_badge',
         parents: [{ class: 'file_diff_header' }],
-        'layer0.tint': 'var(fileHeaderBg)',
+        'layer0.tint': 'var(fileBadgeStagedBg)',
     },
     {
         class: 'staged_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(fileHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeStagedBgHover)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'file_badge' }],
-        'font.bold': true,
+        'font.bold': false,
     },
     {
         class: 'label_control',
         parents: [{ class: 'modified_badge' }],
-        fg: 'var(file_badge_modified_fg)',
+        fg: 'var(fileBadgeModifiedLeftFg)',
     },
     {
         class: 'label_control',
@@ -2484,22 +2484,22 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'untracked_badge' }],
-        fg: 'var(file_badge_untracked_fg)',
+        fg: 'var(fileBadgeUntrackedFg)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'staged_badge' }],
-        fg: 'var(file_badge_staged_fg)',
+        fg: 'var(fileBadgeStagedFg)',
     },
     {
         class: 'icon_deleted',
         parents: [{ class: 'modified_badge' }],
-        'layer0.tint': 'var(file_badge_modified_fg)',
+        'layer0.tint': 'var(fileBadgeModifiedRightFg)',
     },
     {
         class: 'icon_deleted',
         parents: [{ class: 'staged_badge' }],
-        'layer0.tint': 'var(file_badge_staged_fg)',
+        'layer0.tint': 'var(fileBadgeStagedFg)',
     },
 
     // Welcome overlay
@@ -2844,7 +2844,7 @@ export const rules = [
     },
     {
         class: 'use_hunk_button',
-        'layer0.tint': 'var(use_hunk_button_fg)',
+        'layer0.tint': 'var(hunkButtonFg)',
         'layer0.opacity': {
             target: 0.8,
             speed: 4.0,

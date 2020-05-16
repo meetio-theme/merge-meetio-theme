@@ -278,10 +278,19 @@ export const dark = {
     repositoryTabBarBg: 'var(background)',
     repositoryTabBarBorderBg: 'var(background)',
 
-    fileBadgeModifiedFg: 'var(mediumGray)',
-    fileBadgeUnmergedFg: '#2e1d07',
-    fileBadgeUntrackedBg: 'var(detailPanelBg)',
-    fileBadgeUntrackedFg: 'var(mediumGray-dark)',
-    fileBadgeStagedBg: 'var(fileHeaderBg)',
-    fileBadgeStagedFg: 'var(mediumGray-light)',
+
+    // Section: Commit Area -> Modified & Unstaged Files
+    fileBadgeModifiedLeftFg: 'var(foreground)',
+    fileBadgeModifiedRightFg: 'var(red)',
+    fileBadgeModifiedBg: 'color(white a(0.2))',
+    fileBadgeModifiedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUnmergedFg: 'var(foreground)',
+    fileBadgeUnmergedBg: 'color(white a(0.2))',
+    fileBadgeUnmergedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedBg: 'color(white a(0.2))',
+    fileBadgeUntrackedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedFg: 'var(foreground)',
+    fileBadgeStagedBg: 'color(white a(0.2))',
+    fileBadgeStagedBgHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeStagedFg: 'var(foreground)',
 };
