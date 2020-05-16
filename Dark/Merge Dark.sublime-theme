@@ -92,18 +92,18 @@
         "outputCanceledFg": "var(red)",
         "toolTipFg": "var(foreground)",
         "toolTipBg": "var(accentLight)",
-        "headAnnFg": "var(foreground)",
+        "headAnnFg": "var(background)",
         "headAnnBg": "var(purple)",
-        "branchAnnFg": "var(foreground)",
+        "branchAnnFg": "var(background)",
         "branchAnnBg": "var(blue)",
-        "remoteAnnFg": "var(foreground)",
+        "remoteAnnFg": "var(background)",
         "remoteAnnBg": "var(cyan)",
-        "tagAnnFg": "var(foreground)",
+        "tagAnnFg": "var(background)",
         "tagAnnBg": "var(yellow)",
-        "stashAnnFg": "var(foreground)",
+        "stashAnnFg": "var(background)",
         "stashAnnBg": "var(orange)",
         "fileAnnFg": "var(foreground)",
-        "fileAnnBg": "color(var(accentLightest) a(0.75))",
+        "fileAnnBg": "color(var(cyan) a(0.50))",
         "submoduleAnnBg": "var(darkGrayLightest)",
         "submoduleLightAnnBg": "var(darkGrayLightest)",
         "insertedAnnBg": "color(var(cyan) a(0.50))",
@@ -997,11 +997,11 @@
                 20,
                 5
             ],
-            "layer1.tint": "var(inputBorderColor)",
+            "layer1.tint": "color(var(accentLightest) a(0.5))",
             "layer1.opacity": 1,
             "layer1.inner_margin": "var(inputBorderSize)",
             "layer1.draw_center": false,
-            "color_scheme_tint": "var(inputBackground)"
+            "color_scheme_tint": "color(var(accentLightest) a(0.15))"
         },
         {
             "class": "text_line_control",
@@ -1299,7 +1299,7 @@
         },
         {
             "class": "git_output_button cancelled",
-            "layer2.tint": "var(outputCancelledFg)",
+            "layer2.tint": "var(outputCanceledFg)",
             "layer2.texture": "Theme - Merge/icon_output_cancelled.png"
         },
         {
@@ -2216,7 +2216,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -2224,7 +2224,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
             "layer0.opacity": 1
         },
         {

@@ -19,6 +19,7 @@
         "diffAdded": "#9ccc65",
         "diffModified": "#e2b93d",
         "diffDeleted": "#ef5350",
+        "transparent": "transparent",
         "accentDark": "color(var(background) l(- 0.75%))",
         "accentDarker": "color(var(background) l(- 1.00%))",
         "accentDarkest": "color(var(background) l(- 2.00%))",
@@ -968,11 +969,11 @@
                 20,
                 5
             ],
-            "layer1.tint": "var(inputBorderColor)",
+            "layer1.tint": "color(var(accentLightest) a(0.5))",
             "layer1.opacity": 1,
             "layer1.inner_margin": "var(inputBorderSize)",
             "layer1.draw_center": false,
-            "color_scheme_tint": "var(inputBackground)"
+            "color_scheme_tint": "color(var(accentLightest) a(0.15))"
         },
         {
             "class": "text_line_control",
@@ -1270,7 +1271,7 @@
         },
         {
             "class": "git_output_button cancelled",
-            "layer2.tint": "var(outputCancelledFg)",
+            "layer2.tint": "var(outputCanceledFg)",
             "layer2.texture": "Theme - Merge/icon_output_cancelled.png"
         },
         {
@@ -2187,7 +2188,7 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -2195,7 +2196,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(tableOfContentsRowBg)",
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
             "layer0.opacity": 1
         },
         {

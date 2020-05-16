@@ -539,11 +539,11 @@ export const rules = [
         class: 'text_line_control',
         'layer0.opacity': 0.0,
         'layer0.inner_margin': [20, 5, 20, 5],
-        'layer1.tint': 'var(inputBorderColor)',
+        'layer1.tint': 'color(var(accentLightest) a(0.5))',
         'layer1.opacity': 1.0,
         'layer1.inner_margin': 'var(inputBorderSize)',
         'layer1.draw_center': false,
-        color_scheme_tint: 'var(inputBackground)',
+        color_scheme_tint: 'color(var(accentLightest) a(0.15))',
     },
     {
         class: 'text_line_control',
@@ -763,7 +763,7 @@ export const rules = [
     },
     {
         class: 'git_output_button cancelled',
-        'layer2.tint': 'var(outputCancelledFg)',
+        'layer2.tint': 'var(outputCanceledFg)',
         'layer2.texture': 'Theme - Merge/icon_output_cancelled.png',
     },
     {
@@ -1389,13 +1389,13 @@ export const rules = [
     {
         class: 'table_of_contents_row_container',
         attributes: ['hover'],
-        'layer0.tint': 'var(tableOfContentsRowBg)',
+        'layer0.tint': 'var(tableOfContentsRowBgHover)',
         'layer0.opacity': 1.0,
     },
     {
         class: 'table_of_contents_row_container',
         attributes: ['selected'],
-        'layer0.tint': 'var(tableOfContentsRowBg)',
+        'layer0.tint': 'var(tableOfContentsRowBgHover)',
         'layer0.opacity': 1.0,
     },
 

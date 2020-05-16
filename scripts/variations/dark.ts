@@ -131,23 +131,23 @@ export const dark = {
     toolTipBg: 'var(accentLight)',
 
     // Section: Annotations
-    headAnnFg: 'var(foreground)',
+    headAnnFg: 'var(background)',
     headAnnBg: 'var(purple)',
 
-    branchAnnFg: 'var(foreground)',
+    branchAnnFg: 'var(background)',
     branchAnnBg: 'var(blue)',
 
-    remoteAnnFg: 'var(foreground)',
+    remoteAnnFg: 'var(background)',
     remoteAnnBg: 'var(cyan)',
 
-    tagAnnFg: 'var(foreground)',
+    tagAnnFg: 'var(background)',
     tagAnnBg: 'var(yellow)',
 
-    stashAnnFg: 'var(foreground)',
+    stashAnnFg: 'var(background)',
     stashAnnBg: 'var(orange)',
 
     fileAnnFg: 'var(foreground)',
-    fileAnnBg: 'color(var(accentLightest) a(0.75))',
+    fileAnnBg: 'color(var(cyan) a(0.50))',
 
     submoduleAnnBg: 'var(darkGrayLightest)',
     submoduleLightAnnBg: 'var(darkGrayLightest)',
