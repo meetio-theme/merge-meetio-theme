@@ -20,6 +20,7 @@ export const light = {
     diffAdded: ui.diffAdded,
     diffModified: ui.diffModified,
     diffDeleted: ui.diffDeleted,
+    transparent: "transparent",
 
     accentDark: "color(var(background) l(- 0.75%))",
     accentDarker: "color(var(background) l(- 1.00%))",
@@ -72,7 +73,8 @@ export const light = {
 
     // Welcome overlay
     welcomeBg: "var(accentDarkest)",
-    recentRepositoriesRowBgHover: "var(background)",
+    recentRepositoriesRowBg: 'var(accentLight)',
+    recentRepositoriesRowBgHover: 'var(accentLightest)',
 
     // Preferences Page
     preferencesOverlayBg: "var(background)",
@@ -84,14 +86,15 @@ export const light = {
     locationBarFg: "var(foreground)",
     locationBarHeadingFg: "var(foreground)",
     locationBarHeadingShadow: "black",
-    locationBarRowBgHover: "var(accentLight)",
-    disclosureFg: "white",
+    locationBarRowBg: 'var(accentLight)',
+    locationBarRowBgHover: 'var(accentLighter)',
+    disclosureFg: 'var(foreground)',
 
-    // Commit list
-    commitListBg: "var(background)",
-    commitRowBgHover: "var(background)",
-    commitSummaryFgPrimary: "var(foreground)",
-    commitSummaryFgSecondary: "var(foreground)",
+    // Section: Commit list
+    commitListBg: 'var(accentLight)',
+    commitRowBgHover: 'var(accentLighter)',
+    commitSummaryFgPrimary: 'var(foreground)',
+    commitSummaryFgSecondary: 'var(foreground)',
 
     commitEdge0: "var(blue)",
     commitEdge1: "var(purple)",
@@ -102,12 +105,14 @@ export const light = {
 
     // Sidebar Bar
     sideBarContainerBg: "var(background)",
+    sideBarContainerBgWithGraph: 'var(accentLight)',
 
     // Table of Contents
     tableOfContentsBg: "var(background)",
     tableOfContentsFg: "var(foreground)",
     tableOfContentsHeadingFg: "var(foreground)",
-    tableOfContentsRowBg: "var(background)",
+    tableOfContentsRowBg: 'var(accentLight)',
+    tableOfContentsRowBgHover: 'var(accentLighter)',
 
     // Detail panel
     detailPanelBg: "var(background)",
@@ -121,28 +126,34 @@ export const light = {
     outputRunningFg: "var(cyan)",
     outputCanceledFg: "var(red)",
 
+    // Section: Git Output Panel
+    gitOutputPanelBg: "var(accentLight)",
+    gitOutputPanelFg: "var(foreground)",
+
     // Tool Tips
-    toolTipBg: "var(accentLight)",
     toolTipFg: "var(foreground)",
+    toolTipBg: "var(accentLight)",
 
     // Annotations
-    headAnnFg: "var(foreground)",
+    headAnnFg: "var(background)",
     headAnnBg: "var(purple)",
 
-    branchAnnFg: "var(foreground)",
+    branchAnnFg: "var(background)",
     branchAnnBg: "var(blue)",
 
-    remoteAnnFg: "var(foreground)",
+    remoteAnnFg: "var(background)",
     remoteAnnBg: "var(cyan)",
 
-    tagAnnFg: "var(foreground)",
+    tagAnnFg: "var(background)",
     tagAnnBg: "var(yellow)",
 
-    stashAnnFg: "var(foreground)",
+    stashAnnFg: "var(background)",
     stashAnnBg: "var(orange)",
 
     fileAnnFg: "var(foreground)",
     fileAnnBg: "color(var(accentLightest) a(0.75))",
+    fileAnnIconAheadFg: 'var(green)',
+    fileAnnIconBehindFg: 'var(red)',
 
     submoduleAnnBg: "var(darkGrayLightest)",
     submoduleLightAnnBg: "var(darkGrayLightest)",
@@ -154,7 +165,7 @@ export const light = {
     fileDiffShadow: "color(black a(0.5))",
     fileIconBg: "color(white a(0.2))",
 
-    hunkButtonFg: "#eee",
+    hunkButtonFg: "var(foreground)",
     hunkButtonShadow: "color(black a(0.5))",
 
     fileHeaderBg: "var(background)",
@@ -188,8 +199,16 @@ export const light = {
 
     // Buttons
     buttonBg: "var(accentLighter)",
+    buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
     buttonFg: "var(labelColor)",
     buttonShadow: "color(black a(0.5))",
+    buttonBgHover: 'color(var(colorAccent) a(0.2))',
+
+        // Section: Inputs
+    inputBackground: 'var(background)',
+    inputBackgroundWelcome: 'var(welcomeBg)',
+    inputBorderColor: 'color(var(background) l(+ 2%))',
+    inputBorderSize: [0, 0, 0, 2],
 
     highlightedButtonLightBg: "color(hsl(84, 35%, 50%))",
     highlightedButtonLightFg: "var(labelColor)",
@@ -201,19 +220,25 @@ export const light = {
     toggleButtonFg: "var(foreground)",
     toggleButtonFgSelected: "var(foreground)",
 
-    // Tabs
-    tabBarBg: "var(background)",
-    tabSeparatorBg: "var(accentLighter)",
+    // Section: Tabs
+    tabBarBg: 'var(background)',
+    tabSeparatorBg: 'var(accentLighter)',
+    tabBackground: ['background', 1],
+    tabSelectedBorderColor: 'var(colorAccent)',
+    tabSelectedBorderSize: [0, 0, 0, 2],
+    tabLabelColor: "color(var(foreground) a(0.50))",
+    tabLabelColorHover: "color(var(colorAccent) a(1.0))",
+    tabLabelColorSelected: "color(var(colorAccent) a(1.0))",
 
-    // Radio buttons
-    radioBack: "var(--background)",
-    radioSelected: "var(blue)",
-    radioBorderSelected: "var(blue)",
+    // Section: Radio buttons
+    radioBack: 'var(--background)',
+    radioSelected: 'var(colorAccent)',
+    radioBorderSelected: 'var(colorAccent)',
 
-    // Checkbox buttons
-    checkboxBack: "var(--background)",
-    checkboxSelected: "var(blue)",
-    checkboxBorderSelected: "var(blue)",
+    // Section: Checkbox buttons
+    checkboxBack: 'var(--background)',
+    checkboxSelected: 'var(colorAccent)',
+    checkboxBorderSelected: 'var(colorAccent)',
 
     // Dialogs
     dialogBg: "var(background)",
@@ -246,7 +271,7 @@ export const light = {
     loadingBall2: "var(blue)",
 
     // Command Palette
-    previewFg: "white",
+    previewFg: "var(foreground)",
 
     // Merge Helper
     mergeHelperHighlightBg: "color(var(accentLightest) l(25%))",
@@ -259,10 +284,18 @@ export const light = {
     repositoryTabBarBg: "var(background)",
     repositoryTabBarBorderBg: "var(background)",
 
-    fileBadgeModifiedFg: "var(mediumGray)",
-    fileBadgeUnmergedFg: "#2e1d07",
-    fileBadgeUntrackedBg: "var(detailPanelBg)",
-    fileBadgeUntrackedFg: "var(mediumGray-dark)",
-    fileBadgeStagedBg: "var(fileHeaderBg)",
-    fileBadgeStagedFg: "var(mediumGray-light)",
+    // Section: Commit Area -> Modified & Unstaged Files
+    fileBadgeModifiedLeftFg: 'var(foreground)',
+    fileBadgeModifiedRightFg: 'var(red)',
+    fileBadgeModifiedBg: 'color(white a(0.2))',
+    fileBadgeModifiedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUnmergedFg: 'var(foreground)',
+    fileBadgeUnmergedBg: 'color(white a(0.2))',
+    fileBadgeUnmergedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedBg: 'color(white a(0.2))',
+    fileBadgeUntrackedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedFg: 'var(foreground)',
+    fileBadgeStagedBg: 'color(white a(0.2))',
+    fileBadgeStagedBgHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeStagedFg: 'var(foreground)',
 };

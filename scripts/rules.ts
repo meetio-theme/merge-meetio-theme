@@ -39,7 +39,7 @@ export const rules = [
     },
     {
         class: 'root_tabs',
-        'layer0.tint': 'var(repositoryTabBarBg)',
+        'layer0.tint': 'var(tabBarBg)',
         'layer0.opacity': 1.0,
     },
 
@@ -138,7 +138,7 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'button_control', attributes: ['confirm'] }],
-        fg: 'var(hazard_button_fg)',
+        fg: 'var(foreground)',
         shadow_color: 'var(hazard_button_shadow)',
         shadow_offset: [0, 1],
     },
@@ -318,12 +318,12 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'details_tab_bar' }],
-        fg: 'color(var(tab_button_fg) a(0.8))',
+        fg: 'var(foreground)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'all_button' }],
-        fg: 'color(var(tab_button_fg) a(1.0))',
+        fg: 'var(foreground)',
     },
     {
         class: 'label_control',
@@ -331,7 +331,7 @@ export const rules = [
             { class: 'details_tab_bar' },
             { class: 'tab', attributes: ['selected'] },
         ],
-        fg: 'color(var(tab_button_fg) a(1.0))',
+        fg: 'var(foreground)',
     },
     // Checkboxes
     {
@@ -374,13 +374,13 @@ export const rules = [
         ],
         content_margin: [13, 13, 0, 0],
         'layer0.texture': 'Theme - Merge/radio_button_back.png',
-        'layer0.tint': 'var(radio_back)',
+        'layer0.tint': 'var(radioBack)',
         'layer0.opacity': 1,
         'layer1.texture': 'Theme - Merge/radio_button_border.png',
-        'layer1.tint': 'var(radio_border-unselected)',
+        'layer1.tint': 'var(radioBorderSelected)',
         'layer1.opacity': 1,
         'layer2.texture': 'Theme - Merge/radio_button_on.png',
-        'layer2.tint': 'var(radio_selected)',
+        'layer2.tint': 'var(radioSelected)',
         'layer2.opacity': 0,
     },
     {
@@ -389,7 +389,7 @@ export const rules = [
             { class: 'radio_button_list_control' },
             { class: 'checkbox_control', attributes: ['hover'] },
         ],
-        'layer1.tint': 'var(radio_border-selected)',
+        'layer1.tint': 'var(radioBorderSelected)',
     },
     {
         class: 'checkbox_box_control',
@@ -397,7 +397,7 @@ export const rules = [
             { class: 'radio_button_list_control' },
             { class: 'checkbox_control', attributes: ['checked'] },
         ],
-        'layer1.tint': 'var(radio_border-selected)',
+        'layer1.tint': 'var(radioBorderSelected)',
         'layer2.opacity': 1,
     },
 
@@ -539,11 +539,11 @@ export const rules = [
         class: 'text_line_control',
         'layer0.opacity': 0.0,
         'layer0.inner_margin': [20, 5, 20, 5],
-        'layer1.tint': 'var(inputBorderColor)',
+        'layer1.tint': 'color(var(accentLightest) a(0.5))',
         'layer1.opacity': 1.0,
         'layer1.inner_margin': 'var(inputBorderSize)',
         'layer1.draw_center': false,
-        color_scheme_tint: 'var(inputBackground)',
+        color_scheme_tint: 'color(var(accentLightest) a(0.15))',
     },
     {
         class: 'text_line_control',
@@ -645,7 +645,7 @@ export const rules = [
     {
         class: 'title_bar',
         attributes: ['panel_visible'],
-        bg: 'var(repositoryTabBarBg)',
+        bg: 'var(headerBg)',
     },
     {
         class: 'header',
@@ -731,14 +731,14 @@ export const rules = [
             interpolation: 'smoothstep',
         },
         'layer1.texture': 'Theme - Merge/icon_output_prompt.png',
-        'layer1.tint': 'var(output_fg)',
+        'layer1.tint': 'var(colorAccent)',
         'layer1.opacity': {
             target: 0.6,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
         'layer2.texture': 'Theme - Merge/icon_output_none.png',
-        'layer2.tint': 'var(output_fg)',
+        'layer2.tint': 'var(colorAccent)',
         'layer2.opacity': {
             target: 0.8,
             speed: 4.0,
@@ -763,7 +763,7 @@ export const rules = [
     },
     {
         class: 'git_output_button cancelled',
-        'layer2.tint': 'var(outputCancelledFg)',
+        'layer2.tint': 'var(outputCanceledFg)',
         'layer2.texture': 'Theme - Merge/icon_output_cancelled.png',
     },
     {
@@ -1208,7 +1208,7 @@ export const rules = [
     },
     {
         class: 'location_bar_row',
-        'layer0.tint': 'var(locationBarRowBgHover)',
+        'layer0.tint': 'var(locationBarRowBg)',
         'layer0.opacity': 0.0,
     },
     {
@@ -1220,7 +1220,7 @@ export const rules = [
     {
         class: 'location_bar_row',
         attributes: ['selected'],
-        'layer0.tint': 'var(accentLightest)',
+        'layer0.tint': 'var(locationBarRowBgHover)',
         'layer0.opacity': 1.0,
     },
     {
@@ -1265,15 +1265,15 @@ export const rules = [
     {
         class: 'icon_behind',
         'layer0.texture': 'Theme - Merge/icon_behind.png',
-        'layer0.tint': 'var(fileAnnFg)',
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(fileAnnIconBehindFg)',
+        'layer0.opacity': 1.0,
         content_margin: [4, 5, 5, 5],
     },
     {
         class: 'icon_ahead',
         'layer0.texture': 'Theme - Merge/icon_ahead.png',
-        'layer0.tint': 'var(fileAnnFg)',
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(fileAnnIconAheadFg)',
+        'layer0.opacity': 1.0,
         content_margin: [4, 5, 5, 5],
     },
     {
@@ -1389,12 +1389,14 @@ export const rules = [
     {
         class: 'table_of_contents_row_container',
         attributes: ['hover'],
-        'layer0.opacity': 0.2,
+        'layer0.tint': 'var(tableOfContentsRowBgHover)',
+        'layer0.opacity': 1.0,
     },
     {
         class: 'table_of_contents_row_container',
         attributes: ['selected'],
-        'layer0.opacity': 0.4,
+        'layer0.tint': 'var(tableOfContentsRowBgHover)',
+        'layer0.opacity': 1.0,
     },
 
     {
@@ -1430,7 +1432,7 @@ export const rules = [
     },
     {
         class: 'commit_summary_control',
-        'layer0.tint': 'var(accentLight)',
+        'layer0.tint': 'var(commitRowBgHover)',
         'layer0.opacity': 0.0,
         content_margin: [8, 8, 4, 8],
     },
@@ -2257,7 +2259,7 @@ export const rules = [
             speed: 4.0,
             interpolation: 'smoothstep',
         },
-        'layer0.tint': 'var(disclosure_fg)',
+        'layer0.tint': 'var(disclosureFg)',
         content_margin: [8, 8],
     },
     {
@@ -2311,7 +2313,7 @@ export const rules = [
     // Commit dialog
     {
         class: 'commit_author',
-        color: 'var(author_fg)',
+        color: 'var(foreground)',
     },
     {
         class: 'commit_author_container',
@@ -2384,7 +2386,7 @@ export const rules = [
             { class: 'file_diff_hunk_container' },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'color(var(hunk_button_fg) a(0))',
+        fg: 'color(var(hunkButtonFg) a(0))',
         shadow_offset: [0, 0],
     },
     {
@@ -2393,8 +2395,8 @@ export const rules = [
             { class: 'file_diff_hunk_container', attributes: ['hover'] },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'var(hunk_button_fg)',
-        shadow_color: 'var(hunk_button_shadow)',
+        fg: 'var(hunkButtonFg)',
+        shadow_color: 'var(hunkButtonShadow)',
         shadow_offset: [0, 1],
     },
     {
@@ -2403,8 +2405,8 @@ export const rules = [
             { class: 'file_diff_hunk_header', attributes: ['selected'] },
             { class: 'hunk_button', attributes: ['!confirm'] },
         ],
-        fg: 'var(hunk_button_fg)',
-        shadow_color: 'var(hunk_button_shadow)',
+        fg: 'var(hunkButtonFg)',
+        shadow_color: 'var(hunkButtonShadow)',
         shadow_offset: [0, 1],
     },
 
@@ -2430,49 +2432,49 @@ export const rules = [
     },
     {
         class: 'modified_badge',
-        'layer0.tint': 'var(file_badge_modified_bg)',
+        'layer0.tint': 'var(fileBadgeModifiedBg)',
     },
     {
         class: 'modified_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(fileHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeModifiedHover)',
     },
     {
         class: 'unmerged_badge',
-        'layer0.tint': 'var(file_badge_unmerged_bg)',
+        'layer0.tint': 'var(fileBadgeUnmergedBg)',
     },
     {
         class: 'unmerged_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(unmergedHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeUnmergedHover)',
     },
     {
         class: 'untracked_badge',
-        'layer0.tint': 'var(file_badge_untracked_bg)',
+        'layer0.tint': 'var(fileBadgeUntrackedBg)',
     },
     {
         class: 'staged_badge',
-        'layer0.tint': 'var(file_badge_staged_bg)',
+        'layer0.tint': 'var(fileBadgeStagedBg)',
     },
     {
         class: 'staged_badge',
         parents: [{ class: 'file_diff_header' }],
-        'layer0.tint': 'var(fileHeaderBg)',
+        'layer0.tint': 'var(fileBadgeStagedBg)',
     },
     {
         class: 'staged_badge',
         parents: [{ class: 'file_diff_header', attributes: ['hover'] }],
-        'layer0.tint': 'var(fileHeaderBgHover)',
+        'layer0.tint': 'var(fileBadgeStagedBgHover)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'file_badge' }],
-        'font.bold': true,
+        'font.bold': false,
     },
     {
         class: 'label_control',
         parents: [{ class: 'modified_badge' }],
-        fg: 'var(file_badge_modified_fg)',
+        fg: 'var(fileBadgeModifiedLeftFg)',
     },
     {
         class: 'label_control',
@@ -2482,22 +2484,22 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'untracked_badge' }],
-        fg: 'var(file_badge_untracked_fg)',
+        fg: 'var(fileBadgeUntrackedFg)',
     },
     {
         class: 'label_control',
         parents: [{ class: 'staged_badge' }],
-        fg: 'var(file_badge_staged_fg)',
+        fg: 'var(fileBadgeStagedFg)',
     },
     {
         class: 'icon_deleted',
         parents: [{ class: 'modified_badge' }],
-        'layer0.tint': 'var(file_badge_modified_fg)',
+        'layer0.tint': 'var(fileBadgeModifiedRightFg)',
     },
     {
         class: 'icon_deleted',
         parents: [{ class: 'staged_badge' }],
-        'layer0.tint': 'var(file_badge_staged_fg)',
+        'layer0.tint': 'var(fileBadgeModifiedRightFg)',
     },
 
     // Welcome overlay
@@ -2593,7 +2595,7 @@ export const rules = [
     },
     {
         class: 'git_output_data_container',
-        'layer0.tint': 'var(--background)',
+        'layer0.tint': 'var(gitOutputPanelBg)',
         'layer0.opacity': 1.0,
         content_margin: [6, 6, 4, 6],
     },
@@ -2637,7 +2639,7 @@ export const rules = [
     {
         class: 'preferences_section_table_row',
         attributes: ['selected'],
-        'layer0.tint': 'var(accentLightest)',
+        'layer0.tint': 'var(preferencesSectionTableRowBg)',
         'layer0.opacity': 1.0,
         content_margin: [0, 16, 0, 0],
     },
@@ -2842,7 +2844,7 @@ export const rules = [
     },
     {
         class: 'use_hunk_button',
-        'layer0.tint': 'var(use_hunk_button_fg)',
+        'layer0.tint': 'var(hunkButtonFg)',
         'layer0.opacity': {
             target: 0.8,
             speed: 4.0,
@@ -3021,7 +3023,7 @@ export const rules = [
     {
         class: 'tab_close_button',
         settings: ['show_tab_close_buttons'],
-        'layer0.texture': 'Theme - Default/common/light/tab_close.png',
+        'layer0.texture': 'Theme - Default/common/dark/tab_close.png',
         content_margin: [10, 9],
     },
     {
@@ -3076,13 +3078,15 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'new_tab_button' }],
-        fg: 'color(var(labelColor) a(0.7))',
+        fg: "var(colorAccent)",
+        opacity: "var(iconButtonOpacity)",
         'font.bold': true,
     },
     {
         class: 'label_control',
         parents: [{ class: 'new_tab_button', attributes: ['hover'] }],
-        fg: 'var(labelColor)',
+        fg: "var(colorAccent)",
+        opacity: "var(iconButtonOpacityHover)",
         'font.bold': true,
     },
 ];

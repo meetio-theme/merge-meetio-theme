@@ -19,6 +19,7 @@
         "diffAdded": "#addb67",
         "diffModified": "#e2b93d",
         "diffDeleted": "#ef5350",
+        "transparent": "transparent",
         "colorAccent": "#80CBC4",
         "accentDark": "color(var(background) l(- 0.75%))",
         "accentDarker": "color(var(background) l(- 1.00%))",
@@ -27,6 +28,7 @@
         "accentLighter": "color(var(background) l(+ 4%))",
         "accentLightest": "color(var(background) l(+ 10%))",
         "darkRed": "color(var(red) s(25%) l(35%))",
+        "darkTeal": "color(var(cyan) s(25%) l(35%))",
         "darkBlue": "color(var(blue) s(25%) l(35%))",
         "mediumGray": "hsl(210, 10%, 50%)",
         "darkGrayLightest": "hsl(210, 10%, 19%)",
@@ -47,7 +49,7 @@
         "infoShadow": "color(black a(0.2))",
         "divergedBg": "color(var(orange) l(- 5%) s(- 20%))",
         "divergedButtonBg": "var(buttonBg)",
-        "divergedButtonFg": "var(darkGray)",
+        "divergedButtonFg": "var(foreground)",
         "scrollShadow": "color(black a(0.3))",
         "focusHighlightColor": "var(foreground)",
         "overlayBg": "var(background)",
@@ -61,10 +63,11 @@
         "locationBarFg": "var(foreground)",
         "locationBarHeadingFg": "var(foreground)",
         "locationBarHeadingShadow": "black",
-        "locationBarRowBgHover": "var(accentLight)",
-        "disclosureFg": "white",
-        "commitListBg": "var(background)",
-        "commitRowBgHover": "var(background)",
+        "locationBarRowBg": "var(accentLight)",
+        "locationBarRowBgHover": "var(accentLighter)",
+        "disclosureFg": "var(foreground)",
+        "commitListBg": "var(accentLight)",
+        "commitRowBgHover": "var(accentLighter)",
         "commitSummaryFgPrimary": "var(foreground)",
         "commitSummaryFgSecondary": "var(foreground)",
         "commitEdge0": "var(blue)",
@@ -78,7 +81,8 @@
         "tableOfContentsBg": "var(background)",
         "tableOfContentsFg": "var(foreground)",
         "tableOfContentsHeadingFg": "var(foreground)",
-        "tableOfContentsRowBg": "var(background)",
+        "tableOfContentsRowBg": "var(accentLight)",
+        "tableOfContentsRowBgHover": "var(accentLighter)",
         "detailPanelBg": "var(background)",
         "fieldNameFg": "var(foreground)",
         "authorFg": "color(var(--foreground) a(0.4))",
@@ -87,20 +91,24 @@
         "outputFailedFg": "var(red)",
         "outputRunningFg": "var(cyan)",
         "outputCanceledFg": "var(red)",
-        "toolTipBg": "var(accentLight)",
+        "gitOutputPanelBg": "var(accentLight)",
+        "gitOutputPanelFg": "var(foreground)",
         "toolTipFg": "var(foreground)",
-        "headAnnFg": "var(darkGray)",
+        "toolTipBg": "var(accentLight)",
+        "headAnnFg": "var(background)",
         "headAnnBg": "var(purple)",
-        "branchAnnFg": "var(darkGray)",
+        "branchAnnFg": "var(background)",
         "branchAnnBg": "var(blue)",
-        "remoteAnnFg": "var(darkGray)",
+        "remoteAnnFg": "var(background)",
         "remoteAnnBg": "var(cyan)",
-        "tagAnnFg": "var(darkGray)",
+        "tagAnnFg": "var(background)",
         "tagAnnBg": "var(yellow)",
-        "stashAnnFg": "var(darkGray)",
+        "stashAnnFg": "var(background)",
         "stashAnnBg": "var(orange)",
         "fileAnnFg": "var(foreground)",
-        "fileAnnBg": "color(var(accentLightest) a(0.75))",
+        "fileAnnBg": "color(var(cyan) a(0.50))",
+        "fileAnnIconAheadFg": "var(green)",
+        "fileAnnIconBehindFg": "var(red)",
         "submoduleAnnBg": "var(darkGrayLightest)",
         "submoduleLightAnnBg": "var(darkGrayLightest)",
         "insertedAnnBg": "color(var(cyan) a(0.50))",
@@ -166,11 +174,11 @@
         "tabLabelColorHover": "color(var(colorAccent) a(1.0))",
         "tabLabelColorSelected": "color(var(colorAccent) a(1.0))",
         "radioBack": "var(--background)",
-        "radioSelected": "var(blue)",
-        "radioBorderSelected": "var(blue)",
+        "radioSelected": "var(colorAccent)",
+        "radioBorderSelected": "var(colorAccent)",
         "checkboxBack": "var(--background)",
-        "checkboxSelected": "var(blue)",
-        "checkboxBorderSelected": "var(blue)",
+        "checkboxSelected": "var(colorAccent)",
+        "checkboxBorderSelected": "var(colorAccent)",
         "dialogBg": "var(background)",
         "dialogButtonBg": "var(accentLight)",
         "progressBg": "color(var(accentLightest) l(+ 3%))",
@@ -189,18 +197,25 @@
         "failedLabelFg": "var(darkGray)",
         "loadingBall1": "var(mediumGray)",
         "loadingBall2": "var(blue)",
-        "previewFg": "white",
+        "previewFg": "var(foreground)",
         "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
         "consoleBorder": "var(background)",
         "hazardButtonBg": "var(red)",
-        "repositoryTabBarBg": "var(background)",
+        "repositoryTabBarBg": "var(accentLight)",
         "repositoryTabBarBorderBg": "var(background)",
-        "fileBadgeModifiedFg": "var(mediumGray)",
-        "fileBadgeUnmergedFg": "#2e1d07",
-        "fileBadgeUntrackedBg": "var(detailPanelBg)",
-        "fileBadgeUntrackedFg": "var(mediumGray-dark)",
-        "fileBadgeStagedBg": "var(fileHeaderBg)",
-        "fileBadgeStagedFg": "var(mediumGray-light)"
+        "fileBadgeModifiedLeftFg": "var(foreground)",
+        "fileBadgeModifiedRightFg": "var(red)",
+        "fileBadgeModifiedBg": "color(white a(0.2))",
+        "fileBadgeModifiedHover": "color(var(colorAccent) a(0.35))",
+        "fileBadgeUnmergedFg": "var(foreground)",
+        "fileBadgeUnmergedBg": "color(white a(0.2))",
+        "fileBadgeUnmergedHover": "color(var(colorAccent) a(0.35))",
+        "fileBadgeUntrackedBg": "color(white a(0.2))",
+        "fileBadgeUntrackedHover": "color(var(colorAccent) a(0.35))",
+        "fileBadgeUntrackedFg": "var(foreground)",
+        "fileBadgeStagedBg": "color(white a(0.2))",
+        "fileBadgeStagedBgHover": "color(var(colorAccent) a(0.35))",
+        "fileBadgeStagedFg": "var(foreground)"
     },
     "rules": [
         {
@@ -270,7 +285,7 @@
         },
         {
             "class": "root_tabs",
-            "layer0.tint": "var(repositoryTabBarBg)",
+            "layer0.tint": "var(tabBarBg)",
             "layer0.opacity": 1
         },
         {
@@ -390,7 +405,7 @@
                     ]
                 }
             ],
-            "fg": "var(hazard_button_fg)",
+            "fg": "var(foreground)",
             "shadow_color": "var(hazard_button_shadow)",
             "shadow_offset": [
                 0,
@@ -664,7 +679,7 @@
                     "class": "details_tab_bar"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(0.8))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -673,7 +688,7 @@
                     "class": "all_button"
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "label_control",
@@ -688,7 +703,7 @@
                     ]
                 }
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))"
+            "fg": "var(foreground)"
         },
         {
             "class": "checkbox_box_control",
@@ -756,13 +771,13 @@
                 0
             ],
             "layer0.texture": "Theme - Merge/radio_button_back.png",
-            "layer0.tint": "var(radio_back)",
+            "layer0.tint": "var(radioBack)",
             "layer0.opacity": 1,
             "layer1.texture": "Theme - Merge/radio_button_border.png",
-            "layer1.tint": "var(radio_border-unselected)",
+            "layer1.tint": "var(radioBorderSelected)",
             "layer1.opacity": 1,
             "layer2.texture": "Theme - Merge/radio_button_on.png",
-            "layer2.tint": "var(radio_selected)",
+            "layer2.tint": "var(radioSelected)",
             "layer2.opacity": 0
         },
         {
@@ -778,7 +793,7 @@
                     ]
                 }
             ],
-            "layer1.tint": "var(radio_border-selected)"
+            "layer1.tint": "var(radioBorderSelected)"
         },
         {
             "class": "checkbox_box_control",
@@ -793,7 +808,7 @@
                     ]
                 }
             ],
-            "layer1.tint": "var(radio_border-selected)",
+            "layer1.tint": "var(radioBorderSelected)",
             "layer2.opacity": 1
         },
         {
@@ -994,11 +1009,11 @@
                 20,
                 5
             ],
-            "layer1.tint": "var(inputBorderColor)",
+            "layer1.tint": "color(var(accentLightest) a(0.5))",
             "layer1.opacity": 1,
             "layer1.inner_margin": "var(inputBorderSize)",
             "layer1.draw_center": false,
-            "color_scheme_tint": "var(inputBackground)"
+            "color_scheme_tint": "color(var(accentLightest) a(0.15))"
         },
         {
             "class": "text_line_control",
@@ -1120,7 +1135,7 @@
             "attributes": [
                 "panel_visible"
             ],
-            "bg": "var(repositoryTabBarBg)"
+            "bg": "var(headerBg)"
         },
         {
             "class": "header",
@@ -1259,14 +1274,14 @@
                 "interpolation": "smoothstep"
             },
             "layer1.texture": "Theme - Merge/icon_output_prompt.png",
-            "layer1.tint": "var(output_fg)",
+            "layer1.tint": "var(colorAccent)",
             "layer1.opacity": {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
             "layer2.texture": "Theme - Merge/icon_output_none.png",
-            "layer2.tint": "var(output_fg)",
+            "layer2.tint": "var(colorAccent)",
             "layer2.opacity": {
                 "target": 0.8,
                 "speed": 4,
@@ -1296,7 +1311,7 @@
         },
         {
             "class": "git_output_button cancelled",
-            "layer2.tint": "var(outputCancelledFg)",
+            "layer2.tint": "var(outputCanceledFg)",
             "layer2.texture": "Theme - Merge/icon_output_cancelled.png"
         },
         {
@@ -1967,7 +1982,7 @@
         },
         {
             "class": "location_bar_row",
-            "layer0.tint": "var(locationBarRowBgHover)",
+            "layer0.tint": "var(locationBarRowBg)",
             "layer0.opacity": 0
         },
         {
@@ -1983,7 +1998,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(accentLightest)",
+            "layer0.tint": "var(locationBarRowBgHover)",
             "layer0.opacity": 1
         },
         {
@@ -2043,8 +2058,8 @@
         {
             "class": "icon_behind",
             "layer0.texture": "Theme - Merge/icon_behind.png",
-            "layer0.tint": "var(fileAnnFg)",
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(fileAnnIconBehindFg)",
+            "layer0.opacity": 1,
             "content_margin": [
                 4,
                 5,
@@ -2055,8 +2070,8 @@
         {
             "class": "icon_ahead",
             "layer0.texture": "Theme - Merge/icon_ahead.png",
-            "layer0.tint": "var(fileAnnFg)",
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(fileAnnIconAheadFg)",
+            "layer0.opacity": 1,
             "content_margin": [
                 4,
                 5,
@@ -2213,14 +2228,16 @@
             "attributes": [
                 "hover"
             ],
-            "layer0.opacity": 0.2
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
+            "layer0.opacity": 1
         },
         {
             "class": "table_of_contents_row_container",
             "attributes": [
                 "selected"
             ],
-            "layer0.opacity": 0.4
+            "layer0.tint": "var(tableOfContentsRowBgHover)",
+            "layer0.opacity": 1
         },
         {
             "class": "table_of_contents_heading",
@@ -2271,7 +2288,7 @@
         },
         {
             "class": "commit_summary_control",
-            "layer0.tint": "var(accentLight)",
+            "layer0.tint": "var(commitRowBgHover)",
             "layer0.opacity": 0,
             "content_margin": [
                 8,
@@ -3470,7 +3487,7 @@
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer0.tint": "var(disclosure_fg)",
+            "layer0.tint": "var(disclosureFg)",
             "content_margin": [
                 8,
                 8
@@ -3552,7 +3569,7 @@
         },
         {
             "class": "commit_author",
-            "color": "var(author_fg)"
+            "color": "var(foreground)"
         },
         {
             "class": "commit_author_container",
@@ -3683,7 +3700,7 @@
                     ]
                 }
             ],
-            "fg": "color(var(hunk_button_fg) a(0))",
+            "fg": "color(var(hunkButtonFg) a(0))",
             "shadow_offset": [
                 0,
                 0
@@ -3705,8 +3722,8 @@
                     ]
                 }
             ],
-            "fg": "var(hunk_button_fg)",
-            "shadow_color": "var(hunk_button_shadow)",
+            "fg": "var(hunkButtonFg)",
+            "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
                 1
@@ -3728,8 +3745,8 @@
                     ]
                 }
             ],
-            "fg": "var(hunk_button_fg)",
-            "shadow_color": "var(hunk_button_shadow)",
+            "fg": "var(hunkButtonFg)",
+            "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
                 1
@@ -3764,7 +3781,7 @@
         },
         {
             "class": "modified_badge",
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(fileBadgeModifiedBg)"
         },
         {
             "class": "modified_badge",
@@ -3776,11 +3793,11 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(fileHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeModifiedHover)"
         },
         {
             "class": "unmerged_badge",
-            "layer0.tint": "var(file_badge_unmerged_bg)"
+            "layer0.tint": "var(fileBadgeUnmergedBg)"
         },
         {
             "class": "unmerged_badge",
@@ -3792,15 +3809,15 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(unmergedHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeUnmergedHover)"
         },
         {
             "class": "untracked_badge",
-            "layer0.tint": "var(file_badge_untracked_bg)"
+            "layer0.tint": "var(fileBadgeUntrackedBg)"
         },
         {
             "class": "staged_badge",
-            "layer0.tint": "var(file_badge_staged_bg)"
+            "layer0.tint": "var(fileBadgeStagedBg)"
         },
         {
             "class": "staged_badge",
@@ -3809,7 +3826,7 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(fileHeaderBg)"
+            "layer0.tint": "var(fileBadgeStagedBg)"
         },
         {
             "class": "staged_badge",
@@ -3821,7 +3838,7 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(fileHeaderBgHover)"
+            "layer0.tint": "var(fileBadgeStagedBgHover)"
         },
         {
             "class": "label_control",
@@ -3830,7 +3847,7 @@
                     "class": "file_badge"
                 }
             ],
-            "font.bold": true
+            "font.bold": false
         },
         {
             "class": "label_control",
@@ -3839,7 +3856,7 @@
                     "class": "modified_badge"
                 }
             ],
-            "fg": "var(file_badge_modified_fg)"
+            "fg": "var(fileBadgeModifiedLeftFg)"
         },
         {
             "class": "label_control",
@@ -3857,7 +3874,7 @@
                     "class": "untracked_badge"
                 }
             ],
-            "fg": "var(file_badge_untracked_fg)"
+            "fg": "var(fileBadgeUntrackedFg)"
         },
         {
             "class": "label_control",
@@ -3866,7 +3883,7 @@
                     "class": "staged_badge"
                 }
             ],
-            "fg": "var(file_badge_staged_fg)"
+            "fg": "var(fileBadgeStagedFg)"
         },
         {
             "class": "icon_deleted",
@@ -3875,7 +3892,7 @@
                     "class": "modified_badge"
                 }
             ],
-            "layer0.tint": "var(file_badge_modified_fg)"
+            "layer0.tint": "var(fileBadgeModifiedRightFg)"
         },
         {
             "class": "icon_deleted",
@@ -3884,7 +3901,7 @@
                     "class": "staged_badge"
                 }
             ],
-            "layer0.tint": "var(file_badge_staged_fg)"
+            "layer0.tint": "var(fileBadgeModifiedRightFg)"
         },
         {
             "class": "welcome_overlay",
@@ -4026,7 +4043,7 @@
         },
         {
             "class": "git_output_data_container",
-            "layer0.tint": "var(--background)",
+            "layer0.tint": "var(gitOutputPanelBg)",
             "layer0.opacity": 1,
             "content_margin": [
                 6,
@@ -4095,7 +4112,7 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.tint": "var(accentLightest)",
+            "layer0.tint": "var(preferencesSectionTableRowBg)",
             "layer0.opacity": 1,
             "content_margin": [
                 0,
@@ -4427,7 +4444,7 @@
         },
         {
             "class": "use_hunk_button",
-            "layer0.tint": "var(use_hunk_button_fg)",
+            "layer0.tint": "var(hunkButtonFg)",
             "layer0.opacity": {
                 "target": 0.8,
                 "speed": 4,
@@ -4747,7 +4764,7 @@
             "settings": [
                 "show_tab_close_buttons"
             ],
-            "layer0.texture": "Theme - Default/common/light/tab_close.png",
+            "layer0.texture": "Theme - Default/common/dark/tab_close.png",
             "content_margin": [
                 10,
                 9
@@ -4849,7 +4866,8 @@
                     "class": "new_tab_button"
                 }
             ],
-            "fg": "color(var(labelColor) a(0.7))",
+            "fg": "var(colorAccent)",
+            "opacity": "var(iconButtonOpacity)",
             "font.bold": true
         },
         {
@@ -4862,7 +4880,8 @@
                     ]
                 }
             ],
-            "fg": "var(labelColor)",
+            "fg": "var(colorAccent)",
+            "opacity": "var(iconButtonOpacityHover)",
             "font.bold": true
         }
     ]

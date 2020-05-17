@@ -20,6 +20,7 @@ export const dark = {
     diffAdded: ui.diffAdded,
     diffModified: ui.diffModified,
     diffDeleted: ui.diffDeleted,
+    transparent: "transparent",
 
     colorAccent: '#80CBC4',
     accentDark: 'color(var(background) l(- 0.75%))',
@@ -30,6 +31,7 @@ export const dark = {
     accentLightest: 'color(var(background) l(+ 10%))',
 
     darkRed: 'color(var(red) s(25%) l(35%))',
+    darkTeal: "color(var(cyan) s(25%) l(35%))",
     darkBlue: 'color(var(blue) s(25%) l(35%))',
 
     mediumGray: 'hsl(210, 10%, 50%)',
@@ -59,7 +61,7 @@ export const dark = {
 
     divergedBg: 'color(var(orange) l(- 5%) s(- 20%))',
     divergedButtonBg: 'var(buttonBg)',
-    divergedButtonFg: 'var(darkGray)',
+    divergedButtonFg: 'var(foreground)',
 
     // Section: Scroll shadow
     scrollShadow: 'color(black a(0.3))',
@@ -85,12 +87,13 @@ export const dark = {
     locationBarFg: 'var(foreground)',
     locationBarHeadingFg: 'var(foreground)',
     locationBarHeadingShadow: 'black',
-    locationBarRowBgHover: 'var(accentLight)',
-    disclosureFg: 'white',
+    locationBarRowBg: 'var(accentLight)',
+    locationBarRowBgHover: 'var(accentLighter)',
+    disclosureFg: 'var(foreground)',
 
     // Section: Commit list
-    commitListBg: 'var(background)',
-    commitRowBgHover: 'var(background)',
+    commitListBg: 'var(accentLight)',
+    commitRowBgHover: 'var(accentLighter)',
     commitSummaryFgPrimary: 'var(foreground)',
     commitSummaryFgSecondary: 'var(foreground)',
 
@@ -109,7 +112,8 @@ export const dark = {
     tableOfContentsBg: 'var(background)',
     tableOfContentsFg: 'var(foreground)',
     tableOfContentsHeadingFg: 'var(foreground)',
-    tableOfContentsRowBg: 'var(background)',
+    tableOfContentsRowBg: 'var(accentLight)',
+    tableOfContentsRowBgHover: 'var(accentLighter)',
 
     // Section: Detail panel
     detailPanelBg: 'var(background)',
@@ -123,28 +127,34 @@ export const dark = {
     outputRunningFg: "var(cyan)",
     outputCanceledFg: "var(red)",
 
+    // Section: Git Output Panel
+    gitOutputPanelBg: "var(accentLight)",
+    gitOutputPanelFg: "var(foreground)",
+
     // Section: Tool Tips
-    toolTipBg: 'var(accentLight)',
     toolTipFg: 'var(foreground)',
+    toolTipBg: 'var(accentLight)',
 
     // Section: Annotations
-    headAnnFg: 'var(darkGray)',
+    headAnnFg: 'var(background)',
     headAnnBg: 'var(purple)',
 
-    branchAnnFg: 'var(darkGray)',
+    branchAnnFg: 'var(background)',
     branchAnnBg: 'var(blue)',
 
-    remoteAnnFg: 'var(darkGray)',
+    remoteAnnFg: 'var(background)',
     remoteAnnBg: 'var(cyan)',
 
-    tagAnnFg: 'var(darkGray)',
+    tagAnnFg: 'var(background)',
     tagAnnBg: 'var(yellow)',
 
-    stashAnnFg: 'var(darkGray)',
+    stashAnnFg: 'var(background)',
     stashAnnBg: 'var(orange)',
 
     fileAnnFg: 'var(foreground)',
-    fileAnnBg: 'color(var(accentLightest) a(0.75))',
+    fileAnnBg: 'color(var(cyan) a(0.50))',
+    fileAnnIconAheadFg: 'var(green)',
+    fileAnnIconBehindFg: 'var(red)',
 
     submoduleAnnBg: 'var(darkGrayLightest)',
     submoduleLightAnnBg: 'var(darkGrayLightest)',
@@ -223,13 +233,13 @@ export const dark = {
 
     // Section: Radio buttons
     radioBack: 'var(--background)',
-    radioSelected: 'var(blue)',
-    radioBorderSelected: 'var(blue)',
+    radioSelected: 'var(colorAccent)',
+    radioBorderSelected: 'var(colorAccent)',
 
     // Section: Checkbox buttons
     checkboxBack: 'var(--background)',
-    checkboxSelected: 'var(blue)',
-    checkboxBorderSelected: 'var(blue)',
+    checkboxSelected: 'var(colorAccent)',
+    checkboxBorderSelected: 'var(colorAccent)',
 
     // Section: Dialogs
     dialogBg: 'var(background)',
@@ -262,7 +272,7 @@ export const dark = {
     loadingBall2: 'var(blue)',
 
     // Section: Command Palette
-    previewFg: 'white',
+    previewFg: 'var(foreground)',
 
     // Section: Merge Helper
     mergeHelperHighlightBg: 'color(var(accentLightest) l(25%))',
@@ -272,13 +282,22 @@ export const dark = {
     hazardButtonBg: 'var(red)',
 
     // Section: Tabs
-    repositoryTabBarBg: 'var(background)',
+    repositoryTabBarBg: 'var(accentLight)',
     repositoryTabBarBorderBg: 'var(background)',
 
-    fileBadgeModifiedFg: 'var(mediumGray)',
-    fileBadgeUnmergedFg: '#2e1d07',
-    fileBadgeUntrackedBg: 'var(detailPanelBg)',
-    fileBadgeUntrackedFg: 'var(mediumGray-dark)',
-    fileBadgeStagedBg: 'var(fileHeaderBg)',
-    fileBadgeStagedFg: 'var(mediumGray-light)',
+
+    // Section: Commit Area -> Modified & Unstaged Files
+    fileBadgeModifiedLeftFg: 'var(foreground)',
+    fileBadgeModifiedRightFg: 'var(red)',
+    fileBadgeModifiedBg: 'color(white a(0.2))',
+    fileBadgeModifiedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUnmergedFg: 'var(foreground)',
+    fileBadgeUnmergedBg: 'color(white a(0.2))',
+    fileBadgeUnmergedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedBg: 'color(white a(0.2))',
+    fileBadgeUntrackedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedFg: 'var(foreground)',
+    fileBadgeStagedBg: 'color(white a(0.2))',
+    fileBadgeStagedBgHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeStagedFg: 'var(foreground)',
 };
