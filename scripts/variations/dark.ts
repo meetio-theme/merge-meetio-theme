@@ -31,6 +31,7 @@ export const dark = {
     accentLightest: 'color(var(background) l(+ 10%))',
 
     darkRed: 'color(var(red) s(25%) l(35%))',
+    darkTeal: "color(var(cyan) s(25%) l(35%))",
     darkBlue: 'color(var(blue) s(25%) l(35%))',
 
     mediumGray: 'hsl(210, 10%, 50%)',
@@ -60,7 +61,7 @@ export const dark = {
 
     divergedBg: 'color(var(orange) l(- 5%) s(- 20%))',
     divergedButtonBg: 'var(buttonBg)',
-    divergedButtonFg: 'var(darkGray)',
+    divergedButtonFg: 'var(foreground)',
 
     // Section: Scroll shadow
     scrollShadow: 'color(black a(0.3))',
