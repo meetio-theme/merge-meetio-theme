@@ -60,8 +60,8 @@ export const dark = {
     infoShadow: 'color(black a(0.2))',
 
     divergedBg: 'color(var(orange) l(- 5%) s(- 20%))',
-    divergedButtonBg: 'var(buttonBg)',
-    divergedButtonFg: 'var(foreground)',
+    divergedButtonBg: 'color(var(divergedBg) l(+ 25%))',
+    divergedButtonFg: 'color(var(divergedBg) l(- 50%))',
 
     // Section: Scroll shadow
     scrollShadow: 'color(black a(0.3))',

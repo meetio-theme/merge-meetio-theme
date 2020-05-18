@@ -305,9 +305,9 @@ export const rules = [
     {
         class: 'scroll_area_control',
         parents: [{ class: 'details_tab_bar' }],
-        left_shadow: 'var(scroll_shadow)',
+        left_shadow: 'var(scrollShadow)',
         left_shadow_size: 8,
-        right_shadow: 'var(scroll_shadow)',
+        right_shadow: 'var(scrollShadow)',
         right_shadow_size: 8,
     },
     {
@@ -663,6 +663,7 @@ export const rules = [
         class: 'search_text_control',
         'layer0.texture': 'Theme - Merge/input.png',
         'layer0.opacity': 1.0,
+        "layer0.tint": "var(accentLighter)",
         'layer0.inner_margin': 4,
         content_margin: 2,
     },
@@ -1073,14 +1074,14 @@ export const rules = [
     },
     {
         class: 'merge_helper_highlight_label',
-        background_color: 'var(merge_helper_highlight_bg)',
+        background_color: 'var(divergedBg)',
     },
 
     // Diverged banner
     {
         class: 'diverged_container',
         'layer0.opacity': 1.0,
-        'layer0.tint': 'var(diverged_bg)',
+        'layer0.tint': 'var(divergedBg)',
         content_margin: [4, 4, 4, 4],
     },
     {
@@ -1090,26 +1091,26 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'diverged_container' }],
-        fg: 'var(diverged_button_fg)',
-        shadow_color: 'var(diverged_button_shadow)',
+        fg: 'var(divergedButtonFg)',
+        shadow_color: 'var(highlightedButtonShadow)',
         shadow_offset: [0, 1],
     },
     {
         class: 'button_control',
         parents: [{ class: 'diverged_container' }],
-        'layer1.tint': 'var(diverged_button_bg)',
+        'layer1.tint': 'var(divergedButtonBg)',
     },
 
     // Highlighted buttons
     {
         class: 'button_control',
         attributes: ['highlighted'],
-        'layer1.tint': 'var(highlighted_button_light_bg)',
+        'layer1.tint': 'var(highlightedButtonLightBg)',
     },
     {
         class: 'button_control',
         attributes: ['highlighted', 'dark'],
-        'layer1.tint': 'var(highlighted_button_dark_bg)',
+        'layer1.tint': 'var(highlightedButtonDarkBg)',
     },
     {
         class: 'button_control icon_button',
@@ -1120,15 +1121,15 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'button_control', attributes: ['highlighted'] }],
-        fg: 'var(highlighted_button_light_fg)',
-        shadow_color: 'var(highlighted_button_shadow)',
+        fg: 'var(highlightedButtonDarkFg)',
+        shadow_color: 'var(highlightedButtonShadow)',
     },
     {
         class: 'label_control',
         parents: [
             { class: 'button_control', attributes: ['highlighted', 'dark'] },
         ],
-        fg: 'var(highlighted_button_dark_fg)',
+        fg: 'var(highlightedButtonDarkFg)',
     },
 
     // Side bar
@@ -1151,7 +1152,7 @@ export const rules = [
         class: 'scroll_area_control',
         parents: [{ class: 'side_bar_container' }],
         settings: ['overlay_scroll_bars'],
-        top_shadow: 'var(scroll_shadow)',
+        top_shadow: 'var(scrollShadow)',
         top_shadow_size: 8,
     },
     {
