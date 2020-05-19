@@ -170,7 +170,7 @@ export const dark = {
     hunkButtonShadow: 'color(black a(0.5))',
 
     fileHeaderBg: 'var(background)',
-    fileHeaderBgHover: 'var(background)',
+    fileHeaderBgHover: 'var(accentLighter)',
 
     hunkHeaderBg: 'var(accentLight)',
 
@@ -179,8 +179,8 @@ export const dark = {
     deletedHeaderBgHover: 'color(var(darkRed) l(+ 5%))',
 
     unmergedIconFg: 'color(var(foreground) l(+ 20%))',
-    unmergedHeaderBg: 'var(darkBlue)',
-    unmergedHeaderBgHover: 'color(var(darkBlue) l(+ 5%))',
+    unmergedHeaderBg: 'var(accentLighter)',
+    unmergedHeaderBgHover: 'var(accentLightest)',
 
     recentIconFg: 'var(yellow)',
     recentIconBg: 'transparent',
