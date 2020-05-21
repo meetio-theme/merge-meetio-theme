@@ -257,7 +257,7 @@ export const rules = [
     {
         class: 'tab',
         parents: [{ class: 'side_bar_container with_graph' }],
-        'layer0.tint': 'var(side_bar_container_with_graph_bg)',
+        'layer0.tint': 'var(sideBarContainerBgWithGraph)',
     },
     {
         class: 'tab',
@@ -313,7 +313,7 @@ export const rules = [
     {
         class: 'tab',
         parents: [{ class: 'details_tab_bar' }],
-        'layer0.tint': 'var(location_tab_bg)',
+        'layer0.tint': 'var(locationBarFg)',
     },
     {
         class: 'label_control',

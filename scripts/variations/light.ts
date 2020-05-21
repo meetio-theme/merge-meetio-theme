@@ -30,8 +30,6 @@ export const light = {
     accentLightest: "color(var(background) l(+ 10%))",
 
     darkRed: "color(var(red) s(25%) l(35%))",
-    darkTeal: "color(var(cyan) s(25%) l(35%))",
-    darkBlue: "color(var(blue) s(25%) l(35%))",
 
     mediumGray: "hsl(210, 10%, 50%)",
     darkGrayLightest: "hsl(210, 10%, 19%)",
@@ -266,9 +264,9 @@ export const light = {
     // Hints
     failedLabelFg: "var(foreground)",
 
-    // Loading
-    loadingBall1: "var(mediumGray)",
-    loadingBall2: "var(blue)",
+    // Section: Loading
+    loadingBall1: 'var(accentLighter)',
+    loadingBall2: 'var(accentLightest)',
 
     // Command Palette
     previewFg: "var(foreground)",
