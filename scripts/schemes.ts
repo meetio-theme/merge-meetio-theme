@@ -16,14 +16,14 @@ interface IScheme {
 
 [
     {
-        name: 'Meetio-Theme-Dark',
+        name: 'Meetio Dark',
         author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
         variables: dark,
         folder: 'Dark',
         customRules: [],
     },
     {
-        name: 'Meetio-Theme-Light',
+        name: 'Meetio Light',
         author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
         variables: light,
         folder: 'Light',
