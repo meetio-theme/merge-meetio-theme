@@ -6,16 +6,16 @@ export const ui = [
         // Description: Theme
         // - These need to be a valid sublime-color-scheme
         // - file. In this case the Meetio theme
-        name: 'Merge Dark',
-        scheme: 'Meetio-Theme-Dark',
+        name: 'Meetio Dark',
+        scheme: 'Meetio Dark',
         folder: 'Dark',
         variables: dark,
     }, {
         // Description: Theme
         // - These need to be a valid sublime-color-scheme
         // - file. In this case the Meetio theme
-        name: 'Merge Light',
-        scheme: 'Meetio-Theme-Light',
+        name: 'Meetio Light',
+        scheme: 'Meetio Light',
         folder: 'Light',
         variables: light,
     },

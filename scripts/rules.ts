@@ -626,13 +626,13 @@ export const rules = [
     // - Right Side Labels (e.g. Build 2009)
     {
         class: "quick_panel_label hint",
-        color: "color(var(--foreground) a(- 50%))"
+        color: "color(var(foreground) a(- 50%))"
     },
     // Quick Panel
     // - Right Side Command Labels (e.g. ⌘ + p)
     {
         class: "quick_panel_label key_binding",
-        color: "color(var(--foreground) a(- 50%))"
+        color: "color(var(foreground) a(- 50%))"
     },
 
     // Header
@@ -1601,9 +1601,9 @@ export const rules = [
         class: 'search_help',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
-        background_color: 'var(--background)',
-        headline_color: 'color(var(--foreground) l(+ 10%))',
-        color: 'var(--foreground)',
+        background_color: 'var(background)',
+        headline_color: 'color(var(foreground) l(+ 10%))',
+        color: 'var(foreground)',
         content_margin: [14, 8, 14, 14],
     },
     {
