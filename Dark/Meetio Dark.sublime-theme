@@ -179,7 +179,7 @@
         "checkboxBorderSelected": "var(colorAccent)",
         "dialogBg": "var(background)",
         "dialogButtonBg": "var(accentLight)",
-        "progressBg": "color(var(accentLightest) l(+ 3%))",
+        "progressBg": "var(colorAccent)",
         "progressFg": "color(var(accentDarker) a(0.5))",
         "quickPanelBg": "var(background)",
         "quickPanelRowBg": "var(accentLighter)",
@@ -1474,6 +1474,29 @@
             ]
         },
         {
+            "class": "icon_full_context",
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "color(var(colorAccent) a(75%))"
+        },
+        {
+            "class": "icon_full_context",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)"
+        },
+        {
+            "class": "new_tab_icon",
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)"
+        },
+        {
+            "class": "tab_select_dropdown_icon",
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)"
+        },
+        {
             "class": "icon_side_bar",
             "layer0.texture": "Theme - Merge/icon_side_bar.png",
             "layer0.opacity": "var(iconButtonOpacity)",
@@ -2437,11 +2460,32 @@
             "background_color": "var(branchAnnBg)"
         },
         {
+            "class": "commit_annotation branch head",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "var(branchAnnFg)",
+            "background_color": "var(branchAnnBg)"
+        },
+        {
             "class": "remote_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "color": "var(remoteAnnFg)",
             "background_color": "var(remoteAnnBg)"
+        },
+        {
+            "class": "commit_annotation remote",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "var(remoteAnnFg)",
+            "background_color": "var(remoteAnnBg)"
+        },
+        {
+            "class": "commit_annotation branch",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "var(branchAnnFg)",
+            "background_color": "var(branchAnnBg)"
         },
         {
             "class": "tag_annotation",

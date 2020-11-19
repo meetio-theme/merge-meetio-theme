@@ -893,6 +893,27 @@ export const rules = [
         min_size: [110, 27],
     },
     {
+        class: 'icon_full_context',
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'color(var(colorAccent) a(75%))',
+    },
+    {
+        class: 'icon_full_context',
+        attributes: ['hover'],
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
+        class: 'new_tab_icon',
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
+        class: 'tab_select_dropdown_icon',
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
         class: 'icon_side_bar',
         'layer0.texture': 'Theme - Merge/icon_side_bar.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
