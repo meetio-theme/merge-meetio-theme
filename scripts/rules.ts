@@ -32,7 +32,11 @@ export const rules = [
     },
     {
         class: 'command_history_container',
-        'layer0.tint': 'var(background)',
+        'layer0.tint': 'var(accentLighter)',
+    },
+    {
+        class: 'command_table_container',
+        'layer0.tint': 'var(accentLight)',
     },
     // Browse page
     {
@@ -2619,7 +2623,7 @@ export const rules = [
         content_margin: [6, 6, 4, 6],
     },
 
-    //Command History overlay labels
+    // Command History overlay labels
     {
         class: 'command_history_label',
         fg: 'var(helpLabelColor)',
@@ -2720,7 +2724,7 @@ export const rules = [
     // Tool Tips
     {
         class: 'tool_tip_control',
-        'layer0.tint': 'var(tool_tip_bg)',
+        'layer0.tint': 'var(toolTipFg)',
         'layer0.opacity': 1.0,
         content_margin: [8, 3, 8, 3],
     },
@@ -2728,7 +2732,7 @@ export const rules = [
         class: 'tool_tip_label_control',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size_sm)',
-        fg: 'var(tool_tip_fg)',
+        fg: 'var(toolTipBg)',
     },
 
     // Hints

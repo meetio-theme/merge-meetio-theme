@@ -275,11 +275,11 @@
         },
         {
             "class": "command_history_container",
-            "layer0.tint": "var(background)"
+            "layer0.tint": "var(accentLighter)"
         },
         {
-            "class": "command_table_row",
-            "layer0.tint": "var(accentLighter)"
+            "class": "command_table_container",
+            "layer0.tint": "var(accentLight)"
         },
         {
             "class": "console_panel",
@@ -4205,7 +4205,7 @@
         },
         {
             "class": "tool_tip_control",
-            "layer0.tint": "var(tool_tip_bg)",
+            "layer0.tint": "var(toolTipFg)",
             "layer0.opacity": 1,
             "content_margin": [
                 8,
@@ -4218,7 +4218,7 @@
             "class": "tool_tip_label_control",
             "font.face": "var(font_face)",
             "font.size": "var(font_size_sm)",
-            "fg": "var(tool_tip_fg)"
+            "fg": "var(toolTipBg)"
         },
         {
             "class": "hint_stem",
