@@ -26,6 +26,14 @@ export const rules = [
         'layer0.tint': [0, 0, 0],
         'layer0.opacity': 0.0,
     },
+    // Command History
+    {
+        class: 'command_table',
+    },
+    {
+        class: 'command_history_container',
+        'layer0.tint': 'var(background)',
+    },
     // Browse page
     {
         class: 'console_panel',
@@ -547,7 +555,7 @@ export const rules = [
     },
     {
         class: 'text_line_control',
-        parents: [{class: 'welcome_overlay_contents'}],
+        parents: [{ class: 'welcome_overlay_contents' }],
         color_scheme_tint: 'var(inputBackgroundWelcome)',
     },
     {
@@ -1543,11 +1551,21 @@ export const rules = [
         background_color: 'var(remoteAnnBg)',
     },
     {
+        class: 'commit_annotation',
+        'font.face': 'var(font_face)',
+        'font.size': 'var(font_size)',
+        color: 'var(remoteAnnFg)',
+        background_color: 'var(remoteAnnBg)',
+    },
+    {
+        class: 'tag_annotation_container',
+        background_color: 'var(tagAnnBg)',
+    },
+    {
         class: 'tag_annotation',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         color: 'var(tagAnnFg)',
-        background_color: 'var(tagAnnBg)',
     },
     {
         class: 'stash_annotation',
@@ -2525,7 +2543,7 @@ export const rules = [
     },
     {
         class: 'button_control',
-        parents: [{class: 'welcome_overlay_contents'}],
+        parents: [{ class: 'welcome_overlay_contents' }],
         'layer1.tint': 'var(buttonBgWelcome)',
         'layer1.texture': 'Theme - Merge/button.png',
         'layer1.inner_margin': 4,
@@ -3002,29 +3020,29 @@ export const rules = [
     {
         class: "tab_label",
         parents: [
-        {
-            class: "tab_control",
-            attributes: [
-                "hover"
-            ]
-        }],
+            {
+                class: "tab_control",
+                attributes: [
+                    "hover"
+                ]
+            }],
         fg: "var(tabLabelColorHover)"
     },
     {
         class: "tab_label",
         parents: [
-        {
-            class: "tab_control",
-            attributes: [
-                "selected"
-            ]
-        }],
+            {
+                class: "tab_control",
+                attributes: [
+                    "selected"
+                ]
+            }],
         fg: "var(tabLabelColorSelected)"
     },
     {
         class: 'tab_close_button',
         settings: ['show_tab_close_buttons'],
-        'layer0.texture': 'Theme - Default/common/dark/tab_close.png',
+        'layer0.texture': 'Theme - Default/common/tab_close.png',
         content_margin: [10, 9],
     },
     {
@@ -3077,17 +3095,38 @@ export const rules = [
         'layer3.opacity': 0.2,
     },
     {
-        class: 'label_control',
+        class: 'new_tab_icon',
         parents: [{ class: 'new_tab_button' }],
-        fg: "var(colorAccent)",
-        opacity: "var(iconButtonOpacity)",
-        'font.bold': true,
+        "layer0.tint": "var(colorAccent)",
+        "layer0.opacity": "var(iconButtonOpacity)",
     },
     {
-        class: 'label_control',
+        class: 'new_tab_icon',
         parents: [{ class: 'new_tab_button', attributes: ['hover'] }],
-        fg: "var(colorAccent)",
-        opacity: "var(iconButtonOpacityHover)",
-        'font.bold': true,
+        "layer0.tint": "var(colorAccent)",
+        "layer0.opacity": "var(iconButtonOpacityHover)",
     },
-];
+    {
+        class: 'tab_dropdown_button',
+        content_margin: 0,
+        min_size: [32, 32],
+        'layer1.tint': 'var(repositoryTabBarBg)',
+        'layer1.opacity': 1.0,
+        'layer3.tint': 'var(repositoryTabBarBorderBg)',
+        'layer3.texture': 'Theme - Merge/tab_border_end.png',
+        'layer3.inner_margin': [16, 0, 16, 0],
+        'layer3.opacity': 0.2,
+    },
+    {
+        class: 'tab_select_dropdown_icon',
+        parents: [{ class: 'tab_dropdown_button' }],
+        "layer0.tint": "var(colorAccent)",
+        "layer0.opacity": "var(iconButtonOpacity)",
+    },
+    {
+        class: 'tab_select_dropdown_icon',
+        parents: [{ class: 'tab_dropdown_button', attributes: ['hover'] }],
+        "layer0.tint": "var(colorAccent)",
+        "layer0.opacity": "var(iconButtonOpacityHover)",
+    },
+]

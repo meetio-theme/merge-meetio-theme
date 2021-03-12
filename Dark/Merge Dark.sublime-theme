@@ -28,8 +28,6 @@
         "accentLighter": "color(var(background) l(+ 4%))",
         "accentLightest": "color(var(background) l(+ 10%))",
         "darkRed": "color(var(red) s(25%) l(35%))",
-        "darkTeal": "color(var(cyan) s(25%) l(35%))",
-        "darkBlue": "color(var(blue) s(25%) l(35%))",
         "mediumGray": "hsl(210, 10%, 50%)",
         "darkGrayLightest": "hsl(210, 10%, 19%)",
         "darkGrayLight": "hsl(210, 10%, 16%)",
@@ -195,8 +193,8 @@
         "quickPanelPathFgSelectedMatch": "var(foreground)",
         "switchRepoBg": "var(background)",
         "failedLabelFg": "var(darkGray)",
-        "loadingBall1": "var(mediumGray)",
-        "loadingBall2": "var(blue)",
+        "loadingBall1": "var(accentLighter)",
+        "loadingBall2": "var(accentLightest)",
         "previewFg": "var(foreground)",
         "mergeHelperHighlightBg": "color(var(accentLightest) l(25%))",
         "consoleBorder": "var(background)",
@@ -272,6 +270,17 @@
                 0
             ],
             "layer0.opacity": 0
+        },
+        {
+            "class": "command_table"
+        },
+        {
+            "class": "command_history_container",
+            "layer0.tint": "var(background)"
+        },
+        {
+            "class": "command_table_row",
+            "layer0.tint": "var(accentLighter)"
         },
         {
             "class": "console_panel",
@@ -585,7 +594,7 @@
                     "class": "side_bar_container with_graph"
                 }
             ],
-            "layer0.tint": "var(side_bar_container_with_graph_bg)"
+            "layer0.tint": "var(sideBarContainerBgWithGraph)"
         },
         {
             "class": "tab",
@@ -670,7 +679,7 @@
                     "class": "details_tab_bar"
                 }
             ],
-            "layer0.tint": "var(location_tab_bg)"
+            "layer0.tint": "var(locationBarFg)"
         },
         {
             "class": "label_control",
@@ -2446,11 +2455,21 @@
             "background_color": "var(remoteAnnBg)"
         },
         {
+            "class": "commit_annotation",
+            "font.face": "var(font_face)",
+            "font.size": "var(font_size)",
+            "color": "var(remoteAnnFg)",
+            "background_color": "var(remoteAnnBg)"
+        },
+        {
+            "class": "tag_annotation_container",
+            "background_color": "var(tagAnnBg)"
+        },
+        {
             "class": "tag_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "color": "var(tagAnnFg)",
-            "background_color": "var(tagAnnBg)"
+            "color": "var(tagAnnFg)"
         },
         {
             "class": "stash_annotation",
@@ -4765,7 +4784,7 @@
             "settings": [
                 "show_tab_close_buttons"
             ],
-            "layer0.texture": "Theme - Default/common/dark/tab_close.png",
+            "layer0.texture": "Theme - Default/common/tab_close.png",
             "content_margin": [
                 10,
                 9
@@ -4861,18 +4880,17 @@
             "layer3.opacity": 0.2
         },
         {
-            "class": "label_control",
+            "class": "new_tab_icon",
             "parents": [
                 {
                     "class": "new_tab_button"
                 }
             ],
-            "fg": "var(colorAccent)",
-            "opacity": "var(iconButtonOpacity)",
-            "font.bold": true
+            "layer0.tint": "var(colorAccent)",
+            "layer0.opacity": "var(iconButtonOpacity)"
         },
         {
-            "class": "label_control",
+            "class": "new_tab_icon",
             "parents": [
                 {
                     "class": "new_tab_button",
@@ -4881,9 +4899,50 @@
                     ]
                 }
             ],
-            "fg": "var(colorAccent)",
-            "opacity": "var(iconButtonOpacityHover)",
-            "font.bold": true
+            "layer0.tint": "var(colorAccent)",
+            "layer0.opacity": "var(iconButtonOpacityHover)"
+        },
+        {
+            "class": "tab_dropdown_button",
+            "content_margin": 0,
+            "min_size": [
+                32,
+                32
+            ],
+            "layer1.tint": "var(repositoryTabBarBg)",
+            "layer1.opacity": 1,
+            "layer3.tint": "var(repositoryTabBarBorderBg)",
+            "layer3.texture": "Theme - Merge/tab_border_end.png",
+            "layer3.inner_margin": [
+                16,
+                0,
+                16,
+                0
+            ],
+            "layer3.opacity": 0.2
+        },
+        {
+            "class": "tab_select_dropdown_icon",
+            "parents": [
+                {
+                    "class": "tab_dropdown_button"
+                }
+            ],
+            "layer0.tint": "var(colorAccent)",
+            "layer0.opacity": "var(iconButtonOpacity)"
+        },
+        {
+            "class": "tab_select_dropdown_icon",
+            "parents": [
+                {
+                    "class": "tab_dropdown_button",
+                    "attributes": [
+                        "hover"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(colorAccent)",
+            "layer0.opacity": "var(iconButtonOpacityHover)"
         }
     ]
 }
