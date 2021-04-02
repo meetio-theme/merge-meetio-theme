@@ -180,7 +180,7 @@
         "dialogBg": "var(background)",
         "dialogButtonBg": "var(accentLight)",
         "progressBg": "color(var(accentLightest) l(+ 3%))",
-        "progressFg": "color(var(accentDarker) a(0.5))",
+        "progressFg": "color(var(colorAccent) a(0.5))",
         "quickPanelBg": "var(background)",
         "quickPanelRowBg": "var(accentLighter)",
         "quickPanelFg": "var(foreground)",
@@ -1436,7 +1436,15 @@
             "content_margin": 0,
             "min_size": [
                 10,
-                18
+                27
+            ]
+        },
+        {
+            "class": "button_control icon_button search_history_dropdown",
+            "content_margin": 0,
+            "min_size": [
+                10,
+                27
             ]
         },
         {
@@ -1685,7 +1693,6 @@
         },
         {
             "class": "icon_options_dropdown",
-            "layer0.texture": "Theme - Merge/icon_options_dropdown.png",
             "layer0.opacity": "var(iconButtonOpacity)",
             "layer0.tint": "var(colorAccent)",
             "content_margin": [
@@ -1707,8 +1714,19 @@
         },
         {
             "class": "recent_commit_messages icon_options_dropdown",
-            "layer0.texture": "Theme - Merge/icon_options_dropdown.png",
             "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)",
+            "content_margin": [
+                8,
+                13
+            ]
+        },
+        {
+            "class": "recent_commit_messages icon_options_dropdown",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.opacity": "var(iconButtonOpacityHover)",
             "layer0.tint": "var(colorAccent)",
             "content_margin": [
                 8,
@@ -1727,6 +1745,38 @@
         },
         {
             "class": "icon_cancel",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.opacity": "var(iconButtonOpacityHover)"
+        },
+        {
+            "class": "icon_dropdown_button",
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)",
+            "content_margin": [
+                9,
+                8
+            ]
+        },
+        {
+            "class": "icon_dropdown_button",
+            "attributes": [
+                "hover"
+            ],
+            "layer0.opacity": "var(iconButtonOpacityHover)"
+        },
+        {
+            "class": "tab_close_button",
+            "layer0.opacity": "var(iconButtonOpacity)",
+            "layer0.tint": "var(colorAccent)",
+            "content_margin": [
+                9,
+                8
+            ]
+        },
+        {
+            "class": "tab_close_button",
             "attributes": [
                 "hover"
             ],
@@ -2462,7 +2512,7 @@
             "indent": 16
         },
         {
-            "class": "head_annotation",
+            "class": "commit_annotation branch head",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.bold": true,
@@ -2470,21 +2520,14 @@
             "background_color": "var(headAnnBg)"
         },
         {
-            "class": "branch_annotation",
+            "class": "commit_annotation branch",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "color": "var(branchAnnFg)",
             "background_color": "var(branchAnnBg)"
         },
         {
-            "class": "remote_annotation",
-            "font.face": "var(font_face)",
-            "font.size": "var(font_size)",
-            "color": "var(remoteAnnFg)",
-            "background_color": "var(remoteAnnBg)"
-        },
-        {
-            "class": "commit_annotation",
+            "class": "commit_annotation remote",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "color": "var(remoteAnnFg)",

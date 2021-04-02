@@ -887,7 +887,12 @@ export const rules = [
     {
         class: 'button_control icon_button search_close',
         content_margin: 0,
-        min_size: [10, 18],
+        min_size: [10, 27],
+    },
+    {
+        class: 'button_control icon_button search_history_dropdown',
+        content_margin: 0,
+        min_size: [10, 27],
     },
     {
         class: 'button_control_right icon_button',
@@ -1026,7 +1031,6 @@ export const rules = [
     },
     {
         class: 'icon_options_dropdown',
-        'layer0.texture': 'Theme - Merge/icon_options_dropdown.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
         'layer0.tint': 'var(colorAccent)',
         content_margin: [8, 13],
@@ -1038,12 +1042,10 @@ export const rules = [
     },
     {
         class: 'recent_commit_messages icon_options_dropdown',
-        'layer0.texture': 'Theme - Merge/icon_options_dropdown.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
         'layer0.tint': 'var(colorAccent)',
         content_margin: [8, 13],
     },
-
     {
         class: 'icon_cancel',
         'layer0.texture': 'Theme - Merge/icon_cancel.png',
@@ -1053,6 +1055,28 @@ export const rules = [
     },
     {
         class: 'icon_cancel',
+        attributes: ['hover'],
+        'layer0.opacity': 'var(iconButtonOpacityHover)',
+    },
+    {
+        class: 'icon_dropdown_button',
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'var(colorAccent)',
+        content_margin: [9, 8],
+    },
+    {
+        class: 'icon_dropdown_button',
+        attributes: ['hover'],
+        'layer0.opacity': 'var(iconButtonOpacityHover)',
+    },
+    {
+        class: 'tab_close_button',
+        'layer0.opacity': 'var(iconButtonOpacity)',
+        'layer0.tint': 'var(colorAccent)',
+        content_margin: [9, 8],
+    },
+    {
+        class: 'tab_close_button',
         attributes: ['hover'],
         'layer0.opacity': 'var(iconButtonOpacityHover)',
     },
@@ -1558,10 +1582,9 @@ export const rules = [
         color: 'var(commitSummaryFgSecondary)',
         indent: 16,
     },
-
     // Annotations
     {
-        class: 'head_annotation',
+        class: 'commit_annotation branch head',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         'font.bold': true,
@@ -1569,21 +1592,14 @@ export const rules = [
         background_color: 'var(headAnnBg)',
     },
     {
-        class: 'branch_annotation',
+        class: 'commit_annotation branch',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         color: 'var(branchAnnFg)',
         background_color: 'var(branchAnnBg)',
     },
     {
-        class: 'remote_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
-        color: 'var(remoteAnnFg)',
-        background_color: 'var(remoteAnnBg)',
-    },
-    {
-        class: 'commit_annotation',
+        class: 'commit_annotation remote',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         color: 'var(remoteAnnFg)',
