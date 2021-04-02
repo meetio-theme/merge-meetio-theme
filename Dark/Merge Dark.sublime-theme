@@ -452,27 +452,6 @@
             ]
         },
         {
-            "class": "label_control",
-            "parents": [
-                {
-                    "class": "button_control_right"
-                }
-            ],
-            "fg": "var(split_button_right_fg)"
-        },
-        {
-            "class": "label_control",
-            "parents": [
-                {
-                    "class": "button_control_right",
-                    "attributes": [
-                        "hover"
-                    ]
-                }
-            ],
-            "fg": "var(split_button_right_fg-hover)"
-        },
-        {
             "class": "toggle_button",
             "layer0.tint": "var(toggleButtonBg)",
             "layer0.opacity": 1,
@@ -2088,6 +2067,56 @@
                 5,
                 5
             ]
+        },
+        {
+            "class": "button_control icon_button not_filtering search_refs",
+            "layer1.tint": "var(background)"
+        },
+        {
+            "class": "button_control icon_button filtering search_refs",
+            "layer1.tint": "var(background)"
+        },
+        {
+            "class": "icon_filter",
+            "parents": [
+                {
+                    "class": "button_control icon_button not_filtering search_refs"
+                }
+            ],
+            "layer1.tint": "var(colorAccent)"
+        },
+        {
+            "class": "icon_filter",
+            "parents": [
+                {
+                    "class": "button_control icon_button filtering search_refs"
+                }
+            ],
+            "layer0.tint": "var(colorAccent)"
+        },
+        {
+            "class": "icon_filter",
+            "parents": [
+                {
+                    "class": "button_control icon_button filtering search_refs",
+                    "attributes": [
+                        "hover"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(colorAccent)"
+        },
+        {
+            "class": "icon_filter",
+            "parents": [
+                {
+                    "class": "button_control icon_button filtering search_refs",
+                    "attributes": [
+                        "pressed"
+                    ]
+                }
+            ],
+            "layer0.tint": "var(colorAccent)"
         },
         {
             "class": "location_bar_branch_row",

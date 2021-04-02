@@ -172,16 +172,16 @@ export const rules = [
         content_margin: [5, 6],
         min_size: [10, 15],
     },
-    {
-        class: 'label_control',
-        parents: [{ class: 'button_control_right' }],
-        fg: 'var(split_button_right_fg)',
-    },
-    {
-        class: 'label_control',
-        parents: [{ class: 'button_control_right', attributes: ['hover'] }],
-        fg: 'var(split_button_right_fg-hover)',
-    },
+    // {
+    //     class: 'label_control',
+    //     parents: [{ class: 'button_control_right' }],
+    //     fg: 'var(split_button_right_fg)',
+    // },
+    // {
+    //     class: 'label_control',
+    //     parents: [{ class: 'button_control_right', attributes: ['hover'] }],
+    //     fg: 'var(split_button_right_fg-hover)',
+    // },
 
     // Toggle buttons
     {
@@ -1290,6 +1290,34 @@ export const rules = [
         content_margin: [4, 5, 5, 5],
     },
     {
+        class: 'button_control icon_button not_filtering search_refs',
+        'layer1.tint': 'var(background)',
+    },
+    {
+        class: 'button_control icon_button filtering search_refs',
+        'layer1.tint': 'var(background)',
+    },
+    {
+        class: 'icon_filter',
+        parents: [{ class: 'button_control icon_button not_filtering search_refs' }],
+        'layer1.tint': 'var(colorAccent)',
+    },
+    {
+        class: 'icon_filter',
+        parents: [{ class: 'button_control icon_button filtering search_refs' }],
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
+        class: 'icon_filter',
+        parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['hover'] }],
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
+        class: 'icon_filter',
+        parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['pressed'] }],
+        'layer0.tint': 'var(colorAccent)',
+    },
+    {
         class: 'location_bar_branch_row',
         spacing: 4,
     },
@@ -2333,6 +2361,7 @@ export const rules = [
         class: 'hunk_description_container',
         content_margin: [0, 8, 0, 8],
     },
+
     // Commit dialog
     {
         class: 'commit_author',

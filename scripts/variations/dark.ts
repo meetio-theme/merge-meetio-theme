@@ -245,7 +245,7 @@ export const dark = {
 
     // Section: Progress bar
     progressBg: 'color(var(accentLightest) l(+ 3%))',
-    progressFg: 'color(var(accentDarker) a(0.5))',
+    progressFg: 'color(var(colorAccent) a(0.5))',
 
     // Section: Quick panel
     quickPanelBg: 'var(background)',
