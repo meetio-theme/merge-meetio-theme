@@ -2126,6 +2126,16 @@ export const rules = [
         parents: [{ class: 'expand_all_diff_control working' }],
         'layer0.tint': 'var(detailPanelBg)',
     },
+    {
+        class: 'onion_skin_slider',
+        puck_border_color: 'var(accentLighter)',
+        puck_color: 'var(colorAccent)',
+        track_color: 'var(accentLight)',
+    },
+    {
+        class: "image_metadata_label",
+        background_color: "var(accentLightest)"
+    },
 
     {
         class: 'button_control all_button',

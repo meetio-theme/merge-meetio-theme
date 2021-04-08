@@ -1721,18 +1721,6 @@
             ]
         },
         {
-            "class": "recent_commit_messages icon_options_dropdown",
-            "attributes": [
-                "hover"
-            ],
-            "layer0.opacity": "var(iconButtonOpacityHover)",
-            "layer0.tint": "var(colorAccent)",
-            "content_margin": [
-                8,
-                13
-            ]
-        },
-        {
             "class": "icon_cancel",
             "layer0.texture": "Theme - Merge/icon_cancel.png",
             "layer0.opacity": "var(iconButtonOpacity)",
@@ -3259,6 +3247,16 @@
                 }
             ],
             "layer0.tint": "var(detailPanelBg)"
+        },
+        {
+            "class": "onion_skin_slider",
+            "puck_border_color": "var(accentLighter)",
+            "puck_color": "var(colorAccent)",
+            "track_color": "var(accentLight)"
+        },
+        {
+            "class": "image_metadata_label",
+            "background_color": "var(accentLightest)"
         },
         {
             "class": "button_control all_button",
