@@ -1,20 +1,20 @@
- import { light as ui } from '@meetio/meetio-colors';
+import { lighter as ui } from '@meetio/meetio-colors';
 
-export const light = {
+export const lighter = {
     // Section: Define Meetio Colors
     cursor: ui.cursor,
     foreground: ui.foreground,
     background: ui.background,
     comments: ui.comments,
-    blue: ui.blue,
-    brown: ui.brown,
-    cyan: ui.cyan,
-    green: ui.green,
-    orange: ui.orange,
-    pink: ui.pink,
-    purple: ui.purple,
-    red: ui.red,
-    yellow: ui.yellow,
+    blue: ui.base.blue,
+    brown: ui.base.brown,
+    cyan: ui.base.cyan,
+    green: ui.base.green,
+    orange: ui.base.orange,
+    pink: ui.base.pink,
+    purple: ui.base.purple,
+    red: ui.base.red,
+    yellow: ui.base.yellow,
     invalid: ui.invalid,
     deprecated: ui.deprecated,
     diffAdded: ui.diffAdded,
@@ -116,7 +116,7 @@ export const light = {
     detailPanelBg: "var(background)",
     fieldNameFg: "var(foreground)",
     authorFg: "color(var(--foreground) a(0.4))",
-    terminatorFg: 'var(colorAccent)',
+    terminatorFg: 'var(foreground)',
 
     // Center Branch Input
     outputSucceededFg: "var(green)",
@@ -171,6 +171,8 @@ export const light = {
 
     hunkHeaderBg: "var(accentLight)",
 
+    createdIconFg: 'var(green)',
+
     deletedIconFg: "var(foreground)",
     deletedHeaderBg: "var(darkRed)",
     deletedHeaderBgHover: "color(var(darkRed) l(+ 5%))",
@@ -200,9 +202,9 @@ export const light = {
     buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
     buttonFg: "var(labelColor)",
     buttonShadow: "color(black a(0.5))",
-    buttonBgHover: 'color(var(colorAccent) a(0.2))',
+    buttonBgHover: 'color(var(foreground) a(0.2))',
 
-        // Section: Inputs
+    // Section: Inputs
     inputBackground: 'var(background)',
     inputBackgroundWelcome: 'var(welcomeBg)',
     inputBorderColor: 'color(var(background) l(+ 2%))',
@@ -222,21 +224,21 @@ export const light = {
     tabBarBg: 'var(background)',
     tabSeparatorBg: 'var(accentLighter)',
     tabBackground: ['background', 1],
-    tabSelectedBorderColor: 'var(colorAccent)',
+    tabSelectedBorderColor: 'var(foreground)',
     tabSelectedBorderSize: [0, 0, 0, 2],
     tabLabelColor: "color(var(foreground) a(0.50))",
-    tabLabelColorHover: "color(var(colorAccent) a(1.0))",
-    tabLabelColorSelected: "color(var(colorAccent) a(1.0))",
+    tabLabelColorHover: "color(var(foreground) a(1.0))",
+    tabLabelColorSelected: "color(var(foreground) a(1.0))",
 
     // Section: Radio buttons
     radioBack: 'var(--background)',
-    radioSelected: 'var(colorAccent)',
-    radioBorderSelected: 'var(colorAccent)',
+    radioSelected: 'var(foreground)',
+    radioBorderSelected: 'var(foreground)',
 
     // Section: Checkbox buttons
     checkboxBack: 'var(--background)',
-    checkboxSelected: 'var(colorAccent)',
-    checkboxBorderSelected: 'var(colorAccent)',
+    checkboxSelected: 'var(foreground)',
+    checkboxBorderSelected: 'var(foreground)',
 
     // Dialogs
     dialogBg: "var(background)",
@@ -286,14 +288,14 @@ export const light = {
     fileBadgeModifiedLeftFg: 'var(foreground)',
     fileBadgeModifiedRightFg: 'var(red)',
     fileBadgeModifiedBg: 'color(white a(0.2))',
-    fileBadgeModifiedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeModifiedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUnmergedFg: 'var(foreground)',
     fileBadgeUnmergedBg: 'color(white a(0.2))',
-    fileBadgeUnmergedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUnmergedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUntrackedBg: 'color(white a(0.2))',
-    fileBadgeUntrackedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUntrackedFg: 'var(foreground)',
     fileBadgeStagedBg: 'color(white a(0.2))',
-    fileBadgeStagedBgHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeStagedBgHover: 'color(var(foreground) a(0.35))',
     fileBadgeStagedFg: 'var(foreground)',
 };

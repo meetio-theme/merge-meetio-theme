@@ -1,20 +1,20 @@
-import { dark as ui } from '@meetio/meetio-colors';
+import { darker as ui } from '@meetio/meetio-colors';
 
-export const dark = {
+export const darker = {
     // Section: Define Meetio Colors
     cursor: ui.cursor,
     foreground: ui.foreground,
     background: ui.background,
     comments: ui.comments,
-    blue: ui.blue,
-    brown: ui.brown,
-    cyan: ui.cyan,
-    green: ui.green,
-    orange: ui.orange,
-    pink: ui.pink,
-    purple: ui.purple,
-    red: ui.red,
-    yellow: ui.yellow,
+    blue: ui.base.blue,
+    brown: ui.base.brown,
+    cyan: ui.base.cyan,
+    green: ui.base.green,
+    orange: ui.base.orange,
+    pink: ui.base.pink,
+    purple: ui.base.purple,
+    red: ui.base.red,
+    yellow: ui.base.yellow,
     invalid: ui.invalid,
     deprecated: ui.deprecated,
     diffAdded: ui.diffAdded,
@@ -22,7 +22,6 @@ export const dark = {
     diffDeleted: ui.diffDeleted,
     transparent: "transparent",
 
-    colorAccent: '#80CBC4',
     accentDark: 'color(var(background) l(- 0.75%))',
     accentDarker: 'color(var(background) l(- 1.00%))',
     accentDarkest: 'color(var(background) l(- 2.00%))',
@@ -117,7 +116,7 @@ export const dark = {
     detailPanelBg: 'var(background)',
     fieldNameFg: 'var(foreground)',
     authorFg: 'color(var(--foreground) a(0.4))',
-    terminatorFg: 'var(colorAccent)',
+    terminatorFg: 'var(foreground)',
 
     // Section: Center Branch Input
     outputSucceededFg: "var(green)",
@@ -151,11 +150,12 @@ export const dark = {
 
     fileAnnFg: 'var(foreground)',
     fileAnnBg: 'color(var(cyan) a(0.50))',
+
     fileAnnIconAheadFg: 'var(green)',
     fileAnnIconBehindFg: 'var(red)',
 
-    submoduleAnnBg: 'var(darkGrayLightest)',
-    submoduleLightAnnBg: 'var(darkGrayLightest)',
+    submoduleAnnBg: 'var(purple)',
+    submoduleLightAnnBg: 'var(foreground)',
 
     insertedAnnBg: 'color(var(cyan) a(0.50))',
     deletedAnnBg: 'color(var(red) a(0.50))',
@@ -172,16 +172,19 @@ export const dark = {
 
     hunkHeaderBg: 'var(accentLight)',
 
-    deletedIconFg: 'var(foreground)',
+    createdIconFg: 'var(green)',
+
+    deletedIconFg: 'var(red)',
     deletedHeaderBg: 'var(darkRed)',
     deletedHeaderBgHover: 'color(var(darkRed) l(+ 5%))',
 
-    unmergedIconFg: 'color(var(foreground) l(+ 20%))',
+    unmergedIconFg: 'var(yellow)',
     unmergedHeaderBg: 'var(accentLighter)',
     unmergedHeaderBgHover: 'var(accentLightest)',
 
     recentIconFg: 'var(yellow)',
     recentIconBg: 'transparent',
+
     untrackedHeaderBg: 'var(accentLight)',
     untrackedHeaderBgHover: 'var(accentLighter)',
 
@@ -201,7 +204,7 @@ export const dark = {
     buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
     buttonFg: 'var(labelColor)',
     buttonShadow: 'color(black a(0.5))',
-    buttonBgHover: 'color(var(colorAccent) a(0.2))',
+    buttonBgHover: 'color(var(foreground) a(0.2))',
 
     // Section: Inputs
     inputBackground: 'var(background)',
@@ -223,21 +226,21 @@ export const dark = {
     tabBarBg: 'var(background)',
     tabSeparatorBg: 'var(accentLighter)',
     tabBackground: ['background', 1],
-    tabSelectedBorderColor: 'var(colorAccent)',
+    tabSelectedBorderColor: 'var(foreground)',
     tabSelectedBorderSize: [0, 0, 0, 2],
     tabLabelColor: "color(var(foreground) a(0.50))",
-    tabLabelColorHover: "color(var(colorAccent) a(1.0))",
-    tabLabelColorSelected: "color(var(colorAccent) a(1.0))",
+    tabLabelColorHover: "color(var(foreground) a(1.0))",
+    tabLabelColorSelected: "color(var(foreground) a(1.0))",
 
     // Section: Radio buttons
     radioBack: 'var(--background)',
-    radioSelected: 'var(colorAccent)',
-    radioBorderSelected: 'var(colorAccent)',
+    radioSelected: 'var(foreground)',
+    radioBorderSelected: 'var(foreground)',
 
     // Section: Checkbox buttons
     checkboxBack: 'var(--background)',
-    checkboxSelected: 'var(colorAccent)',
-    checkboxBorderSelected: 'var(colorAccent)',
+    checkboxSelected: 'var(foreground)',
+    checkboxBorderSelected: 'var(foreground)',
 
     // Section: Dialogs
     dialogBg: 'var(background)',
@@ -245,7 +248,7 @@ export const dark = {
 
     // Section: Progress bar
     progressBg: 'color(var(accentLightest) l(+ 3%))',
-    progressFg: 'color(var(accentDarker) a(0.5))',
+    progressFg: 'color(var(foreground) a(0.5))',
 
     // Section: Quick panel
     quickPanelBg: 'var(background)',
@@ -274,7 +277,7 @@ export const dark = {
 
     // Section: Merge Helper
     mergeHelperHighlightBg: 'color(var(accentLightest) l(25%))',
-    consoleBorder: 'var(background)',
+    consoleBorder: 'var(accentLight)',
 
     // Section: Hazard buttons
     hazardButtonBg: 'var(red)',
@@ -288,14 +291,14 @@ export const dark = {
     fileBadgeModifiedLeftFg: 'var(foreground)',
     fileBadgeModifiedRightFg: 'var(red)',
     fileBadgeModifiedBg: 'color(white a(0.2))',
-    fileBadgeModifiedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeModifiedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUnmergedFg: 'var(foreground)',
     fileBadgeUnmergedBg: 'color(white a(0.2))',
-    fileBadgeUnmergedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUnmergedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUntrackedBg: 'color(white a(0.2))',
-    fileBadgeUntrackedHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeUntrackedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUntrackedFg: 'var(foreground)',
     fileBadgeStagedBg: 'color(white a(0.2))',
-    fileBadgeStagedBgHover: 'color(var(colorAccent) a(0.35))',
+    fileBadgeStagedBgHover: 'color(var(foreground) a(0.35))',
     fileBadgeStagedFg: 'var(foreground)',
 };
