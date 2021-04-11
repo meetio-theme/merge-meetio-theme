@@ -10,26 +10,10 @@ node_modules/
 .rpt2_cache
 dist/
 demo/*.js
+schemes/
 
 # Generated files
 package-lock.json
 npm-debug
 yarn.lock
 yarn-error.log
-
-# Sublime Files
-Preferences.sublime-settings
-Merge.sublime-theme
-
-# Testing Files
-Commit Message - Merge Dark.sublime-settings
-Diff - Merge Dark.sublime-settings
-File Mode - Merge Dark.sublime-settings
-Meetio-Theme-Dark.sublime-color-scheme
-Widget - Merge Dark.sublime-settings
-
-Commit Message - Merge Light.sublime-settings
-Diff - Merge Light.sublime-settings
-File Mode - Merge Light.sublime-settings
-Meetio-Theme-Light.sublime-color-scheme
-Widget - Merge Light.sublime-settings

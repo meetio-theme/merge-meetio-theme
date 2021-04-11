@@ -4,29 +4,42 @@ import {
     IRules,
     IColors,
 } from '@meetio/scheme-generator';
-import { dark, light } from '@meetio/meetio-colors';
+import { darker, lighter, palenight, deepocean } from '@meetio/meetio-colors';
 
 interface IScheme {
     name: string;
     author: string;
     variables: IColors;
-    folder: string;
+    // folder: string;
     customRules: Array<IRules>;
 }
-
 [
     {
-        name: 'Meetio-Theme-Dark',
+        name: 'Meetio Darker',
         author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-        variables: dark,
-        folder: 'Dark',
+        variables: darker,
+        // folder: 'Dark',
         customRules: [],
     },
     {
-        name: 'Meetio-Theme-Light',
+        name: 'Meetio Lighter',
         author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
-        variables: light,
-        folder: 'Light',
+        variables: lighter,
+        // folder: 'Light',
+        customRules: [],
+    },
+    {
+        name: 'Meetio Palenight',
+        author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
+        variables: palenight,
+        // folder: 'Palenight',
+        customRules: [],
+    },
+    {
+        name: 'Meetio Deepocean',
+        author: 'Mauro Reis Vieira <mauroreisvieira@gmail.com>',
+        variables: deepocean,
+        // folder: 'Deepocean',
         customRules: [],
     },
 ].map((item: IScheme) => {
@@ -34,5 +47,5 @@ interface IScheme {
         colors: item.variables,
         rules: item.customRules,
     };
-    generateScheme(item.name, item.author, item.name, settings, item.folder);
+    generateScheme(item.name, item.author, item.name, settings/*, item.folder*/);
 });

@@ -77,6 +77,10 @@ export const rules = [
         'font.size': 'var(font_size)',
     },
     {
+        class: "eliding_label_control",
+        color: "var(foreground)"
+    },
+    {
         class: 'title_label_control',
         fg: 'var(labelColor)',
         'font.face': 'var(font_face)',
@@ -737,21 +741,21 @@ export const rules = [
     {
         class: 'git_output_button',
         'layer0.texture': 'Theme - Merge/icon_output_border.png',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         'layer0.opacity': {
             target: 1.0,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
         'layer1.texture': 'Theme - Merge/icon_output_prompt.png',
-        'layer1.tint': 'var(colorAccent)',
+        'layer1.tint': 'var(foreground)',
         'layer1.opacity': {
             target: 0.6,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
         'layer2.texture': 'Theme - Merge/icon_output_none.png',
-        'layer2.tint': 'var(colorAccent)',
+        'layer2.tint': 'var(foreground)',
         'layer2.opacity': {
             target: 0.8,
             speed: 4.0,
@@ -913,7 +917,7 @@ export const rules = [
         class: 'icon_side_bar',
         'layer0.texture': 'Theme - Merge/icon_side_bar.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -925,7 +929,7 @@ export const rules = [
         class: 'icon_table_of_contents',
         'layer0.texture': 'Theme - Merge/icon_toc.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -937,7 +941,7 @@ export const rules = [
         class: 'icon_back',
         'layer0.texture': 'Theme - Merge/icon_back.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -949,7 +953,7 @@ export const rules = [
         class: 'icon_forward',
         'layer0.texture': 'Theme - Merge/icon_forward.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -961,7 +965,7 @@ export const rules = [
         class: 'icon_stash',
         'layer0.texture': 'Theme - Merge/icon_stash.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -973,7 +977,7 @@ export const rules = [
         class: 'icon_pop_stash',
         'layer0.texture': 'Theme - Merge/icon_pop_stash.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -985,7 +989,7 @@ export const rules = [
         class: 'icon_search',
         'layer0.texture': 'Theme - Merge/icon_search.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -997,7 +1001,7 @@ export const rules = [
         class: 'icon_more',
         'layer0.texture': 'Theme - Merge/icon_more.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -1009,7 +1013,7 @@ export const rules = [
         class: 'icon_pull',
         'layer0.texture': 'Theme - Merge/icon_pull.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -1021,7 +1025,7 @@ export const rules = [
         class: 'icon_push',
         'layer0.texture': 'Theme - Merge/icon_push.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [15, 13],
     },
     {
@@ -1032,7 +1036,7 @@ export const rules = [
     {
         class: 'icon_options_dropdown',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [8, 13],
     },
     {
@@ -1043,14 +1047,14 @@ export const rules = [
     {
         class: 'recent_commit_messages icon_options_dropdown',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [8, 13],
     },
     {
         class: 'icon_cancel',
         'layer0.texture': 'Theme - Merge/icon_cancel.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [9, 8],
     },
     {
@@ -1061,7 +1065,7 @@ export const rules = [
     {
         class: 'icon_dropdown_button',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [9, 8],
     },
     {
@@ -1072,7 +1076,7 @@ export const rules = [
     {
         class: 'tab_close_button',
         'layer0.opacity': 'var(iconButtonOpacity)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [9, 8],
     },
     {
@@ -1084,7 +1088,7 @@ export const rules = [
         class: 'icon_visible',
         'layer0.texture': 'Theme - Merge/icon_visible.png',
         'layer0.opacity': 'var(iconButtonOpacityHidden)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [8, 5],
     },
 
@@ -1324,22 +1328,22 @@ export const rules = [
     {
         class: 'icon_filter',
         parents: [{ class: 'button_control icon_button not_filtering search_refs' }],
-        'layer1.tint': 'var(colorAccent)',
+        'layer1.tint': 'var(foreground)',
     },
     {
         class: 'icon_filter',
         parents: [{ class: 'button_control icon_button filtering search_refs' }],
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
     },
     {
         class: 'icon_filter',
         parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['hover'] }],
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
     },
     {
         class: 'icon_filter',
         parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['pressed'] }],
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
     },
     {
         class: 'location_bar_branch_row',
@@ -1373,7 +1377,7 @@ export const rules = [
         class: 'icon_hidden',
         'layer0.texture': 'Theme - Merge/icon_hidden.png',
         'layer0.opacity': 'var(iconButtonOpacityFaded)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         'layer1.texture': 'Theme - Merge/icon_hidden_slash.png',
         'layer1.opacity': 'var(iconButtonOpacity)',
         'layer1.tint': 'var(hiddenSlash)',
@@ -1389,14 +1393,14 @@ export const rules = [
         class: 'icon_uninitialized_submodule',
         'layer0.texture': 'Theme - Merge/icon_diverged_filled.png',
         'layer0.opacity': 0.35,
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [8, 5],
     },
     {
         class: 'icon_section_actions',
         'layer0.texture': 'Theme - Merge/gear.png',
         'layer0.opacity': 'var(iconButtonOpacityHidden)',
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [10, 7],
     },
     {
@@ -1587,7 +1591,6 @@ export const rules = [
         class: 'commit_annotation branch head',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
-        'font.bold': true,
         color: 'var(headAnnFg)',
         background_color: 'var(headAnnBg)',
     },
@@ -1604,6 +1607,18 @@ export const rules = [
         'font.size': 'var(font_size)',
         color: 'var(remoteAnnFg)',
         background_color: 'var(remoteAnnBg)',
+    },
+    {
+        class: "condensed_branch_annotation_container",
+        background_color: "var(purple)"
+    },
+    {
+        class: "condensed_branch_annotation",
+        fg: "var(background)"
+    },
+    {
+        class: "condensed_branch_icon",
+        "layer0.tint": "var(background)"
     },
     {
         class: 'tag_annotation_container',
@@ -1667,9 +1682,9 @@ export const rules = [
         class: 'search_help',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
-        background_color: 'var(--background)',
-        headline_color: 'color(var(--foreground) l(+ 10%))',
-        color: 'var(--foreground)',
+        background_color: 'var(background)',
+        headline_color: 'color(var(foreground) l(+ 10%))',
+        color: 'var(foreground)',
         content_margin: [14, 8, 14, 14],
     },
     {
@@ -1779,7 +1794,7 @@ export const rules = [
         content_margin: [8, 8, 8, 8],
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
-        background_color: 'var(blame_popup_bg)',
+        background_color: 'var(accentLight)',
         link_color: 'var(blue)',
         color: 'var(--foreground)',
     },
@@ -1948,7 +1963,7 @@ export const rules = [
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         'font.italic': true,
-        color: 'var(field_name_fg)',
+        color: 'var(foreground)',
     },
     {
         class: 'separator_container',
@@ -2129,7 +2144,7 @@ export const rules = [
     {
         class: 'onion_skin_slider',
         puck_border_color: 'var(accentLighter)',
-        puck_color: 'var(colorAccent)',
+        puck_color: 'var(foreground)',
         track_color: 'var(accentLight)',
     },
     {
@@ -2221,7 +2236,7 @@ export const rules = [
     {
         class: 'icon_created',
         'layer0.texture': 'Theme - Merge/icon_staged.png',
-        'layer0.tint': 'var(deletedIconFg)',
+        'layer0.tint': 'var(createdIconFg)',
         'layer0.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
     },
@@ -2294,6 +2309,12 @@ export const rules = [
     },
     {
         class: 'label_control',
+        parents: [{ class: 'file_diff_header' }],
+        shadow_color: 'var(file_diff_shadow)',
+        shadow_offset: [0, 1],
+    },
+    {
+        class: 'eliding_label_control',
         parents: [{ class: 'file_diff_header' }],
         shadow_color: 'var(file_diff_shadow)',
         shadow_offset: [0, 1],
@@ -2747,14 +2768,6 @@ export const rules = [
         case: 'title',
     },
     {
-        class: 'preference_title_label',
-        fg: 'var(labelColor)',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
-        'font.bold': true,
-        case: 'title',
-    },
-    {
         class: 'preference_help_text_label',
         fg: 'var(helpLabelColor)',
         'font.face': 'var(font_face)',
@@ -2779,7 +2792,7 @@ export const rules = [
     // Tool Tips
     {
         class: 'tool_tip_control',
-        'layer0.tint': 'var(toolTipFg)',
+        'layer0.tint': 'var(foreground)',
         'layer0.opacity': 1.0,
         content_margin: [8, 3, 8, 3],
     },
@@ -2787,7 +2800,7 @@ export const rules = [
         class: 'tool_tip_label_control',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size_sm)',
-        fg: 'var(toolTipBg)',
+        fg: 'color(black)',
     },
 
     // Hints
@@ -3061,7 +3074,7 @@ export const rules = [
         class: 'icon_folder',
         'layer0.texture': 'Theme - Merge/folder_closed.png',
         'layer0.opacity': 0.4,
-        'layer0.tint': 'var(colorAccent)',
+        'layer0.tint': 'var(foreground)',
         content_margin: [9, 8],
     },
     {
@@ -3156,13 +3169,13 @@ export const rules = [
     {
         class: 'new_tab_icon',
         parents: [{ class: 'new_tab_button' }],
-        "layer0.tint": "var(colorAccent)",
+        "layer0.tint": "var(foreground)",
         "layer0.opacity": "var(iconButtonOpacity)",
     },
     {
         class: 'new_tab_icon',
         parents: [{ class: 'new_tab_button', attributes: ['hover'] }],
-        "layer0.tint": "var(colorAccent)",
+        "layer0.tint": "var(foreground)",
         "layer0.opacity": "var(iconButtonOpacityHover)",
     },
     {
@@ -3179,13 +3192,13 @@ export const rules = [
     {
         class: 'tab_select_dropdown_icon',
         parents: [{ class: 'tab_dropdown_button' }],
-        "layer0.tint": "var(colorAccent)",
+        "layer0.tint": "var(foreground)",
         "layer0.opacity": "var(iconButtonOpacity)",
     },
     {
         class: 'tab_select_dropdown_icon',
         parents: [{ class: 'tab_dropdown_button', attributes: ['hover'] }],
-        "layer0.tint": "var(colorAccent)",
+        "layer0.tint": "var(foreground)",
         "layer0.opacity": "var(iconButtonOpacityHover)",
     },
 ]
