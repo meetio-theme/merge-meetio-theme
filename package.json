@@ -1,6 +1,6 @@
 {
     "name": "@meetio/merge-meetio-theme",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "The most powerful theme for Sublime Merge",
     "bugs": {
         "url": "https://github.com/meetio-theme/merge-meetio-theme/issues"
