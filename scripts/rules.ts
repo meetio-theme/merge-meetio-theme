@@ -1471,7 +1471,7 @@ export const rules = [
         'font.bold': true,
         color: 'var(locationBarFg)',
         shadow_color: 'var(location_bar_heading_shadow)',
-        shadow_offset: [0, 1],
+        shadow_offset: [0, 0],
     },
 
     // Commit list
