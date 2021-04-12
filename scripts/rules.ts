@@ -58,8 +58,8 @@ export const rules = [
     // Focus highlight
     {
         class: 'focus_highlight_control',
-        highlight_color: 'color(var(focus_highlight_color) a(0.2))',
-        highlight_border_color: 'color(var(focus_highlight_color) a(0.6))',
+        highlight_color: 'color(var(foreground) a(0.2))',
+        highlight_border_color: 'color(var(foreground) a(0.6))',
     },
 
     // Overlay
@@ -75,10 +75,6 @@ export const rules = [
         fg: 'var(labelColor)',
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
-    },
-    {
-        class: "eliding_label_control",
-        color: "var(foreground)"
     },
     {
         class: 'title_label_control',
@@ -1232,7 +1228,7 @@ export const rules = [
         'font.bold': true,
         color: 'var(locationBarFg)',
         shadow_color: 'var(location_bar_heading_shadow)',
-        shadow_offset: [0, 1],
+        shadow_offset: [0, 0],
     },
     {
         class: 'location_bar_tree',
@@ -1946,8 +1942,8 @@ export const rules = [
     },
     {
         class: 'commit_metadata_standin',
-        'layer0.tint': 'var(pink)',
-        'layer0.opacity': 1.0,
+        'layer0.tint': 'var(background)',
+        'layer0.opacity': 0.0,
         content_margin: [0, 4, 0, 0],
     },
     {
@@ -1963,6 +1959,7 @@ export const rules = [
         'font.face': 'var(font_face)',
         'font.size': 'var(font_size)',
         'font.italic': true,
+        'font.bold': true,
         color: 'var(foreground)',
     },
     {
@@ -2149,7 +2146,8 @@ export const rules = [
     },
     {
         class: "image_metadata_label",
-        background_color: "var(accentLightest)"
+        background_color: "var(accentLightest)",
+        fg: "var(foreground)"
     },
 
     {
@@ -2310,14 +2308,19 @@ export const rules = [
     {
         class: 'label_control',
         parents: [{ class: 'file_diff_header' }],
+        "font.bold": true,
         shadow_color: 'var(file_diff_shadow)',
-        shadow_offset: [0, 1],
+        shadow_offset: [0, 0],
+    },
+    {
+        class: "eliding_label_control",
+        color: "var(foreground)"
     },
     {
         class: 'eliding_label_control',
         parents: [{ class: 'file_diff_header' }],
         shadow_color: 'var(file_diff_shadow)',
-        shadow_offset: [0, 1],
+        shadow_offset: [0, 0],
     },
     {
         class: 'label_control',
@@ -3099,6 +3102,10 @@ export const rules = [
                 ]
             }],
         fg: "var(tabLabelColorHover)"
+    },
+    {
+        class: "close_button_control",
+        "layer0.tint": "var(foreground)",
     },
     {
         class: "tab_label",
