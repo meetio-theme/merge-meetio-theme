@@ -29,12 +29,6 @@ export const lighter = {
     accentLighter: "color(var(background) l(+ 4%))",
     accentLightest: "color(var(background) l(+ 10%))",
 
-    darkRed: "color(var(red) s(25%) l(35%))",
-
-    mediumGray: "hsl(210, 10%, 50%)",
-    darkGrayLightest: "hsl(210, 10%, 19%)",
-    darkGrayLight: "hsl(210, 10%, 16%)",
-    darkGrayMedium: "hsl(210, 10%, 13%)",
     darkGray: "hsl(210, 10%, 10%)",
 
     // Labels
@@ -174,8 +168,8 @@ export const lighter = {
     createdIconFg: 'var(green)',
 
     deletedIconFg: "var(foreground)",
-    deletedHeaderBg: "var(darkRed)",
-    deletedHeaderBgHover: "color(var(darkRed) l(+ 5%))",
+    deletedHeaderBg: "var(red)",
+    deletedHeaderBgHover: "color(var(red) l(+ 5%))",
 
     unmergedIconFg: "color(var(foreground) l(+ 20%))",
     unmergedHeaderBg: "var(accentLighter)",

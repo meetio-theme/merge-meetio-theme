@@ -30,12 +30,6 @@ export const palenight = {
     accentLighter: 'color(var(background) l(+ 4%))',
     accentLightest: 'color(var(background) l(+ 10%))',
 
-    darkRed: 'color(var(red) s(25%) l(35%))',
-
-    mediumGray: 'hsl(210, 10%, 50%)',
-    darkGrayLightest: 'hsl(210, 10%, 19%)',
-    darkGrayLight: 'hsl(210, 10%, 16%)',
-    darkGrayMedium: 'hsl(210, 10%, 13%)',
     darkGray: 'hsl(210, 10%, 10%)',
 
     // Section: Labels
@@ -176,8 +170,8 @@ export const palenight = {
     createdIconFg: 'var(green)',
 
     deletedIconFg: 'var(red)',
-    deletedHeaderBg: 'var(darkRed)',
-    deletedHeaderBgHover: 'color(var(darkRed) l(+ 5%))',
+    deletedHeaderBg: 'var(red)',
+    deletedHeaderBgHover: 'color(var(red) l(+ 5%))',
 
     unmergedIconFg: 'var(yellow)',
     unmergedHeaderBg: 'var(accentLighter)',

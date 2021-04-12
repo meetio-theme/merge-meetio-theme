@@ -1111,6 +1111,7 @@ export const rules = [
     {
         class: 'merge_helper_highlight_label',
         background_color: 'var(divergedBg)',
+        fg: "var(accentLightest)"
     },
 
     // Diverged banner
