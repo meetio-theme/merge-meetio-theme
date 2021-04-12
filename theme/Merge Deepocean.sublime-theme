@@ -2325,7 +2325,7 @@
             "shadow_color": "var(location_bar_heading_shadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
