@@ -1224,7 +1224,7 @@
                 2,
                 2
             ],
-            "layer0.tint": "var(info-progress_bar_bg)",
+            "layer0.tint": "var(background)",
             "layer0.opacity": 1
         },
         {
@@ -1241,7 +1241,7 @@
                 2,
                 2
             ],
-            "layer0.tint": "var(info-progress_bar_fg)",
+            "layer0.tint": "var(foreground)",
             "layer0.opacity": 1,
             "content_margin": [
                 0,

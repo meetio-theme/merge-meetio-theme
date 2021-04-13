@@ -722,7 +722,7 @@ export const rules = [
         parents: [{ class: 'info_area' }],
         'layer0.texture': 'Theme - Merge/progress_bar_bottom.png',
         'layer0.inner_margin': [2, 0, 2, 2],
-        'layer0.tint': 'var(info-progress_bar_bg)',
+        'layer0.tint': 'var(background)',
         'layer0.opacity': 1.0,
     },
     {
@@ -730,7 +730,7 @@ export const rules = [
         parents: [{ class: 'info_area' }],
         'layer0.texture': 'Theme - Merge/progress_bar_bottom.png',
         'layer0.inner_margin': [2, 0, 2, 2],
-        'layer0.tint': 'var(info-progress_bar_fg)',
+        'layer0.tint': 'var(foreground)',
         'layer0.opacity': 1.0,
         content_margin: [0, 2],
     },
