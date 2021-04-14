@@ -970,6 +970,16 @@ export const rules = [
         'layer0.opacity': 'var(iconButtonOpacityHover)',
     },
     {
+        class: 'icon_full_context',
+        parents: [{ class: 'file_diff_hunk_container', attributes: ['hover'] }],
+        'layer0.opacity': 'var(iconButtonOpacity)',
+    },
+    {
+        class: 'icon_full_context',
+        parents: [{ class: 'icon_button', attributes: ['hover'] }],
+        'layer0.opacity': 'var(iconButtonOpacityHover)',
+    },
+    {
         class: 'icon_pop_stash',
         'layer0.texture': 'Theme - Merge/icon_pop_stash.png',
         'layer0.opacity': 'var(iconButtonOpacity)',
