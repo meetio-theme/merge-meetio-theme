@@ -2478,6 +2478,10 @@ export const rules = [
 
     // Hunk buttons
     {
+        class: 'icon_more_hunk',
+        'layer0.tint': 'var(foreground)'
+    },
+    {
         class: 'hunk_button',
         min_size: [90, 15],
         content_margin: [10, 3],
