@@ -1333,24 +1333,52 @@ export const rules = [
         'layer1.tint': 'var(background)',
     },
     {
-        class: 'icon_filter',
-        parents: [{ class: 'button_control icon_button not_filtering search_refs' }],
-        'layer1.tint': 'var(foreground)',
+        class: "filter_button",
+        "layer1.tint": "var(tabBackground)"
     },
     {
-        class: 'icon_filter',
-        parents: [{ class: 'button_control icon_button filtering search_refs' }],
-        'layer0.tint': 'var(foreground)',
+        class: "icon_filter",
+        parents: [
+            {
+                class: "button_control icon_button filter_button"
+            }
+        ],
+        "layer1.tint": "var(foreground)"
     },
     {
-        class: 'icon_filter',
-        parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['hover'] }],
-        'layer0.tint': 'var(foreground)',
+        class: "icon_filter",
+        parents: [
+            {
+                class: "button_control icon_button filter_button"
+            }
+        ],
+        "layer0.tint": "var(foreground)"
     },
     {
-        class: 'icon_filter',
-        parents: [{ class: 'button_control icon_button filtering search_refs', attributes: ['pressed'] }],
-        'layer0.tint': 'var(foreground)',
+        class: "icon_filter",
+        parents: [
+            {
+                class: "button_control icon_button filter_button",
+                attributes: [
+                    "hover"
+                ]
+            }
+        ],
+        "layer0.tint": "var(foreground)"
+    },
+    {
+        class: "icon_filter",
+        parents: [
+            {
+                class: "button_control icon_button filter_button",
+                attributes: [
+                    "selected"
+                ]
+            }
+        ],
+        "layer0.opacity": 0.25,
+        "layer1.opacity": 0.75,
+        "layer1.tint": "var(foreground)",
     },
     {
         class: 'location_bar_branch_row',

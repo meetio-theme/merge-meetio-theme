@@ -2135,10 +2135,14 @@
             "layer1.tint": "var(background)"
         },
         {
+            "class": "filter_button",
+            "layer1.tint": "var(tabBackground)"
+        },
+        {
             "class": "icon_filter",
             "parents": [
                 {
-                    "class": "button_control icon_button not_filtering search_refs"
+                    "class": "button_control icon_button filter_button"
                 }
             ],
             "layer1.tint": "var(foreground)"
@@ -2147,7 +2151,7 @@
             "class": "icon_filter",
             "parents": [
                 {
-                    "class": "button_control icon_button filtering search_refs"
+                    "class": "button_control icon_button filter_button"
                 }
             ],
             "layer0.tint": "var(foreground)"
@@ -2156,7 +2160,7 @@
             "class": "icon_filter",
             "parents": [
                 {
-                    "class": "button_control icon_button filtering search_refs",
+                    "class": "button_control icon_button filter_button",
                     "attributes": [
                         "hover"
                     ]
@@ -2168,13 +2172,15 @@
             "class": "icon_filter",
             "parents": [
                 {
-                    "class": "button_control icon_button filtering search_refs",
+                    "class": "button_control icon_button filter_button",
                     "attributes": [
-                        "pressed"
+                        "selected"
                     ]
                 }
             ],
-            "layer0.tint": "var(foreground)"
+            "layer0.opacity": 0.25,
+            "layer1.opacity": 0.75,
+            "layer1.tint": "var(foreground)"
         },
         {
             "class": "location_bar_branch_row",
