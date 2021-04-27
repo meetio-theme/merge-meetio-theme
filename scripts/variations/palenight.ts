@@ -143,14 +143,17 @@ export const palenight = {
     stashAnnFg: 'var(background)',
     stashAnnBg: 'var(orange)',
 
-    fileAnnFg: 'var(foreground)',
+    fileAnnFg: 'var(background)',
     fileAnnBg: 'color(var(cyan) a(0.50))',
 
     fileAnnIconAheadFg: 'var(green)',
     fileAnnIconBehindFg: 'var(red)',
 
+    submoduleAnnFg: 'var(background)',
+    submoduleLightAnnFg: 'var(background)',
+
     submoduleAnnBg: 'var(purple)',
-    submoduleLightAnnBg: 'var(foreground)',
+    submoduleLightAnnBg: 'var(purple)',
 
     insertedAnnBg: 'color(var(cyan) a(0.50))',
     deletedAnnBg: 'color(var(red) a(0.50))',
@@ -179,6 +182,8 @@ export const palenight = {
 
     recentIconFg: 'var(yellow)',
     recentIconBg: 'transparent',
+
+    iconUninitializedSubmodule: "var(yellow)",
 
     untrackedHeaderBg: 'var(accentLight)',
     untrackedHeaderBgHover: 'var(accentLighter)',

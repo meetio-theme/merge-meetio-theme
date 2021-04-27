@@ -142,13 +142,17 @@ export const lighter = {
     stashAnnFg: "var(background)",
     stashAnnBg: "var(orange)",
 
-    fileAnnFg: "var(foreground)",
-    fileAnnBg: "color(var(accentLightest) a(0.75))",
+    fileAnnFg: "var(background)",
+    fileAnnBg: "color(var(cyan) a(0.75))",
+
     fileAnnIconAheadFg: 'var(green)',
     fileAnnIconBehindFg: 'var(red)',
 
-    submoduleAnnBg: "var(darkGrayLightest)",
-    submoduleLightAnnBg: "var(darkGrayLightest)",
+    submoduleAnnFg: 'var(background)',
+    submoduleLightAnnFg: 'var(background)',
+
+    submoduleAnnBg: 'var(purple)',
+    submoduleLightAnnBg: 'var(purple)',
 
     insertedAnnBg: "color(var(cyan) a(0.50))",
     deletedAnnBg: "color(var(red) a(0.50))",
@@ -177,6 +181,9 @@ export const lighter = {
 
     recentIconFg: "var(yellow)",
     recentIconBg: "transparent",
+
+    iconUninitializedSubmodule: "var(yellow)",
+
     untrackedHeaderBg: 'var(accentLight)',
     untrackedHeaderBgHover: 'var(accentLighter)',
 

@@ -97,12 +97,14 @@
         "tagAnnBg": "var(yellow)",
         "stashAnnFg": "var(background)",
         "stashAnnBg": "var(orange)",
-        "fileAnnFg": "var(foreground)",
+        "fileAnnFg": "var(background)",
         "fileAnnBg": "color(var(cyan) a(0.50))",
         "fileAnnIconAheadFg": "var(green)",
         "fileAnnIconBehindFg": "var(red)",
+        "submoduleAnnFg": "var(background)",
+        "submoduleLightAnnFg": "var(background)",
         "submoduleAnnBg": "var(purple)",
-        "submoduleLightAnnBg": "var(foreground)",
+        "submoduleLightAnnBg": "var(purple)",
         "insertedAnnBg": "color(var(cyan) a(0.50))",
         "deletedAnnBg": "color(var(red) a(0.50))",
         "fileDiffShadow": "color(black a(0.5))",
@@ -121,6 +123,7 @@
         "unmergedHeaderBgHover": "var(accentLightest)",
         "recentIconFg": "var(yellow)",
         "recentIconBg": "transparent",
+        "iconUninitializedSubmodule": "var(yellow)",
         "untrackedHeaderBg": "var(accentLight)",
         "untrackedHeaderBgHover": "var(accentLighter)",
         "stagedIconFg": "var(foreground)",
@@ -325,7 +328,7 @@
             "shadow_color": "var(buttonShadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
@@ -336,11 +339,9 @@
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.texture": "Theme - Merge/button.png",
             "layer1.inner_margin": 4,
             "layer2.tint": "var(hazardButtonBg)",
             "layer2.opacity": 0,
-            "layer2.texture": "Theme - Merge/button.png",
             "layer2.inner_margin": 4,
             "min_size": [
                 90,
@@ -352,14 +353,10 @@
             ]
         },
         {
-            "class": "button_control left",
-            "layer1.texture": "Theme - Merge/button_left.png",
-            "layer2.texture": "Theme - Merge/button_left.png"
+            "class": "button_control left"
         },
         {
-            "class": "button_control right",
-            "layer1.texture": "Theme - Merge/button_right.png",
-            "layer2.texture": "Theme - Merge/button_right.png"
+            "class": "button_control right"
         },
         {
             "class": "button_control",
@@ -413,12 +410,11 @@
             "shadow_color": "var(hazard_button_shadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
             "class": "button_control_left",
-            "layer1.texture": "Theme - Merge/button_left.png",
             "min_size": [
                 70,
                 15
@@ -426,14 +422,12 @@
         },
         {
             "class": "button_control_right",
-            "layer1.texture": "Theme - Merge/button_right.png",
             "layer1.inner_margin": [
                 2,
                 2,
                 2,
                 2
             ],
-            "layer3.texture": "Theme - Merge/button_right_line.png",
             "layer3.tint": "var(split_button_line)",
             "layer3.opacity": 0.35,
             "layer3.inner_margin": 4,
@@ -464,7 +458,6 @@
         },
         {
             "class": "toggle_button left",
-            "layer0.texture": "Theme - Merge/button_outline_left.png",
             "layer1.opacity": {
                 "target": 0,
                 "speed": 4,
@@ -488,12 +481,10 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.texture": "Theme - Merge/button_left.png",
             "layer1.opacity": 0
         },
         {
             "class": "toggle_button right",
-            "layer0.texture": "Theme - Merge/button_outline_right.png",
             "layer1.opacity": {
                 "target": 0,
                 "speed": 4,
@@ -517,7 +508,6 @@
             "attributes": [
                 "selected"
             ],
-            "layer0.texture": "Theme - Merge/button_right.png",
             "layer1.opacity": 0
         },
         {
@@ -612,7 +602,6 @@
         },
         {
             "class": "tab_separator",
-            "layer0.texture": "Theme - Merge/tab_separator.png",
             "layer0.tint": "var(tabSeparatorBg)",
             "layer0.inner_margin": [
                 0,
@@ -696,13 +685,10 @@
                 0,
                 0
             ],
-            "layer0.texture": "Theme - Merge/checkbox_back.png",
             "layer0.tint": "var(checkboxBack)",
             "layer0.opacity": 1,
-            "layer1.texture": "Theme - Merge/checkbox_border.png",
             "layer1.tint": "var(checkbox_border-unselected)",
             "layer1.opacity": 1,
-            "layer2.texture": "Theme - Merge/checkbox_check.png",
             "layer2.tint": "var(checkboxSelected)",
             "layer2.opacity": 0
         },
@@ -729,7 +715,6 @@
                     ]
                 }
             ],
-            "layer2.texture": "Theme - Merge/checkbox_disabled.png",
             "layer2.tint": "var(checkbox-disabled)",
             "layer2.opacity": 1
         },
@@ -753,13 +738,10 @@
                 0,
                 0
             ],
-            "layer0.texture": "Theme - Merge/radio_button_back.png",
             "layer0.tint": "var(radioBack)",
             "layer0.opacity": 1,
-            "layer1.texture": "Theme - Merge/radio_button_border.png",
             "layer1.tint": "var(radioBorderSelected)",
             "layer1.opacity": 1,
-            "layer2.texture": "Theme - Merge/radio_button_on.png",
             "layer2.tint": "var(radioSelected)",
             "layer2.opacity": 0
         },
@@ -830,7 +812,6 @@
         },
         {
             "class": "scroll_track_control",
-            "layer0.texture": "Theme - Merge/light_scroll_bar.png",
             "layer0.opacity": 1,
             "layer0.inner_margin": 2,
             "content_margin": [
@@ -844,12 +825,10 @@
             "class": "scroll_track_control",
             "attributes": [
                 "dark"
-            ],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar.png"
+            ]
         },
         {
             "class": "puck_control",
-            "layer0.texture": "Theme - Merge/light_scroll_puck.png",
             "layer0.opacity": 1,
             "layer0.inner_margin": 2,
             "content_margin": [
@@ -861,8 +840,7 @@
             "class": "puck_control",
             "attributes": [
                 "dark"
-            ],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck.png"
+            ]
         },
         {
             "class": "scroll_corner_control",
@@ -874,7 +852,6 @@
             "attributes": [
                 "horizontal"
             ],
-            "layer0.texture": "Theme - Merge/light_scroll_bar_horiz.png",
             "content_margin": [
                 4,
                 4,
@@ -887,15 +864,13 @@
             "attributes": [
                 "horizontal",
                 "dark"
-            ],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar_horiz.png"
+            ]
         },
         {
             "class": "puck_control",
             "attributes": [
                 "horizontal"
             ],
-            "layer0.texture": "Theme - Merge/light_scroll_puck_horiz.png",
             "content_margin": [
                 12,
                 0
@@ -906,8 +881,7 @@
             "attributes": [
                 "horizontal",
                 "dark"
-            ],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck_horiz.png"
+            ]
         },
         {
             "class": "scroll_bar_control",
@@ -930,8 +904,7 @@
                 {
                     "class": "overlay_control"
                 }
-            ],
-            "layer0.texture": "Theme - Merge/light_scroll_bar.png"
+            ]
         },
         {
             "class": "puck_control",
@@ -939,8 +912,7 @@
                 {
                     "class": "overlay_control"
                 }
-            ],
-            "layer0.texture": "Theme - Merge/light_scroll_puck.png"
+            ]
         },
         {
             "class": "dialog",
@@ -1144,7 +1116,6 @@
         },
         {
             "class": "search_text_control",
-            "layer0.texture": "Theme - Merge/input.png",
             "layer0.opacity": 1,
             "layer0.tint": "var(accentLighter)",
             "layer0.inner_margin": 4,
@@ -1156,7 +1127,6 @@
         },
         {
             "class": "info_area",
-            "layer0.texture": "Theme - Merge/button.png",
             "layer0.tint": "var(accentLighter)",
             "layer0.opacity": 0.4,
             "layer0.inner_margin": 4,
@@ -1191,7 +1161,7 @@
             "shadow_color": "var(infoShadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
@@ -1217,7 +1187,6 @@
                     "class": "info_area"
                 }
             ],
-            "layer0.texture": "Theme - Merge/progress_bar_bottom.png",
             "layer0.inner_margin": [
                 2,
                 0,
@@ -1234,7 +1203,6 @@
                     "class": "info_area"
                 }
             ],
-            "layer0.texture": "Theme - Merge/progress_bar_bottom.png",
             "layer0.inner_margin": [
                 2,
                 0,
@@ -1250,21 +1218,18 @@
         },
         {
             "class": "git_output_button",
-            "layer0.texture": "Theme - Merge/icon_output_border.png",
             "layer0.tint": "var(foreground)",
             "layer0.opacity": {
                 "target": 1,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer1.texture": "Theme - Merge/icon_output_prompt.png",
             "layer1.tint": "var(foreground)",
             "layer1.opacity": {
                 "target": 0.6,
                 "speed": 4,
                 "interpolation": "smoothstep"
             },
-            "layer2.texture": "Theme - Merge/icon_output_none.png",
             "layer2.tint": "var(foreground)",
             "layer2.opacity": {
                 "target": 0.8,
@@ -1280,23 +1245,19 @@
         },
         {
             "class": "git_output_button succeeded",
-            "layer2.tint": "var(outputSucceededFg)",
-            "layer2.texture": "Theme - Merge/icon_output_succeeded.png"
+            "layer2.tint": "var(outputSucceededFg)"
         },
         {
             "class": "git_output_button failed",
-            "layer2.tint": "var(outputFailedFg)",
-            "layer2.texture": "Theme - Merge/icon_output_failed.png"
+            "layer2.tint": "var(outputFailedFg)"
         },
         {
             "class": "git_output_button running",
-            "layer2.tint": "var(outputRunningFg)",
-            "layer2.texture": "Theme - Merge/icon_output_running.png"
+            "layer2.tint": "var(outputRunningFg)"
         },
         {
             "class": "git_output_button cancelled",
-            "layer2.tint": "var(outputCanceledFg)",
-            "layer2.texture": "Theme - Merge/icon_output_cancelled.png"
+            "layer2.tint": "var(outputCanceledFg)"
         },
         {
             "class": "git_output_button",
@@ -1849,7 +1810,7 @@
             "shadow_color": "var(highlightedButtonShadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
@@ -2219,10 +2180,8 @@
         },
         {
             "class": "icon_hidden",
-            "layer0.texture": "Theme - Merge/icon_hidden.png",
             "layer0.opacity": "var(iconButtonOpacityFaded)",
             "layer0.tint": "var(foreground)",
-            "layer1.texture": "Theme - Merge/icon_hidden_slash.png",
             "layer1.opacity": "var(iconButtonOpacity)",
             "layer1.tint": "var(hiddenSlash)",
             "content_margin": [
@@ -2240,9 +2199,8 @@
         },
         {
             "class": "icon_uninitialized_submodule",
-            "layer0.texture": "Theme - Merge/icon_diverged_filled.png",
-            "layer0.opacity": 0.35,
-            "layer0.tint": "var(foreground)",
+            "layer0.opacity": 1,
+            "layer0.tint": "var(iconUninitializedSubmodule)",
             "content_margin": [
                 8,
                 5
@@ -2250,7 +2208,6 @@
         },
         {
             "class": "icon_section_actions",
-            "layer0.texture": "Theme - Merge/gear.png",
             "layer0.opacity": "var(iconButtonOpacityHidden)",
             "layer0.tint": "var(foreground)",
             "content_margin": [
@@ -2369,8 +2326,7 @@
                 {
                     "class": "commit_table_container"
                 }
-            ],
-            "layer0.texture": "Theme - Merge/light_scroll_bar.png"
+            ]
         },
         {
             "class": "puck_control",
@@ -2378,8 +2334,7 @@
                 {
                     "class": "commit_table_container"
                 }
-            ],
-            "layer0.texture": "Theme - Merge/light_scroll_puck.png"
+            ]
         },
         {
             "class": "commit_table",
@@ -2586,15 +2541,15 @@
             "class": "submodule_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "fg": "var(submodule_ann_fg)",
+            "fg": "var(submoduleAnnFg)",
             "background_color": "var(submoduleAnnBg)"
         },
         {
             "class": "submodule_light_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "fg": "var(submodule_light_ann_fg)",
-            "background_color": "var(submoduleAnnBg)"
+            "fg": "var(submoduleLightAnnFg)",
+            "background_color": "var(submoduleLightAnnBg)"
         },
         {
             "class": "inserted_annotation",
@@ -2631,109 +2586,6 @@
                 8,
                 14,
                 14
-            ]
-        },
-        {
-            "class": "searching",
-            "layer0.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_02.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer0.opacity": 1,
-            "layer0.tint": "var(loadingBall1)",
-            "layer1.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_13.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_01.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_12.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer1.opacity": 1,
-            "layer1.tint": "var(loadingBall2)",
-            "layer2.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_01.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_13.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer2.opacity": 1,
-            "layer2.tint": "var(loadingBall1)",
-            "content_margin": [
-                11,
-                5
             ]
         },
         {
@@ -3063,7 +2915,6 @@
         },
         {
             "class": "terminator",
-            "layer0.texture": "Theme - Merge/terminator.png",
             "layer0.tint": "color(var(terminatorFg) a(0.25))",
             "layer0.opacity": 1,
             "content_margin": [
@@ -3097,109 +2948,6 @@
         {
             "class": "label_control bad_signature",
             "color": "var(red)"
-        },
-        {
-            "class": "loading",
-            "layer0.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_02.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer0.opacity": 1,
-            "layer0.tint": "var(loadingBall1)",
-            "layer1.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_13.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_01.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_12.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer1.opacity": 1,
-            "layer1.tint": "var(loadingBall2)",
-            "layer2.texture": {
-                "keyframes": [
-                    "Theme - Merge/loading_01.png",
-                    "Theme - Merge/loading_02.png",
-                    "Theme - Merge/loading_03.png",
-                    "Theme - Merge/loading_04.png",
-                    "Theme - Merge/loading_05.png",
-                    "Theme - Merge/loading_06.png",
-                    "Theme - Merge/loading_07.png",
-                    "Theme - Merge/loading_08.png",
-                    "Theme - Merge/loading_09.png",
-                    "Theme - Merge/loading_10.png",
-                    "Theme - Merge/loading_11.png",
-                    "Theme - Merge/loading_12.png",
-                    "Theme - Merge/loading_13.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png",
-                    "Theme - Merge/loading_00.png"
-                ],
-                "loop": true,
-                "frame_time": 0.05
-            },
-            "layer2.opacity": 1,
-            "layer2.tint": "var(loadingBall1)",
-            "content_margin": [
-                11,
-                5
-            ]
         },
         {
             "class": "single_file",
@@ -3300,7 +3048,6 @@
         },
         {
             "class": "button_control all_button",
-            "layer0.texture": "Theme - Merge/button_outline.png",
             "layer0.draw_center": false,
             "layer0.tint": "var(buttonBg)",
             "layer0.inner_margin": 4,
@@ -3415,7 +3162,6 @@
         },
         {
             "class": "icon_deleted",
-            "layer0.texture": "Theme - Merge/icon_deleted.png",
             "layer0.tint": "var(deletedIconFg)",
             "layer0.opacity": 1,
             "content_margin": [
@@ -3427,7 +3173,6 @@
         },
         {
             "class": "icon_created",
-            "layer0.texture": "Theme - Merge/icon_staged.png",
             "layer0.tint": "var(createdIconFg)",
             "layer0.opacity": 1,
             "content_margin": [
@@ -3439,7 +3184,6 @@
         },
         {
             "class": "icon_unmerged",
-            "layer0.texture": "Theme - Merge/icon_unmerged.png",
             "layer0.tint": "var(unmergedIconFg)",
             "layer0.opacity": 1,
             "content_margin": [
@@ -3475,7 +3219,6 @@
         },
         {
             "class": "icon_staged",
-            "layer0.texture": "Theme - Merge/icon_staged.png",
             "layer0.tint": "var(stagedIconFg)",
             "layer0.opacity": 1,
             "content_margin": [
@@ -3515,7 +3258,6 @@
         },
         {
             "class": "file_icon",
-            "layer0.texture": "Theme - Merge/button.png",
             "layer0.tint": "var(fileIconBg)",
             "layer0.opacity": 1,
             "layer0.inner_margin": [
@@ -3530,12 +3272,10 @@
             ]
         },
         {
-            "class": "file_icon_left",
-            "layer0.texture": "Theme - Merge/button_left.png"
+            "class": "file_icon_left"
         },
         {
-            "class": "file_icon_right",
-            "layer0.texture": "Theme - Merge/button_right.png"
+            "class": "file_icon_right"
         },
         {
             "class": "table_of_contents_icon_wrapper",
@@ -3628,7 +3368,6 @@
         },
         {
             "class": "disclosure_button_control",
-            "layer0.texture": "Theme - Merge/disclosure_unexpanded.png",
             "layer0.opacity": {
                 "target": 0.3,
                 "speed": 4,
@@ -3644,8 +3383,7 @@
             "class": "disclosure_button_control",
             "attributes": [
                 "expanded"
-            ],
-            "layer0.texture": "Theme - Merge/disclosure_expanded.png"
+            ]
         },
         {
             "class": "disclosure_button_control",
@@ -3681,7 +3419,6 @@
                     "class": "close"
                 }
             ],
-            "layer0.texture": "Theme - Merge/icon_cancel.png",
             "content_margin": [
                 9,
                 8
@@ -3877,7 +3614,7 @@
             "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
@@ -3900,12 +3637,11 @@
             "shadow_color": "var(hunkButtonShadow)",
             "shadow_offset": [
                 0,
-                1
+                0
             ]
         },
         {
             "class": "file_badge",
-            "layer0.texture": "Theme - Merge/button.png",
             "layer0.inner_margin": [
                 4,
                 4,
@@ -3923,12 +3659,10 @@
             "spacing": 1
         },
         {
-            "class": "left_badge",
-            "layer0.texture": "Theme - Merge/button_left.png"
+            "class": "left_badge"
         },
         {
-            "class": "right_badge",
-            "layer0.texture": "Theme - Merge/button_right.png"
+            "class": "right_badge"
         },
         {
             "class": "modified_badge",
@@ -4072,7 +3806,6 @@
             "class": "welcome_overlay_contents",
             "layer0.tint": "var(welcomeBg)",
             "layer0.opacity": 1,
-            "layer0.texture": "Theme - Merge/button.png",
             "layer0.inner_margin": 4,
             "spacing": 32,
             "content_margin": [
@@ -4090,10 +3823,8 @@
                 }
             ],
             "layer1.tint": "var(buttonBgWelcome)",
-            "layer1.texture": "Theme - Merge/button.png",
             "layer1.inner_margin": 4,
             "layer2.opacity": 0,
-            "layer2.texture": "Theme - Merge/button.png",
             "layer2.inner_margin": 4,
             "min_size": [
                 120,
@@ -4351,7 +4082,6 @@
         },
         {
             "class": "hint_stem bottom",
-            "layer0.texture": "Theme - Merge/hint_bottom_arrow.png",
             "content_margin": [
                 6,
                 3,
@@ -4361,7 +4091,6 @@
         },
         {
             "class": "hint_stem left",
-            "layer0.texture": "Theme - Merge/hint_left_arrow.png",
             "content_margin": [
                 3,
                 6,
@@ -4371,7 +4100,6 @@
         },
         {
             "class": "hint_stem top",
-            "layer0.texture": "Theme - Merge/hint_top_arrow.png",
             "content_margin": [
                 6,
                 3,
@@ -4381,7 +4109,6 @@
         },
         {
             "class": "hint_stem right",
-            "layer0.texture": "Theme - Merge/hint_right_arrow.png",
             "content_margin": [
                 3,
                 6,
@@ -4480,7 +4207,6 @@
                     "class": "error_output"
                 }
             ],
-            "layer1.texture": "Theme - Merge/hint_bottom_stripe.png",
             "layer1.inner_margin": [
                 4,
                 9,
@@ -4599,12 +4325,10 @@
             ]
         },
         {
-            "class": "use_hunk_button left",
-            "layer0.texture": "Theme - Merge/icon_left_hunk.png"
+            "class": "use_hunk_button left"
         },
         {
-            "class": "use_hunk_button right",
-            "layer0.texture": "Theme - Merge/icon_right_hunk.png"
+            "class": "use_hunk_button right"
         },
         {
             "class": "use_hunk_button",
@@ -4818,7 +4542,6 @@
             "layer1.tint": "var(repositoryTabBarBg)",
             "layer1.opacity": 1,
             "layer3.tint": "var(repositoryTabBarBorderBg)",
-            "layer3.texture": "Theme - Merge/tab_border.png",
             "layer3.inner_margin": [
                 16,
                 0,
@@ -4849,8 +4572,7 @@
             "class": "tab_control",
             "attributes": [
                 "right"
-            ],
-            "layer3.texture": "Theme - Merge/tab_border_end.png"
+            ]
         },
         {
             "class": "repository_tab_label_container",
@@ -4858,7 +4580,6 @@
         },
         {
             "class": "icon_folder",
-            "layer0.texture": "Theme - Merge/folder_closed.png",
             "layer0.opacity": 0.4,
             "layer0.tint": "var(foreground)",
             "content_margin": [
@@ -4911,7 +4632,6 @@
             "settings": [
                 "show_tab_close_buttons"
             ],
-            "layer0.texture": "Theme - Default/common/tab_close.png",
             "content_margin": [
                 10,
                 9
@@ -4997,7 +4717,6 @@
             "layer1.tint": "var(repositoryTabBarBg)",
             "layer1.opacity": 1,
             "layer3.tint": "var(repositoryTabBarBorderBg)",
-            "layer3.texture": "Theme - Merge/tab_border_end.png",
             "layer3.inner_margin": [
                 16,
                 0,
@@ -5039,7 +4758,6 @@
             "layer1.tint": "var(repositoryTabBarBg)",
             "layer1.opacity": 1,
             "layer3.tint": "var(repositoryTabBarBorderBg)",
-            "layer3.texture": "Theme - Merge/tab_border_end.png",
             "layer3.inner_margin": [
                 16,
                 0,
