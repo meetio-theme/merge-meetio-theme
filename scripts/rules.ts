@@ -73,13 +73,10 @@ export const rules = [
     {
         class: 'label_control',
         fg: 'var(labelColor)',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
     },
     {
         class: 'title_label_control',
         fg: 'var(labelColor)',
-        'font.face': 'var(font_face)',
         'font.size': 24,
     },
     {
@@ -99,24 +96,18 @@ export const rules = [
             speed: 4.0,
             interpolation: 'smoothstep',
         },
-        // 'layer1.texture': 'Theme - Merge/button.png',
         'layer1.inner_margin': 4,
         'layer2.tint': 'var(hazardButtonBg)',
         'layer2.opacity': 0.0,
-        // 'layer2.texture': 'Theme - Merge/button.png',
         'layer2.inner_margin': 4,
         min_size: [90, 15],
         content_margin: [10, 6],
     },
     {
         class: 'button_control left',
-        // 'layer1.texture': 'Theme - Merge/button_left.png',
-        // 'layer2.texture': 'Theme - Merge/button_left.png',
     },
     {
         class: 'button_control right',
-        // 'layer1.texture': 'Theme - Merge/button_right.png',
-        // 'layer2.texture': 'Theme - Merge/button_right.png',
     },
     {
         class: 'button_control',
@@ -158,14 +149,11 @@ export const rules = [
     // Split buttons
     {
         class: 'button_control_left',
-        // 'layer1.texture': 'Theme - Merge/button_left.png',
         min_size: [70, 15],
     },
     {
         class: 'button_control_right',
-        // 'layer1.texture': 'Theme - Merge/button_right.png',
         'layer1.inner_margin': [2, 2, 2, 2],
-        // 'layer3.texture': 'Theme - Merge/button_right_line.png',
         'layer3.tint': 'var(split_button_line)',
         'layer3.opacity': 0.35,
         'layer3.inner_margin': 4,
@@ -194,7 +182,6 @@ export const rules = [
     },
     {
         class: 'toggle_button left',
-        // 'layer0.texture': 'Theme - Merge/button_outline_left.png',
         'layer1.opacity': {
             target: 0.0,
             speed: 4.0,
@@ -214,12 +201,10 @@ export const rules = [
     {
         class: 'toggle_button left',
         attributes: ['selected'],
-        // 'layer0.texture': 'Theme - Merge/button_left.png',
         'layer1.opacity': 0,
     },
     {
         class: 'toggle_button right',
-        // 'layer0.texture': 'Theme - Merge/button_outline_right.png',
         'layer1.opacity': {
             target: 0.0,
             speed: 4.0,
@@ -239,13 +224,13 @@ export const rules = [
     {
         class: 'toggle_button right',
         attributes: ['selected'],
-        // 'layer0.texture': 'Theme - Merge/button_right.png',
         'layer1.opacity': 0,
     },
     {
         class: 'label_control',
         parents: [{ class: 'toggle_button' }],
         fg: 'var(toggleButtonFg)',
+        shadow_offset: [0, 0]
     },
     {
         class: 'label_control',
@@ -299,7 +284,6 @@ export const rules = [
 
     {
         class: 'tab_separator',
-        // 'layer0.texture': 'Theme - Merge/tab_separator.png',
         'layer0.tint': 'var(tabSeparatorBg)',
         'layer0.inner_margin': [0, 1],
         'layer0.opacity': 1.0,
@@ -349,13 +333,10 @@ export const rules = [
     {
         class: 'checkbox_box_control',
         content_margin: [13, 13, 0, 0],
-        // 'layer0.texture': 'Theme - Merge/checkbox_back.png',
         'layer0.tint': 'var(checkboxBack)',
         'layer0.opacity': 1,
-        // 'layer1.texture': 'Theme - Merge/checkbox_border.png',
         'layer1.tint': 'var(checkbox_border-unselected)',
         'layer1.opacity': 1,
-        // 'layer2.texture': 'Theme - Merge/checkbox_check.png',
         'layer2.tint': 'var(checkboxSelected)',
         'layer2.opacity': 0,
     },
@@ -368,7 +349,6 @@ export const rules = [
     {
         class: 'checkbox_box_control',
         parents: [{ class: 'checkbox_control', attributes: ['disabled'] }],
-        // 'layer2.texture': 'Theme - Merge/checkbox_disabled.png',
         'layer2.tint': 'var(checkbox-disabled)',
         'layer2.opacity': 1,
     },
@@ -385,13 +365,10 @@ export const rules = [
             { class: 'checkbox_control' },
         ],
         content_margin: [13, 13, 0, 0],
-        // 'layer0.texture': 'Theme - Merge/radio_button_back.png',
         'layer0.tint': 'var(radioBack)',
         'layer0.opacity': 1,
-        // 'layer1.texture': 'Theme - Merge/radio_button_border.png',
         'layer1.tint': 'var(radioBorderSelected)',
         'layer1.opacity': 1,
-        // 'layer2.texture': 'Theme - Merge/radio_button_on.png',
         'layer2.tint': 'var(radioSelected)',
         'layer2.opacity': 0,
     },
@@ -442,73 +419,63 @@ export const rules = [
     },
     {
         class: 'scroll_track_control',
-        // 'layer0.texture': 'Theme - Merge/light_scroll_bar.png',
         'layer0.opacity': 1.0,
         'layer0.inner_margin': 2,
         content_margin: [4, 4, 3, 4],
     },
-    {
-        class: 'scroll_track_control',
-        attributes: ['dark'],
-        // 'layer0.texture': 'Theme - Merge/dark_scroll_bar.png',
-    },
-    {
-        class: 'puck_control',
-        // 'layer0.texture': 'Theme - Merge/light_scroll_puck.png',
-        'layer0.opacity': 1.0,
-        'layer0.inner_margin': 2,
-        content_margin: [0, 12],
-    },
-    {
-        class: 'puck_control',
-        attributes: ['dark'],
-        // 'layer0.texture': 'Theme - Merge/dark_scroll_puck.png',
-    },
-    {
-        class: 'scroll_corner_control',
-        'layer0.opacity': 1.0,
-        tint_index: 0,
-    },
+    // {
+    //     class: 'scroll_track_control',
+    //     attributes: ['dark'],
+    // },
+    // {
+    //     class: 'puck_control',
+    //     'layer0.opacity': 1.0,
+    //     'layer0.inner_margin': 2,
+    //     content_margin: [0, 12],
+    // },
+    // {
+    //     class: 'puck_control',
+    //     attributes: ['dark'],
+    // },
+    // {
+    //     class: 'scroll_corner_control',
+    //     'layer0.opacity': 1.0,
+    //     tint_index: 0,
+    // },
     // Scroll Bars (Horizontal)
-    {
-        class: 'scroll_track_control',
-        attributes: ['horizontal'],
-        // 'layer0.texture': 'Theme - Merge/light_scroll_bar_horiz.png',
-        content_margin: [4, 4, 4, 3],
-    },
-    {
-        class: 'scroll_track_control',
-        attributes: ['horizontal', 'dark'],
-        // 'layer0.texture': 'Theme - Merge/dark_scroll_bar_horiz.png',
-    },
-    {
-        class: 'puck_control',
-        attributes: ['horizontal'],
-        // 'layer0.texture': 'Theme - Merge/light_scroll_puck_horiz.png',
-        content_margin: [12, 0],
-    },
-    {
-        class: 'puck_control',
-        attributes: ['horizontal', 'dark'],
-        // 'layer0.texture': 'Theme - Merge/dark_scroll_puck_horiz.png',
-    },
+    // {
+    //     class: 'scroll_track_control',
+    //     attributes: ['horizontal'],
+    //     content_margin: [4, 4, 4, 3],
+    // },
+    // {
+    //     class: 'scroll_track_control',
+    //     attributes: ['horizontal', 'dark'],
+    // },
+    // {
+    //     class: 'puck_control',
+    //     attributes: ['horizontal'],
+    //     content_margin: [12, 0],
+    // },
+    // {
+    //     class: 'puck_control',
+    //     attributes: ['horizontal', 'dark'],
+    // },
     // Scroll Bars (Overlay)
-    {
-        class: 'scroll_bar_control',
-        parents: [{ class: 'overlay_control' }],
-        'layer0.opacity': 0.0,
-        content_margin: [4, 0, 0, 0],
-    },
-    {
-        class: 'scroll_track_control',
-        parents: [{ class: 'overlay_control' }],
-        // 'layer0.texture': 'Theme - Merge/light_scroll_bar.png',
-    },
-    {
-        class: 'puck_control',
-        parents: [{ class: 'overlay_control' }],
-        // 'layer0.texture': 'Theme - Merge/light_scroll_puck.png',
-    },
+    // {
+    //     class: 'scroll_bar_control',
+    //     parents: [{ class: 'overlay_control' }],
+    //     'layer0.opacity': 0.0,
+    //     content_margin: [4, 0, 0, 0],
+    // },
+    // {
+    //     class: 'scroll_track_control',
+    //     parents: [{ class: 'overlay_control' }],
+    // },
+    // {
+    //     class: 'puck_control',
+    //     parents: [{ class: 'overlay_control' }],
+    // },
 
     // Dialogs
     {
@@ -570,13 +537,11 @@ export const rules = [
     {
         class: 'text_line_control',
         parents: [{ class: 'overlay_control' }],
-        'font.face': 'var(font_face)',
         'font.size': 'var(font_size_lg)',
     },
     {
         class: 'text_line_control',
         parents: [{ class: 'switch_project_window' }],
-        'font.face': 'var(font_face)',
         'font.size': 'var(font_size_lg)',
     },
     {
@@ -614,7 +579,6 @@ export const rules = [
     {
         class: 'quick_panel_label',
         parents: [{ class: 'mini_quick_panel_row' }],
-        'font.face': 'var(font_face)',
         'font.size': 'var(font_size_lg)',
     },
     {
@@ -627,8 +591,6 @@ export const rules = [
     {
         class: 'quick_panel_label preview',
         fg: 'var(previewFg)',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
     },
     {
         class: 'quick_panel_label command',
@@ -673,19 +635,17 @@ export const rules = [
     },
     {
         class: 'search_text_control',
-        // 'layer0.texture': 'Theme - Merge/input.png',
         'layer0.opacity': 1.0,
         "layer0.tint": "var(accentLighter)",
         'layer0.inner_margin': 4,
         content_margin: 2,
     },
-    {
-        class: 'search_bar',
-        spacing: 4,
-    },
+    // {
+    //     class: 'search_bar',
+    //     spacing: 4,
+    // },
     {
         class: 'info_area',
-        // 'layer0.texture': 'Theme - Merge/button.png',
         'layer0.tint': 'var(accentLighter)',
         'layer0.opacity': 0.4,
         'layer0.inner_margin': 4,
@@ -712,15 +672,12 @@ export const rules = [
     {
         class: 'failed_label',
         parents: [{ class: 'info_area' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(failedLabelFg)',
         background_color: 'var(failed_label_bg)',
     },
     {
         class: 'progress_bar_control',
         parents: [{ class: 'info_area' }],
-        // 'layer0.texture': 'Theme - Merge/progress_bar_bottom.png',
         'layer0.inner_margin': [2, 0, 2, 2],
         'layer0.tint': 'var(background)',
         'layer0.opacity': 1.0,
@@ -728,7 +685,6 @@ export const rules = [
     {
         class: 'progress_gauge_control',
         parents: [{ class: 'info_area' }],
-        // 'layer0.texture': 'Theme - Merge/progress_bar_bottom.png',
         'layer0.inner_margin': [2, 0, 2, 2],
         'layer0.tint': 'var(foreground)',
         'layer0.opacity': 1.0,
@@ -736,21 +692,18 @@ export const rules = [
     },
     {
         class: 'git_output_button',
-        // 'layer0.texture': 'Theme - Merge/icon_output_border.png',
         'layer0.tint': 'var(foreground)',
         'layer0.opacity': {
             target: 1.0,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
-        // 'layer1.texture': 'Theme - Merge/icon_output_prompt.png',
         'layer1.tint': 'var(foreground)',
         'layer1.opacity': {
             target: 0.6,
             speed: 4.0,
             interpolation: 'smoothstep',
         },
-        // 'layer2.texture': 'Theme - Merge/icon_output_none.png',
         'layer2.tint': 'var(foreground)',
         'layer2.opacity': {
             target: 0.8,
@@ -762,22 +715,18 @@ export const rules = [
     {
         class: 'git_output_button succeeded',
         'layer2.tint': 'var(outputSucceededFg)',
-        // 'layer2.texture': 'Theme - Merge/icon_output_succeeded.png',
     },
     {
         class: 'git_output_button failed',
         'layer2.tint': 'var(outputFailedFg)',
-        // 'layer2.texture': 'Theme - Merge/icon_output_failed.png',
     },
     {
         class: 'git_output_button running',
         'layer2.tint': 'var(outputRunningFg)',
-        // 'layer2.texture': 'Theme - Merge/icon_output_running.png',
     },
     {
         class: 'git_output_button cancelled',
         'layer2.tint': 'var(outputCanceledFg)',
-        // 'layer2.texture': 'Theme - Merge/icon_output_cancelled.png',
     },
     {
         class: 'git_output_button',
@@ -1106,14 +1055,14 @@ export const rules = [
         content_margin: 8,
         spacing: 16,
     },
-    {
-        class: 'merge_options_container',
-        spacing: 4,
-    },
-    {
-        class: 'merge_helper_buttons_container',
-        spacing: 4,
-    },
+    // {
+    //     class: 'merge_options_container',
+    //     spacing: 4,
+    // },
+    // {
+    //     class: 'merge_helper_buttons_container',
+    //     spacing: 4,
+    // },
     {
         class: 'merge_helper_help_text_label',
         fg: 'color(var(labelColor) a(0.5))',
@@ -1219,23 +1168,17 @@ export const rules = [
     },
     {
         class: 'location_bar_label',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.bold': false,
         color: 'var(locationBarFg)',
     },
     {
         class: 'location_bar_label',
         attributes: ['selected'],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.bold': true,
         color: 'var(locationBarFg)',
     },
     {
         class: 'location_bar_heading',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.bold': true,
         color: 'var(locationBarFg)',
         shadow_color: 'var(location_bar_heading_shadow)',
@@ -1299,16 +1242,12 @@ export const rules = [
     },
     {
         class: 'submodule_stat',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(submodule_stat_fg)',
         background_color: 'var(submodule_stat_bg)',
     },
     {
         class: 'branch_stat_label',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
-        color: 'color(var(fileAnnFg) a(0.8))',
+        fg: "var(branchStatsLabelFg)"
     },
     {
         class: 'icon_behind',
@@ -1426,7 +1365,7 @@ export const rules = [
         class: 'icon_uninitialized_submodule',
         'layer0.opacity': 1,
         'layer0.tint': 'var(iconUninitializedSubmodule)',
-        content_margin: [8, 5],
+        content_margin: [8, 6],
     },
     {
         class: 'icon_section_actions',
@@ -1454,14 +1393,14 @@ export const rules = [
         'layer0.tint': 'var(tabBarBg)',
         'layer0.opacity': 1.0,
     },
-    {
-        class: 'table_of_contents_heading_container',
-        spacing: 8,
-    },
-    {
-        class: 'table_of_contents_view_style',
-        content_margin: 4,
-    },
+    // {
+    //     class: 'table_of_contents_heading_container',
+    //     spacing: 8,
+    // },
+    // {
+    //     class: 'table_of_contents_view_style',
+    //     content_margin: 4,
+    // },
     {
         class: 'table_of_contents_tree',
         row_padding: [6, 2, 2, 2],
@@ -1477,8 +1416,6 @@ export const rules = [
     },
     {
         class: 'table_of_contents_label',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(tableOfContentsFg)',
     },
     {
@@ -1501,8 +1438,6 @@ export const rules = [
 
     {
         class: 'table_of_contents_heading',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.bold': true,
         color: 'var(locationBarFg)',
         shadow_color: 'var(location_bar_heading_shadow)',
@@ -1557,23 +1492,17 @@ export const rules = [
     {
         class: 'index_files_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(commitSummaryFgPrimary)',
     },
     {
         class: 'index_action_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.italic': true,
         color: 'var(commitSummaryFgSecondary)',
     },
     {
         class: 'message_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.bold': false,
         color: 'var(commitSummaryFgPrimary)',
     },
@@ -1585,23 +1514,18 @@ export const rules = [
     {
         class: 'author_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.italic': true,
         color: 'var(commitSummaryFgSecondary)',
     },
     {
         class: 'time_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.italic': true,
         color: 'var(commitSummaryFgSecondary)',
     },
     {
         class: 'commit_file_name_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.size': 'var(font_size)',
         'font.italic': true,
         color: 'var(commitSummaryFgPrimary)',
         indent: 16,
@@ -1609,8 +1533,6 @@ export const rules = [
     {
         class: 'commit_file_path_label',
         parents: [{ class: 'commit_summary_control' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.italic': true,
         color: 'var(commitSummaryFgSecondary)',
         indent: 16,
@@ -1618,28 +1540,22 @@ export const rules = [
     // Annotations
     {
         class: 'commit_annotation branch head',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(headAnnFg)',
         background_color: 'var(headAnnBg)',
     },
     {
         class: 'commit_annotation branch',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(branchAnnFg)',
         background_color: 'var(branchAnnBg)',
     },
     {
         class: 'commit_annotation remote',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(remoteAnnFg)',
         background_color: 'var(remoteAnnBg)',
     },
     {
         class: "condensed_branch_annotation_container",
-        background_color: "var(purple)"
+        background_color: "var(--purplish)"
     },
     {
         class: "condensed_branch_annotation",
@@ -1655,49 +1571,35 @@ export const rules = [
     },
     {
         class: 'tag_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(tagAnnFg)',
     },
     {
         class: 'stash_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(stashAnnFg)',
         background_color: 'var(stashAnnBg)',
     },
     {
         class: 'file_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         color: 'var(fileAnnFg)',
         background_color: 'var(fileAnnBg)',
     },
     {
         class: 'submodule_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         fg: 'var(submoduleAnnFg)',
         background_color: 'var(submoduleAnnBg)',
     },
     {
         class: 'submodule_light_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         fg: 'var(submoduleLightAnnFg)',
         background_color: 'var(submoduleLightAnnBg)',
     },
     {
         class: 'inserted_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
-        fg: 'var(labelColor)',
+        fg: 'var(insertedAnnFg)',
         background_color: 'var(insertedAnnBg)',
     },
     {
         class: 'deleted_annotation',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         fg: 'var(labelColor)',
         background_color: 'var(deletedAnnBg)',
     },
@@ -1709,134 +1611,30 @@ export const rules = [
     },
     {
         class: 'search_help',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         background_color: 'var(background)',
         headline_color: 'color(var(foreground) l(+ 10%))',
         color: 'var(foreground)',
         content_margin: [14, 8, 14, 14],
     },
-    // {
-    //     class: 'searching',
-    //     'layer0.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_02.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer0.opacity': 1.0,
-    //     'layer0.tint': 'var(loadingBall1)',
-    //     'layer1.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_13.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_01.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_12.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer1.opacity': 1.0,
-    //     'layer1.tint': 'var(loadingBall2)',
-    //     'layer2.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_01.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_13.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer2.opacity': 1.0,
-    //     'layer2.tint': 'var(loadingBall1)',
-    //     content_margin: [11, 5],
-    // },
 
     // Blame panel
     {
         class: 'blame_commit_summary',
         content_margin: [8, 8, 8, 8],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         background_color: 'var(accentLight)',
-        link_color: 'var(blue)',
+        link_color: 'var(--bluish)',
         color: 'var(--foreground)',
     },
     {
         class: 'blame_text_control',
         settings: ['!kelly_colors'],
         num_colors: 6,
-        color0: 'color(var(red) s(80%))',
-        color1: 'color(color(var(orange) s(100%)) s(80%))',
-        color2: 'color(var(yellow) s(80%))',
-        color3: 'color(color(var(cyan) l(35%)) s(80%))',
-        color4: 'color(color(var(blue) l(60%)) s(80%))',
-        color5: 'color(color(var(purple) s(80%) l(65%)) s(80%))',
+        color0: 'color(var(--redish) s(80%))',
+        color1: 'color(var(--orangish) s(80%))',
+        color2: 'color(var(--yellowish) s(80%))',
+        color3: 'color(color(var(--cyanish) l(35%)) s(80%))',
+        color4: 'color(color(var(--bluish) l(60%)) s(80%))',
+        color5: 'color(color(var(--purplish) s(80%) l(65%)) s(80%))',
     },
     {
         class: 'blame_text_control',
@@ -1901,14 +1699,14 @@ export const rules = [
         parents: [{ class: 'commit_dialog_summary_container' }],
         content_margin: [4, 0, 4, 4],
     },
-    {
-        class: 'commit_dialog_section_container',
-        content_margin: [0, 4, 0, 0],
-    },
-    {
-        class: 'commit_dialog_summary_container',
-        content_margin: [0, 4, 0, 0],
-    },
+    // {
+    //     class: 'commit_dialog_section_container',
+    //     content_margin: [0, 4, 0, 0],
+    // },
+    // {
+    //     class: 'commit_dialog_summary_container',
+    //     content_margin: [0, 4, 0, 0],
+    // },
     {
         class: 'scroll_corner_control',
         parents: [{ class: 'details_panel' }],
@@ -1916,10 +1714,10 @@ export const rules = [
         'layer0.opacity': 1.0,
         'layer0.tint': 'var(detailPanelBg)',
     },
-    {
-        class: 'diff scroll_area_control',
-        overlay: true,
-    },
+    // {
+    //     class: 'diff scroll_area_control',
+    //     overlay: true,
+    // },
     {
         class: 'diff scroll_area_control',
         settings: ['!overlay_scroll_bars'],
@@ -1946,10 +1744,10 @@ export const rules = [
         settings: ['overlay_scroll_bars'],
         content_margin: [4, 0, 4, 0],
     },
-    {
-        class: 'scroll_area_control',
-        parents: [{ class: 'commit_dialog_header' }],
-    },
+    // {
+    //     class: 'scroll_area_control',
+    //     parents: [{ class: 'commit_dialog_header' }],
+    // },
     {
         class: 'commit_message_container',
         'layer0.tint': '#f00',
@@ -1957,10 +1755,10 @@ export const rules = [
         content_margin: [4, 4, 4, 8],
         spacing: 6,
     },
-    {
-        class: 'recent_commit_messages_dropdown_container',
-        content_margin: [2, 0],
-    },
+    // {
+    //     class: 'recent_commit_messages_dropdown_container',
+    //     content_margin: [2, 0],
+    // },
     {
         class: 'commit_metadata_container',
         content_margin: [6, 6, 4, 6],
@@ -1969,28 +1767,26 @@ export const rules = [
         'layer0.opacity': 1.0,
         spacing: 6,
     },
-    {
-        class: 'sidebar_commit_metadata_container',
-        min_size: [0, 180],
-    },
+    // {
+    //     class: 'sidebar_commit_metadata_container',
+    //     min_size: [0, 180],
+    // },
     {
         class: 'commit_metadata_standin',
         'layer0.tint': 'var(background)',
         'layer0.opacity': 0.0,
         content_margin: [0, 4, 0, 0],
     },
-    {
-        class: 'show_contents_container',
-        content_margin: 8,
-    },
-    {
-        class: 'edit_button_container',
-        spacing: 4,
-    },
+    // {
+    //     class: 'show_contents_container',
+    //     content_margin: 8,
+    // },
+    // {
+    //     class: 'edit_button_container',
+    //     spacing: 4,
+    // },
     {
         class: 'field_name_label',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         'font.italic': true,
         'font.bold': true,
         color: 'var(foreground)',
@@ -2001,7 +1797,6 @@ export const rules = [
     },
     {
         class: 'terminator',
-        // 'layer0.texture': 'Theme - Merge/terminator.png',
         'layer0.tint': 'color(var(terminatorFg) a(0.25))',
         'layer0.opacity': 1.0,
         content_margin: [16, 4, 16, 4],
@@ -2018,112 +1813,12 @@ export const rules = [
     },
     {
         class: 'label_control good_signature',
-        color: 'var(green)',
+        color: 'var(--greenish)',
     },
     {
         class: 'label_control bad_signature',
-        color: 'var(red)',
+        color: 'var(--redish)',
     },
-    // {
-    //     class: 'loading',
-    //     'layer0.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_02.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer0.opacity': 1.0,
-    //     'layer0.tint': 'var(loadingBall1)',
-    //     'layer1.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_13.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_01.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_12.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer1.opacity': 1.0,
-    //     'layer1.tint': 'var(loadingBall2)',
-    //     'layer2.texture': {
-    //         keyframes: [
-    //             'Theme - Merge/loading_01.png',
-    //             'Theme - Merge/loading_02.png',
-    //             'Theme - Merge/loading_03.png',
-    //             'Theme - Merge/loading_04.png',
-    //             'Theme - Merge/loading_05.png',
-    //             'Theme - Merge/loading_06.png',
-    //             'Theme - Merge/loading_07.png',
-    //             'Theme - Merge/loading_08.png',
-    //             'Theme - Merge/loading_09.png',
-    //             'Theme - Merge/loading_10.png',
-    //             'Theme - Merge/loading_11.png',
-    //             'Theme - Merge/loading_12.png',
-    //             'Theme - Merge/loading_13.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //             'Theme - Merge/loading_00.png',
-    //         ],
-    //         loop: true,
-    //         frame_time: 0.05,
-    //     },
-    //     'layer2.opacity': 1.0,
-    //     'layer2.tint': 'var(loadingBall1)',
-    //     content_margin: [11, 5],
-    // },
 
     // File diffs
     {
@@ -2185,7 +1880,6 @@ export const rules = [
 
     {
         class: 'button_control all_button',
-        // 'layer0.texture': 'Theme - Merge/button_outline.png',
         'layer0.draw_center': false,
         'layer0.tint': 'var(buttonBg)',
         'layer0.inner_margin': 4,
@@ -2253,20 +1947,18 @@ export const rules = [
         attributes: ['hover'],
         'layer0.tint': 'var(untrackedHeaderBgHover)',
     },
-    {
-        class: 'file_meta',
-        spacing: 5,
-    },
+    // {
+    //     class: 'file_meta',
+    //     spacing: 5,
+    // },
     {
         class: 'icon_deleted',
-        // 'layer0.texture': 'Theme - Merge/icon_deleted.png',
         'layer0.tint': 'var(deletedIconFg)',
         'layer0.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
     },
     {
         class: 'icon_created',
-        // 'layer0.texture': 'Theme - Merge/icon_staged.png',
         'layer0.tint': 'var(createdIconFg)',
         'layer0.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
@@ -2274,7 +1966,6 @@ export const rules = [
 
     {
         class: 'icon_unmerged',
-        // 'layer0.texture': 'Theme - Merge/icon_unmerged.png',
         'layer0.tint': 'var(unmergedIconFg)',
         'layer0.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
@@ -2289,13 +1980,12 @@ export const rules = [
         'layer1.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
     },
-    {
-        class: 'table_of_contents_icon',
-        content_margin: [10, 9, 10, 9],
-    },
+    // {
+    //     class: 'table_of_contents_icon',
+    //     content_margin: [10, 9, 10, 9],
+    // },
     {
         class: 'icon_staged',
-        // 'layer0.texture': 'Theme - Merge/icon_staged.png',
         'layer0.tint': 'var(stagedIconFg)',
         'layer0.opacity': 1.0,
         content_margin: [10, 9, 10, 9],
@@ -2303,24 +1993,21 @@ export const rules = [
     {
         class: 'icon_text',
         color: 'var(foreground)',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
     },
-    {
-        class: 'total_untracked',
-        content_margin: [4, 0, 4, 0],
-    },
-    {
-        class: 'recently_modified',
-        content_margin: [5, 0, 0, 0],
-    },
-    {
-        class: 'file_icons',
-        spacing: 1,
-    },
+    // {
+    //     class: 'total_untracked',
+    //     content_margin: [4, 0, 4, 0],
+    // },
+    // {
+    //     class: 'recently_modified',
+    //     content_margin: [5, 0, 0, 0],
+    // },
+    // {
+    //     class: 'file_icons',
+    //     spacing: 1,
+    // },
     {
         class: 'file_icon',
-        // 'layer0.texture': 'Theme - Merge/button.png',
         'layer0.tint': 'var(fileIconBg)',
         'layer0.opacity': 1.0,
         'layer0.inner_margin': [4, 4, 4, 4],
@@ -2328,11 +2015,9 @@ export const rules = [
     },
     {
         class: 'file_icon_left',
-        // 'layer0.texture': 'Theme - Merge/button_left.png',
     },
     {
         class: 'file_icon_right',
-        // 'layer0.texture': 'Theme - Merge/button_right.png',
     },
     {
         class: 'table_of_contents_icon_wrapper',
@@ -2387,7 +2072,6 @@ export const rules = [
     },
     {
         class: 'disclosure_button_control',
-        // 'layer0.texture': 'Theme - Merge/disclosure_unexpanded.png',
         'layer0.opacity': {
             target: 0.3,
             speed: 4.0,
@@ -2399,7 +2083,6 @@ export const rules = [
     {
         class: 'disclosure_button_control',
         attributes: ['expanded'],
-        // 'layer0.texture': 'Theme - Merge/disclosure_expanded.png',
     },
     {
         class: 'disclosure_button_control',
@@ -2422,7 +2105,6 @@ export const rules = [
     {
         class: 'disclosure_button_control',
         parents: [{ class: 'close' }],
-        // 'layer0.texture': 'Theme - Merge/icon_cancel.png',
         content_margin: [9, 8],
     },
     {
@@ -2552,7 +2234,6 @@ export const rules = [
     // File Badges
     {
         class: 'file_badge',
-        // 'layer0.texture': 'Theme - Merge/button.png',
         'layer0.inner_margin': [4, 4, 4, 4],
         'layer0.opacity': 1.0,
         min_size: [18, 18],
@@ -2563,11 +2244,9 @@ export const rules = [
     },
     {
         class: 'left_badge',
-        // 'layer0.texture': 'Theme - Merge/button_left.png',
     },
     {
         class: 'right_badge',
-        // 'layer0.texture': 'Theme - Merge/button_right.png',
     },
     {
         class: 'modified_badge',
@@ -2656,7 +2335,6 @@ export const rules = [
         class: 'welcome_overlay_contents',
         'layer0.tint': 'var(welcomeBg)',
         'layer0.opacity': 1.0,
-        // 'layer0.texture': 'Theme - Merge/button.png',
         'layer0.inner_margin': 4,
         spacing: 32,
         content_margin: [50, 25, 50, 25],
@@ -2665,10 +2343,8 @@ export const rules = [
         class: 'button_control',
         parents: [{ class: 'welcome_overlay_contents' }],
         'layer1.tint': 'var(buttonBgWelcome)',
-        // 'layer1.texture': 'Theme - Merge/button.png',
         'layer1.inner_margin': 4,
         'layer2.opacity': 0.0,
-        // 'layer2.texture': 'Theme - Merge/button.png',
         'layer2.inner_margin': 4,
         min_size: [120, 15],
         content_margin: [10, 6],
@@ -2676,7 +2352,6 @@ export const rules = [
     {
         class: 'purchase_license_cta_link',
         fg: 'color(var(link_label_color))',
-        'font.face': 'var(font_face)',
         'font.bold': true,
     },
     {
@@ -2687,14 +2362,13 @@ export const rules = [
     {
         class: 'subtitle_label_control',
         fg: 'var(labelColor)',
-        'font.face': 'var(font_face)',
         'font.size': 17,
     },
-    {
-        class: 'recent_repository_row',
-        spacing: 4,
-        content_margin: [0, 4],
-    },
+    // {
+    //     class: 'recent_repository_row',
+    //     spacing: 4,
+    //     content_margin: [0, 4],
+    // },
     {
         class: 'recent_repository_button',
         'layer0.tint': 'var(recentRepositoriesRowBg)',
@@ -2743,9 +2417,6 @@ export const rules = [
     {
         class: 'command_history_label',
         fg: 'var(helpLabelColor)',
-        'font.face': 'var(font_face)',
-        'font.size': 15,
-        'font.italic': true,
     },
 
     // Preferences Page
@@ -2788,21 +2459,20 @@ export const rules = [
         'layer0.tint': 'var(preferencesOverlayBg)',
         'layer0.opacity': 1.0,
     },
-    {
-        class: 'preference_wrapper',
-        content_margin: [4, 4, 4, 24],
-        spacing: 4,
-    },
-    {
-        class: 'preference_text_input_container',
-        spacing: 8,
-    },
+    // {
+    //     class: 'preference_wrapper',
+    //     content_margin: [4, 4, 4, 24],
+    //     spacing: 4,
+    // },
+    // {
+    //     class: 'preference_text_input_container',
+    //     spacing: 8,
+    // },
 
     // Preference Labels
     {
         class: 'preferences_section_label',
         fg: 'var(labelColor)',
-        'font.face': 'var(font_face)',
         'font.size': 14,
         'font.bold': true,
         case: 'title',
@@ -2810,8 +2480,6 @@ export const rules = [
     {
         class: 'preference_help_text_label',
         fg: 'var(helpLabelColor)',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size_sm)',
     },
 
     // Switch Repository Window
@@ -2828,6 +2496,12 @@ export const rules = [
         'layer0.tint': 'var(switchRepoBg)',
         tint_index: -1,
     },
+    {
+        class: 'switch_project_panel_cancel_container',
+        parents: [{ class: 'switch_project_window' }],
+        'layer0.tint': 'var(switchRepoBg)',
+        tint_index: -1,
+    },
 
     // Tool Tips
     {
@@ -2838,8 +2512,6 @@ export const rules = [
     },
     {
         class: 'tool_tip_label_control',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size_sm)',
         fg: 'color(black)',
     },
 
@@ -2851,22 +2523,18 @@ export const rules = [
     },
     {
         class: 'hint_stem bottom',
-        // 'layer0.texture': 'Theme - Merge/hint_bottom_arrow.png',
         content_margin: [6, 3, 6, 3],
     },
     {
         class: 'hint_stem left',
-        // 'layer0.texture': 'Theme - Merge/hint_left_arrow.png',
         content_margin: [3, 6, 3, 6],
     },
     {
         class: 'hint_stem top',
-        // 'layer0.texture': 'Theme - Merge/hint_top_arrow.png',
         content_margin: [6, 3, 6, 3],
     },
     {
         class: 'hint_stem right',
-        // 'layer0.texture': 'Theme - Merge/hint_right_arrow.png',
         content_margin: [3, 6, 3, 6],
     },
     {
@@ -2900,8 +2568,6 @@ export const rules = [
     },
     {
         class: 'hint_label',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size_sm)',
         fg: 'var(hint_fg)',
     },
     {
@@ -2912,7 +2578,6 @@ export const rules = [
     {
         class: 'hint_control bottom',
         parents: [{ class: 'error_output' }],
-        // 'layer1.texture': 'Theme - Merge/hint_bottom_stripe.png',
         'layer1.inner_margin': [4, 9, 4, 4],
         'layer1.draw_center': false,
         'layer1.tint': 'var(error_hint_accent)',
@@ -2927,8 +2592,6 @@ export const rules = [
     {
         class: 'hint_label',
         parents: [{ class: 'error_output' }],
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
         fg: 'var(error_hint_fg)',
     },
 
@@ -2983,14 +2646,12 @@ export const rules = [
         },
         content_margin: [10, 8],
     },
-    {
-        class: 'use_hunk_button left',
-        // 'layer0.texture': 'Theme - Merge/icon_left_hunk.png',
-    },
-    {
-        class: 'use_hunk_button right',
-        // 'layer0.texture': 'Theme - Merge/icon_right_hunk.png',
-    },
+    // {
+    //     class: 'use_hunk_button left',
+    // },
+    // {
+    //     class: 'use_hunk_button right',
+    // },
     {
         class: 'use_hunk_button',
         attributes: ['hover'],
@@ -3086,7 +2747,6 @@ export const rules = [
         'layer1.tint': 'var(repositoryTabBarBg)',
         'layer1.opacity': 1.0,
         'layer3.tint': 'var(repositoryTabBarBorderBg)',
-        // 'layer3.texture': 'Theme - Merge/tab_border.png',
         'layer3.inner_margin': [16, 0, 16, 0],
         'layer3.opacity': {
             target: 0.2,
@@ -3104,7 +2764,6 @@ export const rules = [
     {
         class: 'tab_control',
         attributes: ['right'],
-        // 'layer3.texture': 'Theme - Merge/tab_border_end.png',
     },
     {
         class: 'repository_tab_label_container',
@@ -3112,7 +2771,6 @@ export const rules = [
     },
     {
         class: 'icon_folder',
-        // 'layer0.texture': 'Theme - Merge/folder_closed.png',
         'layer0.opacity': 0.4,
         'layer0.tint': 'var(foreground)',
         content_margin: [9, 8],
@@ -3120,8 +2778,6 @@ export const rules = [
     {
         class: 'tab_label',
         fg: 'color(var(labelColor) a(0.9))',
-        'font.face': 'var(font_face)',
-        'font.size': 'var(font_size)',
     },
     {
         class: "tab_label",
@@ -3158,7 +2814,6 @@ export const rules = [
     {
         class: 'tab_close_button',
         settings: ['show_tab_close_buttons'],
-        // 'layer0.texture': 'Theme - Default/common/tab_close.png',
         content_margin: [10, 9],
     },
     {
@@ -3206,7 +2861,6 @@ export const rules = [
         'layer1.tint': 'var(repositoryTabBarBg)',
         'layer1.opacity': 1.0,
         'layer3.tint': 'var(repositoryTabBarBorderBg)',
-        // 'layer3.texture': 'Theme - Merge/tab_border_end.png',
         'layer3.inner_margin': [16, 0, 16, 0],
         'layer3.opacity': 0.2,
     },
@@ -3229,7 +2883,6 @@ export const rules = [
         'layer1.tint': 'var(repositoryTabBarBg)',
         'layer1.opacity': 1.0,
         'layer3.tint': 'var(repositoryTabBarBorderBg)',
-        // 'layer3.texture': 'Theme - Merge/tab_border_end.png',
         'layer3.inner_margin': [16, 0, 16, 0],
         'layer3.opacity': 0.2,
     },

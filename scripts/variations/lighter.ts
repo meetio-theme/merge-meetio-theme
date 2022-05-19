@@ -1,83 +1,62 @@
-import { lighter as ui } from '@meetio/meetio-colors';
-
 export const lighter = {
     // Section: Define Meetio Colors
-    cursor: ui.cursor,
-    foreground: ui.foreground,
-    background: ui.background,
-    comments: ui.comments,
-    blue: ui.base.blue,
-    brown: ui.base.brown,
-    cyan: ui.base.cyan,
-    green: ui.base.green,
-    orange: ui.base.orange,
-    pink: ui.base.pink,
-    purple: ui.base.purple,
-    red: ui.base.red,
-    yellow: ui.base.yellow,
-    invalid: ui.invalid,
-    deprecated: ui.deprecated,
-    diffAdded: ui.diffAdded,
-    diffModified: ui.diffModified,
-    diffDeleted: ui.diffDeleted,
+    foreground: 'var(--foreground)',
+    background: 'var(--background)',
     transparent: "transparent",
 
-    accentDark: "color(var(background) l(- 0.75%))",
-    accentDarker: "color(var(background) l(- 1.00%))",
-    accentDarkest: "color(var(background) l(- 2.00%))",
-    accentLight: "color(var(background) l(+ 2%))",
-    accentLighter: "color(var(background) l(+ 4%))",
-    accentLightest: "color(var(background) l(+ 10%))",
+    accentLight: 'color(var(background) l(+ 2%))',
+    accentLighter: 'color(var(background) l(+ 4%))',
+    accentLightest: 'color(var(background) l(+ 10%))',
 
-    darkGray: "hsl(210, 10%, 10%)",
+    // Section: Labels
+    labelColor: 'var(foreground)',
+    helpLabelColor: 'color(var(foreground) a(0.6))',
 
-    // Labels
-    labelColor: "var(foreground)",
-    helpLabelColor: "color(var(foreground) a(0.6))",
-    branchStatsLabelBg: "color(var(accentLightest) a(0.75))",
+    branchStatsLabelFg: "var(foreground)",
+    branchStatsLabelBg: 'color(var(accentLightest) a(0.75))',
 
-    // Header
-    titleBarStyle: "light",
-    headerBg: "var(background)",
-    headerFg: "var(foreground)",
-    headerButtonBg: "var(accentLight)",
+    // Section: Header
+    titleBarStyle: 'dark',
+    headerBg: 'var(background)',
+    headerFg: 'var(foreground)',
+    headerButtonBg: 'var(accentLight)',
 
-    // Icons on Header (e.g: Push, Pull, Search)
+    // Section: Icons on Header (e.g: Push, Pull, Search)
     iconButtonOpacity: 1,
     iconButtonOpacityHover: 0.8,
     iconButtonOpacityFaded: 0.4,
     iconButtonOpacityHidden: 0.0,
 
-    infoShadow: "color(black a(0.2))",
+    infoShadow: 'color(black a(0.2))',
 
-    divergedBg: 'color(var(orange) l(- 5%) s(- 20%))',
+    divergedBg: 'color(var(--orangish) l(- 5%) s(- 20%))',
     divergedButtonBg: 'color(var(divergedBg) l(+ 25%))',
     divergedButtonFg: 'color(var(divergedBg) l(- 50%))',
 
-    // Scroll shadow
-    scrollShadow: "color(black a(0.3))",
+    // Section: Scroll shadow
+    scrollShadow: 'color(black a(0.3))',
 
-    // Focus highlight
-    focusHighlightColor: "var(foreground)",
+    // Section: Focus highlight
+    focusHighlightColor: 'var(foreground)',
 
-    // Overlay
-    overlayBg: "var(background)",
+    // Section: Overlay
+    overlayBg: 'var(background)',
 
-    // Welcome overlay
-    welcomeBg: "var(accentDarkest)",
+    // Section: Welcome overlay
+    welcomeBg: 'var(accentLight)',
     recentRepositoriesRowBg: 'var(accentLight)',
     recentRepositoriesRowBgHover: 'var(accentLightest)',
 
-    // Preferences Page
-    preferencesOverlayBg: "var(background)",
-    preferencesSectionTableBg: "var(background)",
-    preferencesSectionTableRowBg: "var(accentLight)",
-    preferencesOverlayLeft: "var(background)",
+    // Section: Preferences Page
+    preferencesOverlayBg: 'var(background)',
+    preferencesSectionTableBg: 'var(background)',
+    preferencesSectionTableRowBg: 'var(accentLight)',
+    preferencesOverlayLeft: 'var(background)',
 
-    // Side bar
-    locationBarFg: "var(foreground)",
-    locationBarHeadingFg: "var(foreground)",
-    locationBarHeadingShadow: "black",
+    // Section: Side bar
+    locationBarFg: 'var(foreground)',
+    locationBarHeadingFg: 'var(foreground)',
+    locationBarHeadingShadow: 'black',
     locationBarRowBg: 'var(accentLight)',
     locationBarRowBgHover: 'var(accentLighter)',
     disclosureFg: 'var(foreground)',
@@ -88,121 +67,123 @@ export const lighter = {
     commitSummaryFgPrimary: 'var(foreground)',
     commitSummaryFgSecondary: 'var(foreground)',
 
-    commitEdge0: "var(blue)",
-    commitEdge1: "var(purple)",
-    commitEdge2: "var(red)",
-    commitEdge3: "color(var(orange) l(- 10%))",
-    commitEdge4: "var(yellow)",
-    commitEdge5: "color(var(cyan) l(50%))",
+    commitEdge0: 'var(--bluish)',
+    commitEdge1: 'var(--purplish)',
+    commitEdge2: 'var(--redish)',
+    commitEdge3: 'color(var(--orangish) l(- 10%))',
+    commitEdge4: 'var(--yellowish)',
+    commitEdge5: 'color(var(--cyanish) l(50%))',
 
-    // Sidebar Bar
-    sideBarContainerBg: "var(background)",
+    // Section: Sidebar
+    sideBarContainerBg: 'var(background)',
     sideBarContainerBgWithGraph: 'var(accentLight)',
 
-    // Table of Contents
-    tableOfContentsBg: "var(background)",
-    tableOfContentsFg: "var(foreground)",
-    tableOfContentsHeadingFg: "var(foreground)",
+    // Section: Table of Contents
+    tableOfContentsBg: 'var(background)',
+    tableOfContentsFg: 'var(foreground)',
+    tableOfContentsHeadingFg: 'var(foreground)',
     tableOfContentsRowBg: 'var(accentLight)',
     tableOfContentsRowBgHover: 'var(accentLighter)',
 
-    // Detail panel
-    detailPanelBg: "var(background)",
-    fieldNameFg: "var(foreground)",
-    authorFg: "color(var(--foreground) a(0.4))",
+    // Section: Detail panel
+    detailPanelBg: 'var(background)',
+    fieldNameFg: 'var(foreground)',
+    authorFg: 'color(var(foreground) a(0.4))',
     terminatorFg: 'var(foreground)',
 
-    // Center Branch Input
-    outputSucceededFg: "var(green)",
-    outputFailedFg: "var(red)",
-    outputRunningFg: "var(cyan)",
-    outputCanceledFg: "var(red)",
+    // Section: Center Branch Input
+    outputSucceededFg: "var(--greenish)",
+    outputFailedFg: "var(--redish)",
+    outputRunningFg: "var(--cyanish)",
+    outputCanceledFg: "var(--redish)",
 
     // Section: Git Output Panel
     gitOutputPanelBg: "var(accentLight)",
     gitOutputPanelFg: "var(foreground)",
 
-    // Tool Tips
-    toolTipFg: "var(foreground)",
-    toolTipBg: "var(accentLight)",
+    // Section: Tool Tips
+    toolTipFg: 'var(foreground)',
+    toolTipBg: 'var(accentLight)',
 
-    // Annotations
-    headAnnFg: "var(background)",
-    headAnnBg: "var(purple)",
+    // Section: Annotations
+    headAnnFg: 'var(background)',
+    headAnnBg: 'var(--purplish)',
 
-    branchAnnFg: "var(background)",
-    branchAnnBg: "var(blue)",
+    branchAnnFg: 'var(background)',
+    branchAnnBg: 'var(--bluish)',
 
-    remoteAnnFg: "var(background)",
-    remoteAnnBg: "var(cyan)",
+    remoteAnnFg: 'var(background)',
+    remoteAnnBg: 'var(--cyanish)',
 
-    tagAnnFg: "var(background)",
-    tagAnnBg: "var(yellow)",
+    tagAnnFg: 'var(background)',
+    tagAnnBg: 'var(--yellowish)',
 
-    stashAnnFg: "var(background)",
-    stashAnnBg: "var(orange)",
+    stashAnnFg: 'var(background)',
+    stashAnnBg: 'var(--orangish)',
 
-    fileAnnFg: "var(background)",
-    fileAnnBg: "color(var(cyan) a(0.75))",
+    fileAnnFg: 'var(background)',
+    fileAnnBg: 'color(var(--pinkish))',
 
-    fileAnnIconAheadFg: 'var(green)',
-    fileAnnIconBehindFg: 'var(red)',
+    fileAnnIconAheadFg: 'var(--greenish)',
+    fileAnnIconBehindFg: 'var(--redish)',
 
     submoduleAnnFg: 'var(background)',
     submoduleLightAnnFg: 'var(background)',
 
-    submoduleAnnBg: 'var(purple)',
-    submoduleLightAnnBg: 'var(purple)',
+    submoduleAnnBg: 'var(--purplish)',
+    submoduleLightAnnBg: 'var(--purplish)',
 
-    insertedAnnBg: "color(var(cyan) a(0.50))",
-    deletedAnnBg: "color(var(red) a(0.50))",
+    insertedAnnFg: 'var(background)',
+    insertedAnnBg: 'color(var(--cyanish) a(0.50))',
 
-    // Diff headers
-    fileDiffShadow: "color(black a(0.5))",
-    fileIconBg: "color(white a(0.2))",
+    deletedAnnBg: 'color(var(--redish) a(0.50))',
 
-    hunkButtonFg: "var(foreground)",
-    hunkButtonShadow: "color(black a(0.5))",
+    // Section: Diff headers
+    fileDiffShadow: 'color(black a(0.5))',
+    fileIconBg: 'color(white a(0.2))',
 
-    fileHeaderBg: "var(background)",
-    fileHeaderBgHover: "var(accentLighter)",
+    hunkButtonFg: 'var(foreground)',
+    hunkButtonShadow: 'color(black a(0.5))',
 
-    hunkHeaderBg: "var(accentLight)",
+    fileHeaderBg: 'var(background)',
+    fileHeaderBgHover: 'var(accentLighter)',
 
-    createdIconFg: 'var(green)',
+    hunkHeaderBg: 'var(accentLight)',
 
-    deletedIconFg: "var(foreground)",
-    deletedHeaderBg: "var(red)",
-    deletedHeaderBgHover: "color(var(red) l(+ 5%))",
+    createdIconFg: 'var(--greenish)',
 
-    unmergedIconFg: "color(var(foreground) l(+ 20%))",
-    unmergedHeaderBg: "var(accentLighter)",
-    unmergedHeaderBgHover: "var(accentLightest)",
+    deletedIconFg: 'var(--redish)',
+    deletedHeaderBg: 'var(--redish)',
+    deletedHeaderBgHover: 'color(var(--redish) l(+ 5%))',
 
-    recentIconFg: "var(yellow)",
-    recentIconBg: "transparent",
+    unmergedIconFg: 'var(--yellowish)',
+    unmergedHeaderBg: 'var(accentLighter)',
+    unmergedHeaderBgHover: 'var(accentLightest)',
 
-    iconUninitializedSubmodule: "var(yellow)",
+    recentIconFg: 'var(--yellowish)',
+    recentIconBg: 'transparent',
+
+    iconUninitializedSubmodule: "var(--yellowish)",
 
     untrackedHeaderBg: 'var(accentLight)',
     untrackedHeaderBgHover: 'var(accentLighter)',
 
-    stagedIconFg: "var(foreground)",
+    stagedIconFg: 'var(foreground)',
 
-    renamedFileInserted: "color(var(green) s(30%) l(60%))",
-    renamedFileDeleted: "color(var(red) s(50%) l(65%))",
+    renamedFileInserted: 'color(var(--greenish) s(30%) l(60%))',
+    renamedFileDeleted: 'color(var(--redish) s(50%) l(65%))',
 
-    // Sidebar Location Icon Visible
-    hiddenSlash: "var(red)",
+    // Section: Sidebar Location Icon Visible
+    hiddenSlash: "var(--redish)",
 
-    // Blame
-    blamePopupBg: "color(var(--background) l(+ 10%))",
+    // Section: Blame
+    blamePopupBg: 'color(var(--background) l(+ 10%))',
 
-    // Buttons
-    buttonBg: "var(accentLighter)",
+    // Section: Buttons
+    buttonBg: 'color(var(background) l(+ 5%))',
     buttonBgWelcome: 'color(var(welcomeBg) l(+ 5%))',
-    buttonFg: "var(labelColor)",
-    buttonShadow: "color(black a(0.5))",
+    buttonFg: 'var(labelColor)',
+    buttonShadow: 'color(black a(0.5))',
     buttonBgHover: 'color(var(foreground) a(0.2))',
 
     // Section: Inputs
@@ -211,15 +192,15 @@ export const lighter = {
     inputBorderColor: 'color(var(background) l(+ 2%))',
     inputBorderSize: [0, 0, 0, 2],
 
-    highlightedButtonLightBg: "color(hsl(84, 35%, 50%))",
-    highlightedButtonLightFg: "var(labelColor)",
-    highlightedButtonDarkBg: "color(hsl(83, 40%, 44%))",
-    highlightedButtonDarkFg: "var(labelColor)",
-    highlightedButtonShadow: "color(black a(0.5) l(+ 10%))",
+    highlightedButtonLightBg: 'color(hsl(84, 35%, 50%))',
+    highlightedButtonLightFg: 'var(labelColor)',
+    highlightedButtonDarkBg: 'color(hsl(83, 40%, 44%))',
+    highlightedButtonDarkFg: 'var(labelColor)',
+    highlightedButtonShadow: 'color(black a(0.5) l(+ 10%))',
 
-    toggleButtonBg: "color(var(accentLightest) a(0.5))",
-    toggleButtonFg: "var(foreground)",
-    toggleButtonFgSelected: "var(foreground)",
+    toggleButtonBg: 'color(var(accentLightest) a(0.5))',
+    toggleButtonFg: 'var(foreground)',
+    toggleButtonFgSelected: 'var(foreground)',
 
     // Section: Tabs
     tabBarBg: 'var(background)',
@@ -241,53 +222,54 @@ export const lighter = {
     checkboxSelected: 'var(foreground)',
     checkboxBorderSelected: 'var(foreground)',
 
-    // Dialogs
-    dialogBg: "var(background)",
-    dialogButtonBg: "var(accentLight)",
+    // Section: Dialogs
+    dialogBg: 'var(background)',
+    dialogButtonBg: 'var(accentLight)',
 
-    // Progress bar
-    progressBg: "color(var(accentLightest) l(+ 3%))",
-    progressFg: "color(var(accentDarker) a(0.5))",
+    // Section: Progress bar
+    progressBg: 'color(var(accentLightest) l(+ 3%))',
+    progressFg: 'color(var(foreground) a(0.5))',
 
-    // Quick panel
-    quickPanelBg: "var(background)",
-    quickPanelRowBg: "var(accentLighter)",
-    quickPanelFg: "var(foreground)",
-    quickPanelFgMatch: "var(foreground)",
-    quickPanelFgSelected: "var(foreground)",
-    quickPanelFgSelectedMatch: "var(foreground)",
-    quickPanelPathFg: "var(foreground)",
-    quickPanelPathFgMatch: "var(foreground)",
-    quickPanelPathFgSelected: "var(foreground)",
-    quickPanelPathFgSelectedMatch: "var(foreground)",
+    // Section: Quick panel
+    quickPanelBg: 'var(background)',
+    quickPanelRowBg: 'var(accentLighter)',
+    quickPanelFg: 'var(foreground)',
+    quickPanelFgMatch: 'var(foreground)',
+    quickPanelFgSelected: 'var(foreground)',
+    quickPanelFgSelectedMatch: 'var(foreground)',
+    quickPanelPathFg: 'var(foreground)',
+    quickPanelPathFgMatch: 'var(foreground)',
+    quickPanelPathFgSelected: 'var(foreground)',
+    quickPanelPathFgSelectedMatch: 'var(foreground)',
 
-    // Switch repository window
-    switchRepoBg: "var(background)",
+    // Section: Switch repository window
+    switchRepoBg: 'var(background)',
 
-    // Hints
-    failedLabelFg: "var(foreground)",
+    // Section: Hints
+    failedLabelFg: 'var(background)',
 
     // Section: Loading
     loadingBall1: 'var(accentLighter)',
     loadingBall2: 'var(accentLightest)',
 
-    // Command Palette
-    previewFg: "var(foreground)",
+    // Section: Command Palette
+    previewFg: 'var(foreground)',
 
-    // Merge Helper
-    mergeHelperHighlightBg: "color(var(accentLightest) l(25%))",
-    consoleBorder: "var(background)",
+    // Section: Merge Helper
+    mergeHelperHighlightBg: 'color(var(accentLightest) l(25%))',
+    consoleBorder: 'var(accentLight)',
 
-    // Hazard buttons
-    hazardButtonBg: "var(red)",
+    // Section: Hazard buttons
+    hazardButtonBg: 'var(--redish)',
 
-    // Tabs
-    repositoryTabBarBg: "var(background)",
-    repositoryTabBarBorderBg: "var(background)",
+    // Section: Tabs
+    repositoryTabBarBg: 'var(accentLight)',
+    repositoryTabBarBorderBg: 'var(background)',
+
 
     // Section: Commit Area -> Modified & Unstaged Files
     fileBadgeModifiedLeftFg: 'var(foreground)',
-    fileBadgeModifiedRightFg: 'var(red)',
+    fileBadgeModifiedRightFg: 'var(--redish)',
     fileBadgeModifiedBg: 'color(white a(0.2))',
     fileBadgeModifiedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUnmergedFg: 'var(foreground)',

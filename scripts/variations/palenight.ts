@@ -1,40 +1,18 @@
-import { palenight as ui } from '@meetio/meetio-colors';
-
 export const palenight = {
     // Section: Define Meetio Colors
-    cursor: ui.cursor,
-    foreground: ui.foreground,
-    background: ui.background,
-    comments: ui.comments,
-    blue: ui.base.blue,
-    brown: ui.base.brown,
-    cyan: ui.base.cyan,
-    green: ui.base.green,
-    orange: ui.base.orange,
-    pink: ui.base.pink,
-    purple: ui.base.purple,
-    red: ui.base.red,
-    yellow: ui.base.yellow,
-    invalid: ui.invalid,
-    deprecated: ui.deprecated,
-    diffAdded: ui.diffAdded,
-    diffModified: ui.diffModified,
-    diffDeleted: ui.diffDeleted,
+    foreground: 'var(--foreground)',
+    background: 'var(--background)',
     transparent: "transparent",
 
-
-    accentDark: 'color(var(background) l(- 0.75%))',
-    accentDarker: 'color(var(background) l(- 1.00%))',
-    accentDarkest: 'color(var(background) l(- 2.00%))',
     accentLight: 'color(var(background) l(+ 2%))',
     accentLighter: 'color(var(background) l(+ 4%))',
     accentLightest: 'color(var(background) l(+ 10%))',
 
-    darkGray: 'hsl(210, 10%, 10%)',
-
     // Section: Labels
     labelColor: 'var(foreground)',
     helpLabelColor: 'color(var(foreground) a(0.6))',
+
+    branchStatsLabelFg: "var(foreground)",
     branchStatsLabelBg: 'color(var(accentLightest) a(0.75))',
 
     // Section: Header
@@ -51,7 +29,7 @@ export const palenight = {
 
     infoShadow: 'color(black a(0.2))',
 
-    divergedBg: 'color(var(orange) l(- 5%) s(- 20%))',
+    divergedBg: 'color(var(--orangish) l(- 5%) s(- 20%))',
     divergedButtonBg: 'color(var(divergedBg) l(+ 25%))',
     divergedButtonFg: 'color(var(divergedBg) l(- 50%))',
 
@@ -89,12 +67,12 @@ export const palenight = {
     commitSummaryFgPrimary: 'var(foreground)',
     commitSummaryFgSecondary: 'var(foreground)',
 
-    commitEdge0: 'var(blue)',
-    commitEdge1: 'var(purple)',
-    commitEdge2: 'var(red)',
-    commitEdge3: 'color(var(orange) l(- 10%))',
-    commitEdge4: 'var(yellow)',
-    commitEdge5: 'color(var(cyan) l(50%))',
+    commitEdge0: 'var(--bluish)',
+    commitEdge1: 'var(--purplish)',
+    commitEdge2: 'var(--redish)',
+    commitEdge3: 'color(var(--orangish) l(- 10%))',
+    commitEdge4: 'var(--yellowish)',
+    commitEdge5: 'color(var(--cyanish) l(50%))',
 
     // Section: Sidebar
     sideBarContainerBg: 'var(background)',
@@ -110,14 +88,14 @@ export const palenight = {
     // Section: Detail panel
     detailPanelBg: 'var(background)',
     fieldNameFg: 'var(foreground)',
-    authorFg: 'color(var(--foreground) a(0.4))',
+    authorFg: 'color(var(foreground) a(0.4))',
     terminatorFg: 'var(foreground)',
 
     // Section: Center Branch Input
-    outputSucceededFg: "var(green)",
-    outputFailedFg: "var(red)",
-    outputRunningFg: "var(cyan)",
-    outputCanceledFg: "var(red)",
+    outputSucceededFg: "var(--greenish)",
+    outputFailedFg: "var(--redish)",
+    outputRunningFg: "var(--cyanish)",
+    outputCanceledFg: "var(--redish)",
 
     // Section: Git Output Panel
     gitOutputPanelBg: "var(accentLight)",
@@ -129,34 +107,36 @@ export const palenight = {
 
     // Section: Annotations
     headAnnFg: 'var(background)',
-    headAnnBg: 'var(purple)',
+    headAnnBg: 'var(--purplish)',
 
     branchAnnFg: 'var(background)',
-    branchAnnBg: 'var(blue)',
+    branchAnnBg: 'var(--bluish)',
 
     remoteAnnFg: 'var(background)',
-    remoteAnnBg: 'var(cyan)',
+    remoteAnnBg: 'var(--cyanish)',
 
     tagAnnFg: 'var(background)',
-    tagAnnBg: 'var(yellow)',
+    tagAnnBg: 'var(--yellowish)',
 
     stashAnnFg: 'var(background)',
-    stashAnnBg: 'var(orange)',
+    stashAnnBg: 'var(--orangish)',
 
     fileAnnFg: 'var(background)',
-    fileAnnBg: 'color(var(cyan) a(0.50))',
+    fileAnnBg: 'color(var(--pinkish))',
 
-    fileAnnIconAheadFg: 'var(green)',
-    fileAnnIconBehindFg: 'var(red)',
+    fileAnnIconAheadFg: 'var(--greenish)',
+    fileAnnIconBehindFg: 'var(--redish)',
 
     submoduleAnnFg: 'var(background)',
     submoduleLightAnnFg: 'var(background)',
 
-    submoduleAnnBg: 'var(purple)',
-    submoduleLightAnnBg: 'var(purple)',
+    submoduleAnnBg: 'var(--purplish)',
+    submoduleLightAnnBg: 'var(--purplish)',
 
-    insertedAnnBg: 'color(var(cyan) a(0.50))',
-    deletedAnnBg: 'color(var(red) a(0.50))',
+    insertedAnnFg: 'var(background)',
+    insertedAnnBg: 'var(--cyanish)',
+
+    deletedAnnBg: 'var(--redish)',
 
     // Section: Diff headers
     fileDiffShadow: 'color(black a(0.5))',
@@ -170,31 +150,31 @@ export const palenight = {
 
     hunkHeaderBg: 'var(accentLight)',
 
-    createdIconFg: 'var(green)',
+    createdIconFg: 'var(--greenish)',
 
-    deletedIconFg: 'var(red)',
-    deletedHeaderBg: 'var(red)',
-    deletedHeaderBgHover: 'color(var(red) l(+ 5%))',
+    deletedIconFg: 'var(--redish)',
+    deletedHeaderBg: 'var(--redish)',
+    deletedHeaderBgHover: 'color(var(--redish) l(+ 5%))',
 
-    unmergedIconFg: 'var(yellow)',
+    unmergedIconFg: 'var(--yellowish)',
     unmergedHeaderBg: 'var(accentLighter)',
     unmergedHeaderBgHover: 'var(accentLightest)',
 
-    recentIconFg: 'var(yellow)',
+    recentIconFg: 'var(--yellowish)',
     recentIconBg: 'transparent',
 
-    iconUninitializedSubmodule: "var(yellow)",
+    iconUninitializedSubmodule: "var(--yellowish)",
 
     untrackedHeaderBg: 'var(accentLight)',
     untrackedHeaderBgHover: 'var(accentLighter)',
 
     stagedIconFg: 'var(foreground)',
 
-    renamedFileInserted: 'color(var(green) s(30%) l(60%))',
-    renamedFileDeleted: 'color(var(red) s(50%) l(65%))',
+    renamedFileInserted: 'color(var(--greenish) s(30%) l(60%))',
+    renamedFileDeleted: 'color(var(--redish) s(50%) l(65%))',
 
     // Section: Sidebar Location Icon Visible
-    hiddenSlash: "var(red)",
+    hiddenSlash: "var(--redish)",
 
     // Section: Blame
     blamePopupBg: 'color(var(--background) l(+ 10%))',
@@ -266,7 +246,7 @@ export const palenight = {
     switchRepoBg: 'var(background)',
 
     // Section: Hints
-    failedLabelFg: 'var(darkGray)',
+    failedLabelFg: 'var(background)',
 
     // Section: Loading
     loadingBall1: 'var(accentLighter)',
@@ -280,7 +260,7 @@ export const palenight = {
     consoleBorder: 'var(accentLight)',
 
     // Section: Hazard buttons
-    hazardButtonBg: 'var(red)',
+    hazardButtonBg: 'var(--redish)',
 
     // Section: Tabs
     repositoryTabBarBg: 'var(accentLight)',
@@ -289,7 +269,7 @@ export const palenight = {
 
     // Section: Commit Area -> Modified & Unstaged Files
     fileBadgeModifiedLeftFg: 'var(foreground)',
-    fileBadgeModifiedRightFg: 'var(red)',
+    fileBadgeModifiedRightFg: 'var(--redish)',
     fileBadgeModifiedBg: 'color(white a(0.2))',
     fileBadgeModifiedHover: 'color(var(foreground) a(0.35))',
     fileBadgeUnmergedFg: 'var(foreground)',
