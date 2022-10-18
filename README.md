@@ -5,7 +5,7 @@ In order to apply this **Darker** theme, you will need to clone this remote into
 ## Installation
 
 1. Navigate to the Sublime Merge Packages directory (Ex: `MacOS` : `~/Library/Application Support/Sublime\ Merge/Packages`)
-2. Clone it! `git clone git@github.com:meetio-theme/merge-meetio-theme.git Meetio\ Theme`
+2. Clone it! `git clone git@github.com:meetio-theme/merge-meetio-theme.git Meetio\ Theme` or `git clone https://github.com/meetio-theme/merge-meetio-theme.git Meetio`
 3. Update Preferences (Replace `Palenight` with the desired theme `Darker` `Lighter` `Palenight` `Deepocean`)
 
 ```json
